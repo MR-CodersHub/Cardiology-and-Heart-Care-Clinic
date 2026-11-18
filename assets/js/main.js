@@ -210,7 +210,8 @@
       slides.forEach((s, n) => s.classList.toggle('is-active', n === current));
       dots.forEach((d, n) => d.classList.toggle('is-active', n === current));
     };
-    const start = () => { timer = setInterval(() => go(current + 1), 6000); };
+    const AUTOPLAY_DELAY = 8000;
+    const start = () => { clearInterval(timer); timer = setInterval(() => go(current + 1), AUTOPLAY_DELAY); };
     const stop = () => clearInterval(timer);
     dots.forEach((d, i) => d.addEventListener('click', () => { go(i); stop(); start(); }));
     $('.slider-arrow--prev')?.addEventListener('click', () => { go(current - 1); stop(); start(); });

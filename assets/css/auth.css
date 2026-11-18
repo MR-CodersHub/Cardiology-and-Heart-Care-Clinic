@@ -351,24 +351,24 @@
 /* Social Authentication Buttons */
 .auth-social-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 12px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
 }
 
 .auth-social-btn {
   width: 100%;
-  min-height: 48px;
-  padding: 11px 16px;
+  min-height: 46px;
+  padding: 10px 10px;
   border: 1px solid var(--border-strong);
   border-radius: var(--r-sm);
   background: var(--surface);
   color: var(--text);
-  font-size: 0.875rem;
+  font-size: 0.84rem;
   font-weight: 600;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 8px;
   transition: background-color 0.25s var(--ease-soft), border-color 0.25s var(--ease-soft), transform 0.25s var(--ease);
 }
 
@@ -441,6 +441,11 @@
 
   .auth-sep {
     margin-block: 20px;
+  }
+
+  .auth-social-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
   }
 }
 

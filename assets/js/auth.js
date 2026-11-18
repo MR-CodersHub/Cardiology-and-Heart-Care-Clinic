@@ -59,17 +59,6 @@
     });
   });
 
-  $$('[data-social-auth]').forEach((btn) => {
-    btn.addEventListener('click', () => {
-      const provider = btn.getAttribute('data-social-auth') || 'Social';
-      window.showToast?.(
-        provider + ' authentication',
-        provider + ' sign-in is a frontend UI preview only.',
-        'success'
-      );
-    });
-  });
-
   $$('[data-legal-link]').forEach((link) => {
     link.addEventListener('click', (e) => {
       e.preventDefault();

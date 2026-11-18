@@ -38,6 +38,18 @@
   .profile-grid{grid-template-columns:1fr}
 }
 
+@media (max-width:1440px){
+  .slider-arrow{top:auto;bottom:16px;transform:none;width:40px;height:40px}
+}
+
+@media (min-width:1025px){
+  .hero-slider .hero-split{grid-template-columns:minmax(0,1.3fr) minmax(0,.7fr)}
+}
+
+@media (min-width:861px) and (max-width:1024px){
+  .hero-slider .hero-split{grid-template-columns:minmax(0,1.3fr) minmax(280px,.7fr);gap:var(--s-6)}
+}
+
 @media (max-width:860px){
   :root{--s-12:5rem;--s-13:6rem;--s-11:4.5rem}
   .grid-4{grid-template-columns:repeat(2,1fr)}
@@ -61,11 +73,29 @@
   .page-hero{padding-block:var(--s-9) var(--s-9)}
   .page-hero__pattern{width:260px;height:260px;inset-inline-end:-120px}
   .hero-slide__sub{font-size:.92rem}
+  .hero-slide__content{padding-block:18px}
+  .hero-slide__title{font-size:clamp(2.1875rem,9.8vw,2.375rem);margin-bottom:var(--s-4)}
+  .hero-slide__sub{margin-bottom:var(--s-4)}
+  .hero-feature{gap:8px}
+  .hero-mini-card{padding:12px 14px;gap:12px}
+  .hero-mini-card i{width:38px;height:38px;border-radius:10px}
+  .hero-mini-card strong{font-size:.84rem}
+  .hero-panel{width:100%}
+  .hero-monitor{padding:14px}
+  .hero-monitor__screen svg{height:50px}
+  .hero-monitor__stats{gap:6px}
+  .hero-monitor__stats small{font-size:.52rem}
+  .hero-monitor__stats strong{font-size:.7rem}
+  .hero-monitor__foot{font-size:.62rem}
+  .hero-quote{padding:16px}
+  .hero-quote::before{top:-10px;font-size:4rem}
+  .hero-quote__top{margin-bottom:10px}
+  .hero-quote blockquote{font-size:1rem;margin-bottom:12px}
+  .hero-quote__avatar{width:32px;height:32px}
+  .hero-quote__meta{gap:16px;margin-top:10px;padding-top:10px}
+  .hero-slide__actions{gap:10px}
   .hero-slide__actions .btn{width:100%}
-  .hero-mini-card--offset{margin-inline-start:0}
-  .slider-arrow{width:38px;height:38px}
-  .slider-arrow--prev{inset-inline-start:10px}
-  .slider-arrow--next{inset-inline-end:10px}
+  .slider-arrow{display:none}
   .sec-head--center{text-align:start;margin-inline:0}
   .eyebrow--center::after{display:none}
   .media-compose{min-height:360px}
