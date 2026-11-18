@@ -18,7 +18,9 @@
 
 @media (max-width:1024px){
   .nav,.header__cta .btn{display:none}
-  .burger{display:grid}
+  .header__inner{gap:14px}
+  .header__cta{gap:10px}
+  .burger{display:inline-flex}
   .hero-split{grid-template-columns:1fr;gap:var(--s-6)}
   .hero-visual{min-height:420px}
   .hero-visual__card{inset-inline-start:20px}
@@ -38,6 +40,10 @@
   .sidebar{position:fixed;inset-inline-start:0;top:0;transform:translateX(-105%)}
   [dir="rtl"] .sidebar{transform:translateX(105%)}
   .sidebar.is-open{transform:none}
+  .dash-topbar{padding-inline:20px;gap:12px}
+  .dash-topbar__left{flex:1;gap:12px}
+  .dash-topbar h1{font-size:1.22rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .dash-topbar__right{gap:10px}
   .dash-burger{display:grid}
   .dash-backdrop.is-show{display:block}
   .dash-row,.dash-row--equal,.dash-row--sidebar{grid-template-columns:1fr}
@@ -81,6 +87,12 @@
   .doctor-profile__photo img{object-position:center 25%}
   .cta-band__inner{flex-direction:column;align-items:flex-start}
   .topbar__list li:nth-child(n+3){display:none}
+  .dash-topbar{height:72px;padding-inline:18px}
+  .dash-topbar h1{font-size:1.14rem}
+  .dash-topbar__right{gap:8px}
+  .dash-user small,.dash-user i{display:none}
+  .dash-user{padding-inline-start:10px}
+  .dash-user img{width:36px;height:36px}
 }
 
 @media (min-width:861px) and (max-width:1099px){
@@ -180,13 +192,31 @@
   .newsletter .btn{width:100%}
   .map-embed{height:280px}
 
-  /* Dashboard mobile */
-  .dash-topbar{height:68px;padding-inline:16px}
-  .dash-topbar h1{font-size:1.1rem}
+  /* Main header mobile (<= 640px / 480px) */
+  .header .container,.topbar .container{padding-inline:16px}
+  .header__inner{gap:10px}
+  .header__cta{gap:8px}
+  .logo{gap:9px}
+  .logo__mark{width:38px;height:38px;border-radius:11px}
+  .logo__mark svg{width:22px;height:22px}
+  .logo__name{font-size:1.1rem}
+  .logo__sub{font-size:.5rem;letter-spacing:.18em}
+  .nav-tool-btn,.nav-tool-btn--dir,.profile-menu__trigger,.burger{width:36px;height:36px}
+  .nav-tool-btn svg,.profile-menu__trigger svg{width:15px;height:15px}
+  .burger span{width:17px}
+
+  /* Dashboard mobile (<= 640px / 480px) */
+  .dash-topbar{height:64px;padding-inline:14px;gap:10px}
+  .dash-topbar__left{gap:10px}
+  .dash-topbar h1{font-size:1.02rem;line-height:1.2}
   .dash-topbar .breadcrumb{display:none}
-  .dash-user small,.dash-user i{display:none}
-  .dash-user{padding-inline-start:10px}
-  .dash-icon-btn{width:36px;height:36px}
+  .dash-burger{width:36px;height:36px}
+  .dash-topbar__right{gap:7px}
+  .dash-icon-btn{width:34px;height:34px}
+  .dash-icon-btn svg{width:15px;height:15px}
+  .dash-user>div,.dash-user small,.dash-user i{display:none}
+  .dash-user{padding-inline-start:8px;gap:0}
+  .dash-user img{width:34px;height:34px}
   .dash__body{padding:16px}
   .dash-grid,.dash-grid--3{grid-template-columns:repeat(2,1fr);gap:12px}
   .dstat{padding:15px;flex-direction:column}
@@ -215,23 +245,44 @@
 
 @media (max-width:420px){
   .dash-grid,.dash-grid--3{grid-template-columns:1fr}
-  .topbar__inner{gap:10px}
-  .topbar__badge{padding:3px 9px;font-size:.64rem;gap:5px}
+  .topbar .container,.header .container{padding-inline:12px}
+  .topbar__inner{gap:8px}
+  .topbar__badge{padding:3px 8px;font-size:.62rem;gap:5px}
+  .topbar__list{gap:10px}
+  .topbar__list a,.topbar__list span{font-size:.66rem;gap:5px;white-space:nowrap}
   .logo{gap:8px}
-  .logo__mark{width:36px;height:36px;border-radius:10px}
-  .logo__mark svg{width:20px;height:20px}
-  .logo__name{font-size:1.05rem}
-  .logo__sub{font-size:.46rem;letter-spacing:.14em}
+  .logo__mark{width:34px;height:34px;border-radius:10px}
+  .logo__mark svg{width:19px;height:19px}
+  .logo__name{font-size:1.02rem}
+  .logo__sub{font-size:.45rem;letter-spacing:.12em}
   .slider-nav{bottom:18px}
-  .header .container{padding-inline:12px}
   .header__inner{gap:8px}
   .header__cta{gap:6px}
   .nav-tool-btn,.nav-tool-btn--dir{width:34px;height:34px;padding:0;font-size:.62rem}
   .nav-tool-btn svg{width:14px;height:14px}
   .profile-menu__trigger{width:34px;height:34px}
   .profile-menu__trigger svg{width:15px;height:15px}
-  .burger{width:36px;height:36px}
+  .burger{width:34px;height:34px;gap:4px}
   .burger span{width:16px}
+
+  /* Dashboard ultra-compact (360px / 320px) */
+  .dash-topbar{height:60px;padding-inline:10px;gap:8px}
+  .dash-topbar__left{gap:8px}
+  .dash-burger{width:34px;height:34px}
+  .dash-burger svg{width:17px;height:17px}
+  .dash-topbar h1{font-size:.92rem}
+  .dash-topbar__right{gap:5px}
+  .dash-icon-btn{width:32px;height:32px;font-size:.62rem!important}
+  .dash-icon-btn svg{width:14px;height:14px}
+  .dash-user{padding-inline-start:6px}
+  .dash-user img{width:32px;height:32px}
+}
+
+@media (max-width:380px){
+  .header .logo__sub{display:none}
+  .header__cta{gap:5px}
+  .nav-tool-btn,.nav-tool-btn--dir,.profile-menu__trigger,.burger{width:33px;height:33px}
+  .burger span{width:15px}
 }
 
 @media (prefers-reduced-motion:reduce){

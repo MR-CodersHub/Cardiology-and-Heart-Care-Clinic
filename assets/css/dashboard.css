@@ -20,12 +20,16 @@
 .sidebar__nav a .nav-count{margin-inline-start:auto;background:rgba(255,255,255,.15);padding:1px 8px;border-radius:var(--r-pill);font-size:.66rem}
 /* Dash topbar */
 .dash-topbar{height:82px;background:var(--bg-alt);border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;gap:16px;padding-inline:var(--s-7);position:sticky;top:0;z-index:900}
-.dash-topbar__left{display:flex;align-items:center;gap:14px}
-.dash-burger{display:none;width:40px;height:40px;border-radius:var(--r-sm);border:1px solid var(--border-strong);place-items:center}
+.dash-topbar__left{display:flex;align-items:center;gap:14px;min-width:0}
+.dash-topbar__left>div{min-width:0}
+.dash-burger{display:none;width:40px;height:40px;padding:0;border-radius:var(--r-sm);border:1px solid var(--border-strong);background:var(--surface);color:var(--text);place-items:center;flex:0 0 auto}
+.dash-burger svg{width:19px;height:19px;display:block}
 .dash-topbar h1{font-size:1.4rem;margin:0}
 .dash-topbar .breadcrumb{margin:0}
-.dash-topbar__right{display:flex;align-items:center;gap:12px}
-.dash-icon-btn{position:relative;width:40px;height:40px;border-radius:var(--r-sm);border:1px solid var(--border);display:grid;place-items:center;color:var(--text-muted);transition:all .3s}
+.dash-topbar__right{display:flex;align-items:center;gap:12px;flex:0 0 auto}
+.dash-icon-btn{position:relative;width:40px;height:40px;padding:0;border-radius:var(--r-sm);border:1px solid var(--border);display:grid;place-items:center;line-height:1;color:var(--text-muted);flex:0 0 auto;transition:all .3s}
+.dash-icon-btn>span{display:grid;place-items:center;line-height:1}
+.dash-icon-btn svg{width:17px;height:17px;display:block}
 .dash-icon-btn:hover{background:var(--surface-2);color:var(--accent)}
 .dash-icon-btn .dot{position:absolute;top:8px;inset-inline-end:9px;width:7px;height:7px;background:#C4516B;border-radius:50%;border:2px solid var(--bg-alt)}
 .dash-user{display:flex;align-items:center;gap:10px;padding-inline-start:14px;border-inline-start:1px solid var(--border)}
