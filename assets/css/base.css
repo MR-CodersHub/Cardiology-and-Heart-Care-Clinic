@@ -70,6 +70,7 @@ p{margin-bottom:1rem}
 .sec-head{max-width:680px;margin-bottom:var(--s-9)}
 .sec-head--center{margin-inline:auto;text-align:center}
 .sec-head--split{display:flex;justify-content:space-between;align-items:flex-end;gap:var(--s-7);max-width:none}
+.sec-head--split--center{align-items:center}
 .eyebrow{
   display:inline-flex;align-items:center;gap:10px;
   font-size:.72rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;
