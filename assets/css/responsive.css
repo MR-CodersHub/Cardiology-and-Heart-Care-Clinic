@@ -22,6 +22,13 @@
   .hero-split{grid-template-columns:1fr;gap:var(--s-6)}
   .hero-visual{min-height:420px}
   .hero-visual__card{inset-inline-start:20px}
+  .home2-hero{padding-block:clamp(16px,3vh,32px)}
+  .home2-hero .hero-split{gap:var(--s-5)}
+  .home2-hero .hero-visual{min-height:min(280px,30vh)}
+  .home2-hero h1{margin-bottom:14px}
+  .home2-hero .eyebrow{margin-bottom:12px}
+  .home2-hero .lead{line-height:1.6}
+  .home2-hero .trust-strip{margin-top:18px}
   .detail-hero{grid-template-columns:1fr;gap:var(--s-6)}
   .doctor-profile{grid-template-columns:280px 1fr}
   .auth-wrap{grid-template-columns:1fr}
@@ -93,6 +100,18 @@
   .hero-quote blockquote{font-size:1rem;margin-bottom:12px}
   .hero-quote__avatar{width:32px;height:32px}
   .hero-quote__meta{gap:16px;margin-top:10px;padding-top:10px}
+  .home2-hero{padding-block:clamp(12px,2.5vh,24px)}
+  .home2-hero .hero-split{gap:14px}
+  .home2-hero .hero-visual{min-height:min(220px,26vh)}
+  .home2-hero .hero-visual__card{inset-inline-start:16px;bottom:16px;padding:12px 14px;width:calc(100% - 32px)}
+  .home2-hero .hero-visual__card h5{font-size:1rem;margin-top:8px}
+  .home2-hero .hero-visual__card .small{font-size:.68rem}
+  .home2-hero h1{font-size:clamp(2rem,8.6vw,2.35rem);margin-bottom:12px;line-height:1.1}
+  .home2-hero .eyebrow{margin-bottom:10px}
+  .home2-hero .lead{font-size:.88rem;line-height:1.5;margin-bottom:12px}
+  .home2-hero .flex{gap:8px;margin-top:16px}
+  .home2-hero .btn--lg{padding:12px 18px;font-size:.8rem}
+  .home2-hero .trust-strip{margin-top:16px;font-size:.72rem}
   .hero-slide__actions{gap:10px}
   .hero-slide__actions .btn{width:100%}
   .slider-arrow{display:none}
@@ -139,6 +158,15 @@
   .dash-table{font-size:.76rem}
   .report-card__actions{flex-direction:column}
   .to-top{bottom:80px;inset-inline-end:16px}
+}
+
+@media (max-width:1024px) and (max-height:640px){
+  .home2-hero{padding-block:12px}
+  .home2-hero .hero-visual{min-height:170px}
+  .home2-hero .eyebrow{margin-bottom:8px}
+  .home2-hero h1{margin-bottom:10px}
+  .home2-hero .flex{margin-top:12px}
+  .home2-hero .trust-strip{margin-top:12px}
 }
 
 @media (max-width:540px){
