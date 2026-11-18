@@ -4,234 +4,129 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#FAF9F6">
-<meta name="description" content="Sign in to the Cardia patient portal to manage appointments, view test reports and track medication reminders.">
-<meta name="keywords" content="cardiology, heart care, cardiologist, cardiac diagnostics, preventive cardiology">
-<title>Sign In | Cardia Patient Portal</title>
+<meta name="description" content="Sign in to your Cardia Heart &amp; Vascular Care patient portal account.">
+<title>Sign In | Cardia Heart &amp; Vascular Care</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/variables.css">
 <link rel="stylesheet" href="assets/css/base.css">
 <link rel="stylesheet" href="assets/css/components.css">
 <link rel="stylesheet" href="assets/css/layout.css">
-<link rel="stylesheet" href="assets/css/pages.css">
-<link rel="stylesheet" href="assets/css/dashboard.css">
-<link rel="stylesheet" href="assets/css/responsive.css">
+<link rel="stylesheet" href="assets/css/auth.css">
 </head>
-<body><a class="skip-link" href="#main">Skip to content</a>
-<div class="topbar">
-  <div class="container container--wide topbar__inner">
-    <ul class="topbar__list">
-      <li><a href="tel:+18005550192"><svg class="ico ico--sm"><use href="#i-phone"/></svg> +1 (800) 555-0192</a></li>
-      <li><a href="mailto:care@cardiaclinic.com"><svg class="ico ico--sm"><use href="#i-mail"/></svg> care@cardiaclinic.com</a></li>
-      <li><span><svg class="ico ico--sm"><use href="#i-clock"/></svg> Mon–Sat · 8:00–20:00</span></li>
-      <li><span><svg class="ico ico--sm"><use href="#i-pin"/></svg> 1200 Park Avenue, New York</span></li>
-    </ul>
-    <div class="topbar__tools">
-      <button class="tool-btn" id="themeToggle" data-theme-toggle aria-label="Toggle theme"><span data-theme-icon></span></button>
-      <button class="tool-btn" id="dirToggle" data-dir-toggle aria-label="Toggle layout direction"><span data-dir-label>RTL</span></button>
+<body>
+<main class="auth-page" id="main">
+  <section class="auth-card" aria-labelledby="loginHeading">
+    <div class="auth-brand">
+      <a href="index.html" class="logo" aria-label="Cardia Heart &amp; Vascular Care — Home">
+        <span class="logo__mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#fff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l7.8-7.6 1.1-1.1a5.5 5.5 0 0 0-.1-7.7z"/>
+            <path d="M3 12h4l2-4 3 8 2-4h4"/>
+          </svg>
+        </span>
+        <span class="logo__text">
+          <span class="logo__name">Cardia</span>
+          <span class="logo__sub">Heart &amp; Vascular Care</span>
+        </span>
+      </a>
     </div>
-  </div>
-</div>
-<header class="header">
-  <div class="container container--wide header__inner">
-    <a href="index.html" class="logo" aria-label="Cardia Heart Clinic home">
-      <span class="logo__mark"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#fff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l7.8-7.6 1.1-1.1a5.5 5.5 0 0 0-.1-7.7z"/><path d="M3 12h4l2-4 3 8 2-4h4"/></svg></span>
-      <span class="logo__text"><span class="logo__name">Cardia</span><span class="logo__sub">Heart &amp; Vascular Care</span></span>
-    </a>
-    <nav class="nav" aria-label="Primary navigation">
-      <div class="nav__item"><a class="nav__link" href="index.html">Home</a></div>
-      <div class="nav__item"><a class="nav__link" href="about.html">About</a></div>
-      <div class="nav__item"><a class="nav__link" href="services.html">Services <svg class="ico ico--sm"><use href="#i-chevron"/></svg></a>
-        <div class="nav__dropdown">
-          <a href="services.html">Cardiac Diagnostics <span>›</span></a>
-          <a href="service-details.html">Consultations <span>›</span></a>
-          <a href="service-details.html">Interventional Care <span>›</span></a>
-          <a href="pricing.html">Packages &amp; Pricing <span>›</span></a>
-        </div>
-      </div>
-      <div class="nav__item"><a class="nav__link" href="doctors.html">Doctors</a></div>
-      <div class="nav__item"><a class="nav__link" href="blog.html">Insights</a></div>
-      <div class="nav__item"><a class="nav__link" href="pricing.html">Pricing</a></div>
-      <div class="nav__item"><a class="nav__link" href="contact.html">Contact</a></div>
-      <div class="nav__item"><a class="nav__link nav__link--port" href="patient-dashboard.html">Patient Portal</a></div>
-    </nav>
-    <div class="header__cta">
-      <div class="header__phone"><i><svg class="ico"><use href="#i-phone"/></svg></i><div><small>Need help?</small><strong>+1 (800) 555-0192</strong></div></div>
-      <button class="btn btn--primary btn--sm" data-book>Book Appointment <svg class="ico ico--sm"><use href="#i-arrow"/></svg></button>
-      <button class="burger" data-menu-open aria-label="Open navigation"><span></span><span></span><span></span></button>
-    </div>
-  </div>
-</header><div class="mobile-menu" id="mobileMenu">
-  <div class="mobile-menu__backdrop" data-menu-close></div>
-  <div class="mobile-menu__panel">
-    <div class="mobile-menu__head">
-      <span class="logo"><span class="logo__mark"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#fff" stroke-width="1.7"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l7.8-7.6 1.1-1.1a5.5 5.5 0 0 0-.1-7.7z"/></svg></span><span class="logo__text"><span class="logo__name">Cardia</span><span class="logo__sub">Heart Care</span></span></span>
-      <button class="modal__close" data-menu-close aria-label="Close menu"><svg class="ico"><use href="#i-close"/></svg></button>
-    </div>
-    <nav class="mobile-nav" aria-label="Mobile navigation">
-      <a href="index.html">Home <span>›</span></a>
-      <a href="about.html">About Us <span>›</span></a>
-      <a href="services.html">Services <span>›</span></a>
-      <a href="service-details.html">Service Details <span>›</span></a>
-      <a href="doctors.html">Our Doctors <span>›</span></a>
-      <a href="doctor-details.html">Doctor Profile <span>›</span></a>
-      <a href="blog.html">Insights <span>›</span></a>
-      <a href="contact.html">Contact <span>›</span></a>
-      <a href="pricing.html">Pricing <span>›</span></a>
-      <a href="patient-dashboard.html">Patient Portal <span>›</span></a>
-      <a href="admin-dashboard.html">Admin Portal <span>›</span></a>
-    </nav>
-    <div class="mobile-menu__foot"><a class="btn btn--primary btn--block" href="contact.html" data-book>Book an Appointment <svg class="ico ico--sm"><use href="#i-arrow"/></svg></a></div>
-  </div>
-</div><main id="main">
-  <section class="auth-wrap">
-    <div class="auth-visual">
-      <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1200&q=85" alt="Cardiology consultation">
-      <div class="auth-visual__inner">
-        <a href="index.html" class="logo"><span class="logo__mark"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#fff" stroke-width="1.7"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l7.8-7.6 1.1-1.1a5.5 5.5 0 0 0-.1-7.7z"/><path d="M3 12h4l2-4 3 8 2-4h4"/></svg></span><span class="logo__text"><span class="logo__name">Cardia</span><span class="logo__sub">Heart &amp; Vascular Care</span></span></a>
-        <h2 class="display-2">Welcome back to your heart health space.</h2>
-        <p>Your appointments, reports and medication schedule — all in one calm, secure place.</p>
-        <div class="trust-strip mt-7" style="justify-content:flex-start;border:0;padding:0;color:rgba(255,255,255,.8)"><span class="trust-strip__item"><svg class="ico"><use href="#i-shield"/></svg> Secure portal</span><span class="trust-strip__item"><svg class="ico"><use href="#i-clock"/></svg> Available 24/7</span></div>
-      </div>
-    </div>
-    <div class="auth-form-side">
-      <div class="auth-form">
-        <span class="eyebrow">Patient portal</span>
-        <h2 class="h-2">Sign in to your account</h2>
-        <p>Enter your details to continue to your dashboard.</p>
-        <form id="loginForm" novalidate>
-          <div class="form-group"><label class="form-label" for="loginEmail">Email address</label><input class="form-control" type="email" id="loginEmail" data-validate="email" placeholder="you@example.com"></div>
-          <div class="form-group"><label class="form-label" for="loginPass">Password</label><input class="form-control" type="password" id="loginPass" data-validate="password" placeholder="Enter your password"></div>
-          <div class="flex items-center justify-between gap-3 mb-6"><div class="form-check"><input type="checkbox" id="remember"><label for="remember">Remember me</label></div><a class="small text-accent" href="#" data-demo-link>Forgot password?</a></div>
-          <button class="btn btn--primary btn--lg btn--block" type="submit">Sign In <svg class="ico ico--sm"><use href="#i-arrow"/></svg></button>
-        </form>
-        <div class="auth-divider">or continue with</div>
-        <div class="auth-social"><button type="button" data-demo-link>Google</button><button type="button" data-demo-link>Apple</button></div>
-        <p class="text-center small text-muted mt-6 mb-0">New to Cardia? <a class="text-accent weight-600" href="signup.html">Create an account</a></p>
-        <div class="auth-secure"><svg class="ico ico--sm"><use href="#i-shield"/></svg> Demo portal — use any valid email and an 8+ character password.</div>
-      </div>
-    </div>
-  </section>
 
-  <section class="section section--sm section--tint">
-    <div class="container container--wide">
-      <div class="sec-head sec-head--center" data-reveal><span class="eyebrow eyebrow--center">Inside the portal</span><h2 class="h-2 sec-title">Everything you need, beautifully organised.</h2></div>
-      <div class="grid-3">
-        <div class="card card__body" data-reveal><div class="card__icon"><svg class="ico"><use href="#i-calendar"/></svg></div><h3 class="card__title">Appointments</h3><p class="card__text">Book, reschedule and track every visit in one place.</p></div>
-        <div class="card card__body" data-reveal data-reveal-delay="1"><div class="card__icon card__icon--teal"><svg class="ico"><use href="#i-file"/></svg></div><h3 class="card__title">Test reports</h3><p class="card__text">View and download results as soon as they are ready.</p></div>
-        <div class="card card__body" data-reveal data-reveal-delay="2"><div class="card__icon"><svg class="ico"><use href="#i-pill"/></svg></div><h3 class="card__title">Medication reminders</h3><p class="card__text">Stay on schedule with a simple, gentle daily checklist.</p></div>
-      </div>
+    <div class="auth-head">
+      <h1 class="auth-title" id="loginHeading">Welcome Back</h1>
+      <p class="auth-subtitle">Sign in to continue to your Cardia account.</p>
     </div>
-  </section>
 
-  <section class="section">
-    <div class="container container--wide">
-      <div class="grid-2 items-center gap-6">
-        <div data-reveal="left"><span class="eyebrow">Built around you</span><h2 class="h-2 sec-title">Healthcare administration, minus the frustration.</h2><p class="lead">No more phone tag, lost reports or forgotten doses. The Cardia portal keeps your care clear and connected.</p><ul class="check-list"><li>Appointments and consultation history in one timeline</li><li>Digital reports with plain-language summaries</li><li>Medication schedules with daily reminders</li><li>Secure messages to your care team</li></ul></div>
-        <div class="ratio ratio--4-3" data-reveal="right"><img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=1100&q=85" alt="Patient using a health portal on a phone"></div>
+    <form class="auth-form-body" id="loginForm" novalidate>
+      <div class="form-group">
+        <label class="form-label" for="loginEmail">Email Address</label>
+        <input
+          class="form-control"
+          type="email"
+          id="loginEmail"
+          name="email"
+          autocomplete="email"
+          placeholder="you@example.com"
+          data-validate="email"
+          aria-describedby="loginEmailError"
+          required
+        >
+        <span class="form-error" id="loginEmailError" role="alert">Please enter a valid email address.</span>
       </div>
-    </div>
-  </section>
 
-  <section class="section section--mist">
-    <div class="container container--narrow">
-      <div class="sec-head sec-head--center" data-reveal><span class="eyebrow eyebrow--center">Sign-in help</span><h2 class="h-2 sec-title">A few quick answers.</h2></div>
-      <div class="accordion" data-reveal>
-        <div class="accordion-item is-open"><button class="accordion-head">I forgot my password — what now?<span class="accordion-icon"></span></button><div class="accordion-body"><div class="accordion-body__inner">In a live portal you would receive a secure reset link by email. This demonstration accepts any valid email with a password of eight characters or more.</div></div></div>
-        <div class="accordion-item"><button class="accordion-head">Can I access the portal on my phone?<span class="accordion-icon"></span></button><div class="accordion-body"><div class="accordion-body__inner">Yes. The portal is fully responsive and works beautifully on phones, tablets and desktop computers.</div></div></div>
-        <div class="accordion-item"><button class="accordion-head">Is my information secure?<span class="accordion-icon"></span></button><div class="accordion-body"><div class="accordion-body__inner">This is a design demonstration using fictional sample data only. No real medical records are stored or transmitted.</div></div></div>
+      <div class="form-group">
+        <label class="form-label" for="loginPass">Password</label>
+        <div class="auth-password">
+          <input
+            class="form-control"
+            type="password"
+            id="loginPass"
+            name="password"
+            autocomplete="current-password"
+            placeholder="Enter your password"
+            data-validate="text"
+            aria-describedby="loginPassError"
+            required
+          >
+          <button
+            type="button"
+            class="auth-pass-toggle"
+            data-toggle-password="loginPass"
+            aria-label="Show password"
+            aria-pressed="false"
+          >
+            <svg class="ico-eye" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8S1 12 1 12z"/>
+              <circle cx="12" cy="12" r="3"/>
+            </svg>
+            <svg class="ico-eye-off" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94"/>
+              <path d="M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19"/>
+              <path d="M14.12 14.12a3 3 0 1 1-4.24-4.24"/>
+              <line x1="1" y1="1" x2="23" y2="23"/>
+            </svg>
+          </button>
+        </div>
+        <span class="form-error" id="loginPassError" role="alert">Please enter your password.</span>
       </div>
-    </div>
-  </section>
 
-  <section class="section section--blush">
-    <div class="container container--wide">
-      <div class="grid-2 items-center gap-6">
-        <div data-reveal="left"><span class="eyebrow">Privacy by design</span><h2 class="h-2 sec-title">Your information deserves careful handling.</h2><p class="lead">The portal is designed around clarity and respect — you stay in control of your details, your notifications and your preferences.</p><ul class="check-list"><li>Role-based access for clinic staff</li><li>Encrypted connections and secure sessions</li><li>Clear activity history and profile settings</li><li>Dark mode and RTL support for comfortable use</li></ul></div>
-        <div class="card card__body" data-reveal="right"><div class="card__icon"><svg class="ico"><use href="#i-shield"/></svg></div><h3 class="card__title">A note about this demo</h3><p class="card__text">This portal is a design showcase using entirely fictional sample data. No real patient records are stored, and no clinical service is provided through this site.</p></div>
+      <div class="auth-options">
+        <label class="auth-check" for="rememberMe">
+          <input type="checkbox" id="rememberMe" name="remember">
+          <span>Remember me</span>
+        </label>
+        <a class="auth-link" href="#forgot-password" data-forgot-password>Forgot password?</a>
       </div>
+
+      <button class="auth-submit" type="submit">Sign In</button>
+    </form>
+
+    <div class="auth-sep" role="separator">or continue with</div>
+
+    <div class="auth-social-grid">
+      <button type="button" class="auth-social-btn" data-social-auth="Google">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path fill="#4285F4" d="M23.49 12.27c0-.79-.07-1.54-.2-2.27H12v4.3h6.44a5.51 5.51 0 0 1-2.39 3.61v3h3.87c2.26-2.08 3.57-5.15 3.57-8.64z"/>
+          <path fill="#34A853" d="M12 24c3.24 0 5.95-1.07 7.94-2.91l-3.87-3a7.17 7.17 0 0 1-10.67-3.77H1.41v3.09A12 12 0 0 0 12 24z"/>
+          <path fill="#FBBC05" d="M5.4 14.32A7.22 7.22 0 0 1 5.02 12c0-.81.14-1.59.38-2.32V6.59H1.41A12 12 0 0 0 0 12c0 1.94.46 3.77 1.41 5.41l3.99-3.09z"/>
+          <path fill="#EA4335" d="M12 4.75c1.76 0 3.34.61 4.58 1.79l3.44-3.44C17.95 1.19 15.24 0 12 0A12 12 0 0 0 1.41 6.59l3.99 3.09A7.16 7.16 0 0 1 12 4.75z"/>
+        </svg>
+        <span>Google</span>
+      </button>
+      <button type="button" class="auth-social-btn" data-social-auth="Facebook">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path fill="#1877F2" d="M24 12.07C24 5.41 18.63 0 12 0S0 5.41 0 12.07c0 6.02 4.39 11.01 10.13 11.93v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.69.24 2.69.24v2.97h-1.51c-1.49 0-1.96.93-1.96 1.89v2.25h3.33l-.53 3.49h-2.8V24C19.61 23.08 24 18.09 24 12.07z"/>
+        </svg>
+        <span>Facebook</span>
+      </button>
     </div>
+
+    <p class="auth-switch">Don't have an account?<a class="auth-link" href="signup.html">Sign Up</a></p>
   </section>
-  <section class="section section--sm">
-    <div class="container container--wide"><div class="testimonial" data-reveal style="max-width:760px;margin-inline:auto;text-align:center"><div class="testimonial__stars">★★★★★</div><p class="testimonial__text" style="font-size:1.1rem">I can see my reports, message my doctor and tick off my medications in the same place. It has made managing my heart care so much easier.</p><div class="testimonial__author" style="justify-content:center"><img class="testimonial__avatar" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80" alt="Robert T."><div><div class="testimonial__name">Robert T.</div><div class="testimonial__role">Portal patient</div></div></div></div></div>
-  </section>
-</main><div class="modal" id="bookingModal" role="dialog" aria-modal="true" aria-labelledby="bookingTitle">
-  <div class="modal__backdrop" data-modal-close></div>
-  <div class="modal__dialog">
-    <div class="modal__head">
-      <div><span class="eyebrow">Patient care</span><h3 class="modal__title" id="bookingTitle">Book an Appointment</h3></div>
-      <button class="modal__close" data-modal-close aria-label="Close"><svg class="ico"><use href="#i-close"/></svg></button>
-    </div>
-    <div class="modal__body">
-      <form id="bookingForm" novalidate>
-        <div class="form-row">
-          <div class="form-group"><label class="form-label" for="bookName">Full name *</label><input class="form-control" id="bookName" data-validate="text" placeholder="Your full name"></div>
-          <div class="form-group"><label class="form-label" for="bookPhone">Phone *</label><input class="form-control" id="bookPhone" data-validate="phone" placeholder="+1 800 000 0000"></div>
-        </div>
-        <div class="form-group"><label class="form-label" for="bookEmail">Email address *</label><input class="form-control" type="email" id="bookEmail" data-validate="email" placeholder="you@example.com"></div>
-        <div class="form-row">
-          <div class="form-group"><label class="form-label" for="bookService">Service</label><select class="form-control" id="bookService"><option>General Cardiology Consultation</option><option>ECG &amp; Heart Rhythm Test</option><option>Echocardiogram</option><option>Stress Test</option><option>Preventive Heart Screening</option></select></div>
-          <div class="form-group"><label class="form-label" for="bookDoctor">Preferred cardiologist</label><select class="form-control" id="bookDoctor"><option>No preference</option><option>Dr. Amelia Hart</option><option>Dr. Marcus Chen</option><option>Dr. Priya Raman</option><option>Dr. Daniel Ortiz</option></select></div>
-        </div>
-        <div class="form-row">
-          <div class="form-group"><label class="form-label" for="bookDate">Preferred date *</label><input class="form-control" type="date" id="bookDate" data-validate="text"></div>
-          <div class="form-group"><label class="form-label" for="bookType">Consultation type</label><select class="form-control" id="bookType"><option>At the clinic</option><option>Online / video consultation</option><option>Home visit</option></select></div>
-        </div>
-        <div class="form-group"><label class="form-label">Available time slots</label><div class="flex flex-wrap gap-2"><button type="button" class="filter-btn time-slot">09:00 AM</button><button type="button" class="filter-btn time-slot is-active">10:30 AM</button><button type="button" class="filter-btn time-slot">12:00 PM</button><button type="button" class="filter-btn time-slot">02:30 PM</button><button type="button" class="filter-btn time-slot">04:00 PM</button></div></div>
-        <div class="form-group"><label class="form-label">Consultation preference</label><div class="flex flex-wrap gap-2"><button type="button" class="filter-btn consult-opt is-active"><svg class="ico ico--sm"><use href="#i-building"/></svg> Clinic visit</button><button type="button" class="filter-btn consult-opt"><svg class="ico ico--sm"><use href="#i-video"/></svg> Online</button></div></div>
-        <div class="form-group"><label class="form-label" for="bookNotes">Anything we should know?</label><textarea class="form-control" id="bookNotes" placeholder="Optional notes for your care team"></textarea></div>
-        <button class="btn btn--primary btn--block btn--lg" type="submit">Confirm Appointment <svg class="ico ico--sm"><use href="#i-arrow"/></svg></button>
-        <p class="tiny text-muted text-center mt-4 mb-0">This is a demonstration form. No real appointment is created.</p>
-      </form>
-    </div>
-  </div>
-</div><footer class="footer">
-  <div class="container container--wide">
-    <div class="footer__grid">
-      <div class="footer__about">
-        <a href="index.html" class="logo"><span class="logo__mark"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#fff" stroke-width="1.7"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l7.8-7.6 1.1-1.1a5.5 5.5 0 0 0-.1-7.7z"/><path d="M3 12h4l2-4 3 8 2-4h4"/></svg></span><span class="logo__text"><span class="logo__name">Cardia</span><span class="logo__sub">Heart &amp; Vascular Care</span></span></a>
-        <p>A modern cardiology practice combining clinical precision with genuinely human care. Your heart, in expert hands.</p>
-        <ul class="footer__contact mt-5">
-          <li><svg class="ico"><use href="#i-pin"/></svg><span>1200 Park Avenue, Suite 400<br>New York, NY 10029</span></li>
-          <li><svg class="ico"><use href="#i-phone"/></svg><span>+1 (800) 555-0192</span></li>
-          <li><svg class="ico"><use href="#i-mail"/></svg><span>care@cardiaclinic.com</span></li>
-        </ul>
-        <div class="footer__social"><a href="#" aria-label="Instagram">ig</a><a href="#" aria-label="Facebook">fb</a><a href="#" aria-label="LinkedIn">in</a><a href="#" aria-label="X">x</a></div>
-      </div>
-      <div>
-        <h4 class="footer__title">Explore</h4>
-        <ul class="footer__links">
-          <li><a href="about.html">About Our Clinic</a></li>
-          <li><a href="doctors.html">Our Cardiologists</a></li>
-          <li><a href="services.html">Services &amp; Diagnostics</a></li>
-          <li><a href="pricing.html">Packages &amp; Pricing</a></li>
-          <li><a href="blog.html">Heart Health Journal</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4 class="footer__title">Patient Care</h4>
-        <ul class="footer__links">
-          <li><a href="patient-dashboard.html">Patient Portal</a></li>
-          <li><a href="patient-dashboard.html#reports">Test Reports</a></li>
-          <li><a href="patient-dashboard.html#medications">Medication Reminders</a></li>
-          <li><a href="service-details.html">Appointments</a></li>
-          <li><a href="contact.html">Help &amp; Support</a></li>
-        </ul>
-      </div>
-      <div class="footer__news">
-        <h4 class="footer__title">Heart Health, Delivered</h4>
-        <p>Monthly insights from our cardiologists — prevention, nutrition and the latest in cardiac care.</p>
-        <form class="newsletter" data-newsletter><input type="email" placeholder="Your email address" aria-label="Email address"><button class="btn btn--teal btn--sm" type="submit">Subscribe</button></form>
-      </div>
-    </div>
-    <div class="footer__bottom">
-      <span>© 2026 Cardia Heart &amp; Vascular Clinic. All rights reserved.</span>
-      <span><a href="#">Privacy</a> · <a href="#">Terms</a> · <a href="#">Accessibility</a> · Fictional demo content</span>
-    </div>
-  </div>
-</footer><div class="toast-wrap" aria-live="polite"></div>
-<button class="to-top" id="toTop" aria-label="Back to top"><svg class="ico"><use href="#i-arrow-up"/></svg></button>
+</main>
+<div class="toast-wrap" aria-live="polite"></div>
 <script src="assets/js/main.js"></script>
+<script src="assets/js/auth.js"></script>
 </body>
 </html>

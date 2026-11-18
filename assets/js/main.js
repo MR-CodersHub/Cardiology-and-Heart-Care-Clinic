@@ -99,10 +99,89 @@
   window.addEventListener('scroll', onScrollHeader, { passive: true });
   onScrollHeader();
 
+  /* ---------------- Profile dropdown ---------------- */
+  const profileMenus = $$('[data-profile-menu]');
+  const closeAllProfileMenus = (returnFocusTo) => {
+    profileMenus.forEach(menu => {
+      if (!menu.classList.contains('is-open')) return;
+      menu.classList.remove('is-open');
+      const trigger = $('.profile-menu__trigger', menu);
+      if (trigger) trigger.setAttribute('aria-expanded', 'false');
+    });
+    if (returnFocusTo) returnFocusTo.focus();
+  };
+
+  profileMenus.forEach(menu => {
+    const trigger = $('.profile-menu__trigger', menu);
+    const items = $$('.profile-menu__item', menu);
+    if (!trigger) return;
+
+    const setOpen = (open, focusIndex = null) => {
+      if (open) closeAllProfileMenus();
+      menu.classList.toggle('is-open', open);
+      trigger.setAttribute('aria-expanded', String(open));
+      if (open && focusIndex !== null && items[focusIndex]) {
+        items[focusIndex].focus();
+      }
+    };
+
+    trigger.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const willOpen = !menu.classList.contains('is-open');
+      setOpen(willOpen);
+    });
+
+    trigger.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowDown') {
+        e.preventDefault();
+        setOpen(true, 0);
+      } else if (e.key === 'ArrowUp') {
+        e.preventDefault();
+        setOpen(true, items.length - 1);
+      }
+    });
+
+    items.forEach((item, idx) => {
+      item.addEventListener('click', () => closeAllProfileMenus());
+      item.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowDown') {
+          e.preventDefault();
+          items[(idx + 1) % items.length]?.focus();
+        } else if (e.key === 'ArrowUp') {
+          e.preventDefault();
+          items[(idx - 1 + items.length) % items.length]?.focus();
+        } else if (e.key === 'Home') {
+          e.preventDefault();
+          items[0]?.focus();
+        } else if (e.key === 'End') {
+          e.preventDefault();
+          items[items.length - 1]?.focus();
+        } else if (e.key === 'Escape') {
+          e.preventDefault();
+          closeAllProfileMenus(trigger);
+        } else if (e.key === ' ') {
+          e.preventDefault();
+          item.click();
+        }
+      });
+    });
+
+    menu.addEventListener('focusout', (e) => {
+      if (menu.classList.contains('is-open') && !menu.contains(e.relatedTarget)) {
+        closeAllProfileMenus();
+      }
+    });
+  });
+
+  document.addEventListener('click', (e) => {
+    if (!e.target.closest('[data-profile-menu]')) closeAllProfileMenus();
+  });
+
   /* ---------------- Mobile menu / Sidebar ---------------- */
   const mobileMenu = $('#mobileMenu');
   const openMenu = () => {
     if (!mobileMenu) return;
+    closeAllProfileMenus();
     mobileMenu.classList.add('is-open');
     document.body.classList.add('no-scroll');
   };
@@ -284,6 +363,7 @@
   document.addEventListener('keydown', e => {
     if (e.key === 'Escape') {
       $$('.modal.is-open').forEach(m => m.classList.remove('is-open'));
+      closeAllProfileMenus();
       closeMenu(); closeSidebar();
       document.body.classList.remove('no-scroll');
     }

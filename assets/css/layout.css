@@ -54,6 +54,41 @@
 .burger{display:none;width:44px;height:44px;border-radius:var(--r-sm);border:1px solid var(--border-strong);place-items:center;color:var(--text)}
 .burger span{display:block;width:20px;height:2px;background:currentColor;margin:3px 0;transition:all .3s}
 
+/* Profile dropdown */
+.profile-menu{position:relative;flex:0 0 auto}
+.profile-menu__trigger{
+  width:40px;height:40px;border-radius:50%;border:1px solid var(--border-strong);
+  background:var(--surface);color:var(--text);display:grid;place-items:center;
+  transition:border-color .25s var(--ease-soft),background-color .25s var(--ease-soft),color .25s var(--ease-soft),box-shadow .25s var(--ease-soft);
+}
+.profile-menu__trigger svg{width:18px;height:18px}
+.profile-menu__trigger:hover,.profile-menu.is-open .profile-menu__trigger{
+  border-color:var(--accent);background:var(--accent-soft);color:var(--accent);
+}
+.profile-menu__trigger:focus-visible{outline:2px solid var(--teal);outline-offset:2px}
+.profile-menu__dropdown{
+  position:absolute;top:calc(100% + 10px);inset-inline-end:0;min-width:186px;max-width:calc(100vw - 24px);
+  background:var(--surface);border:1px solid var(--border);border-radius:var(--r-sm);
+  box-shadow:var(--shadow-md);padding:8px;z-index:1100;
+  opacity:0;visibility:hidden;transform:translateY(8px);
+  transition:opacity .22s var(--ease),transform .22s var(--ease),visibility .22s;
+}
+.profile-menu.is-open .profile-menu__dropdown{opacity:1;visibility:visible;transform:none}
+.profile-menu__header{
+  padding:6px 12px 9px;margin-bottom:4px;border-bottom:1px solid var(--border);
+  font-size:.7rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--text-faint);
+}
+.profile-menu__item{
+  display:flex;align-items:center;justify-content:space-between;gap:10px;
+  padding:10px 12px;border-radius:var(--r-xs);font-size:.85rem;font-weight:600;
+  color:var(--text-muted);transition:background-color .2s,color .2s,padding .2s;
+}
+.profile-menu__item:hover,.profile-menu__item:focus-visible{
+  background:var(--accent-soft);color:var(--accent);padding-inline-start:16px;outline:none;
+}
+.profile-menu__item:focus-visible{box-shadow:inset 0 0 0 2px var(--teal)}
+[dir="rtl"] .profile-menu__item span{display:inline-block;transform:scaleX(-1)}
+
 /* Mobile menu */
 .mobile-menu{position:fixed;inset:0;z-index:1200;visibility:hidden;transition:visibility .4s}
 .mobile-menu.is-open{visibility:visible}
