@@ -19,7 +19,7 @@
 <link rel="stylesheet" href="assets/css/dashboard.css">
 <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
-<body><a class="skip-link" href="#main">Skip to content</a>
+<body class="page-service-details"><a class="skip-link" href="#main">Skip to content</a>
 <div class="topbar">
   <div class="container container--wide topbar__inner">
     <span class="topbar__badge">24/7 Available</span>
@@ -83,7 +83,7 @@
     <div class="mobile-menu__foot"><a class="btn btn--primary btn--block btn--book" href="contact.html" data-book><svg class="ico ico--sm" aria-hidden="true"><use href="#i-calendar"/></svg> Book Appointment</a></div>
   </div>
 </div><main id="main">
-  <section class="page-hero">
+  <section class="page-hero" data-sd-section="hero">
     <img class="page-hero__bg" src="https://images.unsplash.com/photo-1666214280557-f1b5022eb634?auto=format&fit=crop&w=1600&q=82" alt="" aria-hidden="true">
     <div class="page-hero__overlay" aria-hidden="true"></div>
     <div class="container container--wide page-hero__inner">
@@ -93,14 +93,18 @@
     </div>
   </section>
 
-  <section class="section" style="padding-top:var(--s-9)">
+  <section class="section" style="padding-top:var(--s-9)" data-sd-section="detail">
     <div class="container container--wide">
       <div class="detail-hero">
         <div data-reveal="left">
           <span class="eyebrow">Diagnostic service</span>
           <h2 class="h-2">Echocardiogram: a clear picture of how your heart works.</h2>
           <p class="lead">A painless ultrasound that shows your heart's structure, valves and pumping function in real time — giving your cardiologist the detail needed to make confident decisions.</p>
-          <div class="flex flex-wrap gap-3 mt-6"><button class="btn btn--primary btn--lg" data-book="Echocardiogram">Book This Test <svg class="ico ico--sm"><use href="#i-arrow"/></svg></button><a class="btn btn--outline btn--lg" href="contact.html">Ask a Question</a></div>
+          <div class="flex flex-wrap gap-3 mt-6"><button class="btn btn--primary btn--lg" data-book="Echocardiogram"><span data-book-label>Book This Test</span> <svg class="ico ico--sm"><use href="#i-arrow"/></svg></button><a class="btn btn--outline btn--lg" href="contact.html">Ask a Question</a></div>
+          <div class="detail-price mt-6" data-reveal>
+            <div class="detail-price__main"><span class="detail-price__label">Echocardiogram package</span><div class="detail-price__amount">$290 <span>/ scan</span></div></div>
+            <div class="detail-price__meta"><span><svg class="ico ico--sm"><use href="#i-check"/></svg> Scan &amp; specialist report</span><span><svg class="ico ico--sm"><use href="#i-check"/></svg> 20-min result consultation</span></div>
+          </div>
           <div class="trust-strip mt-7" style="justify-content:flex-start;padding:0;border:0;gap:22px"><span class="trust-strip__item"><svg class="ico"><use href="#i-clock"/></svg> 45 minutes</span><span class="trust-strip__item"><svg class="ico"><use href="#i-file"/></svg> Report in 24h</span><span class="trust-strip__item"><svg class="ico"><use href="#i-shield"/></svg> Non-invasive</span></div>
         </div>
         <div class="detail-hero__media" data-reveal="right"><img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1200&q=85" alt="Cardiology consultation during an echocardiogram"><span class="detail-hero__tag"><svg class="ico ico--sm"><use href="#i-star"/></svg> Accredited imaging suite</span></div>
@@ -108,11 +112,11 @@
     </div>
   </section>
 
-  <section class="section section--tint">
+  <section class="section section--tint" data-sd-section="about">
     <div class="container container--wide">
       <div class="grid-2 gap-6">
         <div data-reveal><span class="eyebrow">About the test</span><h2 class="h-2 sec-title">See beyond the surface.</h2><p class="lead">An echocardiogram uses sound waves to create moving images of your heart. It helps us assess chamber size, pumping strength, valve function and blood flow — without radiation, needles or discomfort.</p><p class="text-muted">Your specialist will explain each image as they capture it, so you leave understanding exactly what we found and what it means for you.</p></div>
-        <div class="grid-2 gap-4" data-reveal="right">
+        <div class="grid-2 gap-4" data-reveal="right" data-sd="about-cards">
           <div class="diag-card"><div class="diag-card__icon"><svg class="ico"><use href="#i-heart"/></svg></div><div><h5>Pumping function</h5><p>Measures ejection fraction and how well the heart muscle contracts.</p></div></div>
           <div class="diag-card"><div class="diag-card__icon"><svg class="ico"><use href="#i-activity"/></svg></div><div><h5>Valve assessment</h5><p>Detects narrowing, leakage and valve motion abnormalities.</p></div></div>
           <div class="diag-card"><div class="diag-card__icon"><svg class="ico"><use href="#i-pulse"/></svg></div><div><h5>Blood flow</h5><p>Doppler imaging reveals the direction and speed of flow through the heart.</p></div></div>
@@ -122,20 +126,40 @@
     </div>
   </section>
 
-  <section class="section">
+  <section class="section process-section" data-sd-section="process">
     <div class="container container--wide">
-      <div class="sec-head" data-reveal><span class="eyebrow">What to expect</span><h2 class="h-2 sec-title">Your visit, step by step.</h2><p class="sec-sub">No surprises. Here is exactly how your appointment will unfold.</p></div>
-      <div class="grid-4">
-        <div class="process-step" data-reveal><div class="process-step__num">1</div><h5>Arrive &amp; settle</h5><p>Check in, get comfortable and change into a gown in your private room.</p></div>
-        <div class="process-step" data-reveal data-reveal-delay="1"><div class="process-step__num">2</div><h5>Sensors placed</h5><p>Small stickers are applied to your chest to record your heart rhythm.</p></div>
-        <div class="process-step" data-reveal data-reveal-delay="2"><div class="process-step__num">3</div><h5>Images captured</h5><p>A painless probe glides over your chest while we capture live images.</p></div>
-        <div class="process-step" data-reveal data-reveal-delay="3"><div class="process-step__num">4</div><h5>Results explained</h5><p>Your cardiologist walks you through the findings and next steps.</p></div>
+      <div class="sec-head sec-head--center" data-reveal><span class="eyebrow eyebrow--center">What to expect</span><h2 class="h-2 sec-title">Your visit, step by step.</h2><p class="sec-sub">No surprises. Here is exactly how your appointment will unfold.</p></div>
+      <div class="process-flow" data-reveal data-sd="steps">
+        <div class="process-step">
+          <span class="process-step__num">Step 01</span>
+          <div class="process-step__icon"><svg class="ico"><use href="#i-clock"/></svg></div>
+          <h5>Arrive &amp; settle</h5>
+          <p>Check in, get comfortable and change into a gown in your private room.</p>
+        </div>
+        <div class="process-step">
+          <span class="process-step__num">Step 02</span>
+          <div class="process-step__icon"><svg class="ico"><use href="#i-activity"/></svg></div>
+          <h5>Sensors placed</h5>
+          <p>Small stickers are applied to your chest to record your heart rhythm.</p>
+        </div>
+        <div class="process-step">
+          <span class="process-step__num">Step 03</span>
+          <div class="process-step__icon"><svg class="ico"><use href="#i-heart"/></svg></div>
+          <h5>Images captured</h5>
+          <p>A painless probe glides over your chest while we capture live images.</p>
+        </div>
+        <div class="process-step">
+          <span class="process-step__num">Step 04</span>
+          <div class="process-step__icon"><svg class="ico"><use href="#i-file"/></svg></div>
+          <h5>Results explained</h5>
+          <p>Your cardiologist walks you through the findings and next steps.</p>
+        </div>
       </div>
-      <div class="cta-band mt-10" data-reveal><div class="cta-band__inner"><div><h2>Preparation is minimal.</h2><p>Wear comfortable clothing, avoid caffeine two hours before and take your usual medications unless told otherwise.</p></div><button class="btn btn--light btn--lg" data-book="Echocardiogram">Book Your Scan <svg class="ico ico--sm"><use href="#i-arrow"/></svg></button></div></div>
+      <div class="cta-band mt-10" data-reveal><div class="cta-band__inner"><div><h2>Preparation is minimal.</h2><p>Wear comfortable clothing, avoid caffeine two hours before and take your usual medications unless told otherwise.</p></div><button class="btn btn--light btn--lg" data-book="Echocardiogram"><span data-book-label>Book Your Scan</span> <svg class="ico ico--sm"><use href="#i-arrow"/></svg></button></div></div>
     </div>
   </section>
 
-  <section class="section section--mist">
+  <section class="section" data-sd-section="facility">
     <div class="container container--wide">
       <div class="grid-2 items-center gap-6">
         <div class="ratio ratio--4-3" data-reveal="left"><img src="https://images.unsplash.com/photo-1666214280557-f1b5022eb634?auto=format&fit=crop&w=1100&q=85" alt="Cardiologists reviewing diagnostic imaging"></div>
@@ -144,29 +168,27 @@
     </div>
   </section>
 
-  <section class="section">
+  <section class="section section--tint" data-sd-section="specialists">
     <div class="container container--wide">
-      <div class="sec-head sec-head--split" data-reveal><div><span class="eyebrow">Your specialists</span><h2 class="h-2 sec-title">Read by leading imaging cardiologists.</h2><p class="sec-sub">Every scan is interpreted by a specialist who knows your history.</p></div><a class="link-more" href="doctors.html">Meet the team <svg class="ico ico--sm"><use href="#i-arrow"/></svg></a></div>
-      <div class="grid-2 gap-5">
-        <article class="doctor-card" data-reveal><div class="doctor-card__body" style="display:flex;gap:18px;align-items:center"><div class="ratio" style="width:96px;flex:0 0 96px;border-radius:12px;--ratio:110%"><img src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?auto=format&fit=crop&w=400&q=85" alt="Dr. Priya Raman"></div><div><h3 class="doctor-card__name">Dr. Priya Raman</h3><p class="doctor-card__spec">MD, FASE · Cardiac Imaging Director</p><p class="card__text">Specialises in advanced echocardiography and structural heart assessment.</p><div class="doctor-card__actions"><a class="btn btn--primary btn--sm" href="doctor-details.html">View Profile</a><button class="btn btn--outline btn--sm" data-book data-doctor="Dr. Priya Raman">Book</button></div></div></div></article>
-        <article class="doctor-card" data-reveal data-reveal-delay="1"><div class="doctor-card__body" style="display:flex;gap:18px;align-items:center"><div class="ratio" style="width:96px;flex:0 0 96px;border-radius:12px;--ratio:110%"><img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?auto=format&fit=crop&w=400&q=85" alt="Dr. Amelia Hart"></div><div><h3 class="doctor-card__name">Dr. Amelia Hart</h3><p class="doctor-card__spec">MD, FACC · Preventive Cardiology</p><p class="card__text">Interprets findings in the context of your long-term heart health plan.</p><div class="doctor-card__actions"><a class="btn btn--primary btn--sm" href="doctor-details.html">View Profile</a><button class="btn btn--outline btn--sm" data-book data-doctor="Dr. Amelia Hart">Book</button></div></div></div></article>
+      <div class="sec-head sec-head--split sec-head--split--center" data-reveal><div><span class="eyebrow">Your specialists</span><h2 class="h-2 sec-title">Read by leading imaging cardiologists.</h2><p class="sec-sub">Every scan is interpreted by a specialist who knows your history.</p></div><a class="link-more" href="doctors.html">Meet the team <svg class="ico ico--sm"><use href="#i-arrow"/></svg></a></div>
+      <div class="specialists-grid" data-sd="specialist-cards">
+        <article class="doctor-card specialist-card" data-reveal><div class="doctor-card__body specialist-card__body"><div class="ratio specialist-card__photo"><img src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?auto=format&fit=crop&w=400&q=85" alt="Dr. Priya Raman"></div><div class="specialist-card__content"><h3 class="doctor-card__name">Dr. Priya Raman</h3><p class="doctor-card__spec">MD, FASE · Cardiac Imaging Director</p><p class="card__text">Specialises in advanced echocardiography and structural heart assessment.</p><div class="doctor-card__actions"><a class="btn btn--primary btn--sm" href="doctor-details.html?doctor=dr-priya-raman">View Profile</a><button class="btn btn--outline btn--sm" data-book data-doctor="Dr. Priya Raman">Book</button></div></div></div></article>
+        <article class="doctor-card specialist-card" data-reveal data-reveal-delay="1"><div class="doctor-card__body specialist-card__body"><div class="ratio specialist-card__photo"><img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?auto=format&fit=crop&w=400&q=85" alt="Dr. Amelia Hart"></div><div class="specialist-card__content"><h3 class="doctor-card__name">Dr. Amelia Hart</h3><p class="doctor-card__spec">MD, FACC · Preventive Cardiology</p><p class="card__text">Interprets findings in the context of your long-term heart health plan.</p><div class="doctor-card__actions"><a class="btn btn--primary btn--sm" href="doctor-details.html?doctor=dr-amelia-hart">View Profile</a><button class="btn btn--outline btn--sm" data-book data-doctor="Dr. Amelia Hart">Book</button></div></div></div></article>
       </div>
-      <div class="testimonial mt-6" data-reveal style="max-width:760px;margin-inline:auto"><div class="testimonial__stars">★★★★★</div><p class="testimonial__text">The sonographer talked me through the whole scan and Dr. Raman explained the report with such patience. I finally understood my heart.</p><div class="testimonial__author"><img class="testimonial__avatar" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=200&q=80" alt="Miriam L."><div><div class="testimonial__name">Miriam L.</div><div class="testimonial__role">Echocardiogram patient</div></div></div></div>
     </div>
   </section>
 
-  <section class="section section--sm section--tint">
+  <section class="section section--sm" data-sd-section="faq">
     <div class="container container--wide">
       <div class="grid-2 gap-6">
         <div data-reveal><span class="eyebrow">Common questions</span><h2 class="h-2 sec-title">Everything you might be wondering.</h2><p class="lead">Still unsure? Our care team is happy to talk it through before you book.</p><a class="link-more mt-4" href="contact.html">Contact our team <svg class="ico ico--sm"><use href="#i-arrow"/></svg></a></div>
-        <div class="accordion" data-reveal="right">
-          <div class="accordion-item is-open"><button class="accordion-head">Does an echocardiogram hurt?<span class="accordion-icon"></span></button><div class="accordion-body"><div class="accordion-body__inner">Not at all. It is a painless ultrasound. You may feel mild pressure from the probe, but there are no needles, radiation or discomfort.</div></div></div>
+        <div class="accordion" data-reveal="right" data-sd="faqs">
+          <div class="accordion-item"><button class="accordion-head">Does an echocardiogram hurt?<span class="accordion-icon"></span></button><div class="accordion-body"><div class="accordion-body__inner">Not at all. It is a painless ultrasound. You may feel mild pressure from the probe, but there are no needles, radiation or discomfort.</div></div></div>
           <div class="accordion-item"><button class="accordion-head">How long does the appointment take?<span class="accordion-icon"></span></button><div class="accordion-body"><div class="accordion-body__inner">Allow around 45 minutes in total, including check-in, image capture and a discussion with your cardiologist.</div></div></div>
           <div class="accordion-item"><button class="accordion-head">When will I receive my report?<span class="accordion-icon"></span></button><div class="accordion-body"><div class="accordion-body__inner">Reports are usually available within 24 hours in your secure patient portal, with a plain-language summary from your doctor.</div></div></div>
           <div class="accordion-item"><button class="accordion-head">Can I drive after the test?<span class="accordion-icon"></span></button><div class="accordion-body"><div class="accordion-body__inner">Yes. There is no sedation, so you can drive, work and eat normally straight afterwards.</div></div></div>
         </div>
       </div>
-      <div class="price-card mt-8" data-reveal style="max-width:520px;margin-inline:auto"><div class="flex items-center justify-between gap-3 flex-wrap"><div><div class="price-card__plan">Echocardiogram package</div><p class="price-card__desc mb-0">Includes the scan, specialist report and a 20-minute result consultation.</p></div><div style="text-align:end"><div class="price-card__price">$290<span> / scan</span></div><button class="btn btn--primary btn--sm mt-3" data-book="Echocardiogram">Book Now <svg class="ico ico--sm"><use href="#i-arrow"/></svg></button></div></div></div>
     </div>
   </section>
 </main><div class="modal" id="bookingModal" role="dialog" aria-modal="true" aria-labelledby="bookingTitle">
@@ -274,6 +296,7 @@
 
 <div class="toast-wrap" aria-live="polite"></div>
 <button class="to-top" id="toTop" aria-label="Back to top"><svg class="ico"><use href="#i-arrow-up"/></svg></button>
+<script src="assets/js/service-details.js"></script>
 <script src="assets/js/main.js"></script>
 </body>
 </html>

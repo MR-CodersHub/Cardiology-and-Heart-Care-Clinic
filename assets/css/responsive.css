@@ -65,6 +65,8 @@
   .grid-3{grid-template-columns:repeat(2,1fr)}
   .sec-head--split{flex-direction:column;align-items:flex-start}
   .process-step::after{display:none}
+  .process-flow{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .process-flow::before{display:none}
   .home-stats__grid{grid-template-columns:repeat(2,1fr);row-gap:22px}
   .home-stats .stat{padding:8px 12px}
   .home-stats .stat:nth-child(odd){border-inline-start:0}
@@ -85,7 +87,7 @@
   :root{--s-12:4rem;--s-13:4.5rem;--s-11:3.5rem;--header-h:70px}
   body{font-size:15px}
   .container{padding-inline:18px}
-  .grid-2,.grid-3,.grid-4,.form-row{grid-template-columns:1fr}
+  .grid-2,.grid-3,.grid-4,.form-row,.specialists-grid{grid-template-columns:1fr}
   .form-row{gap:0}
   .facility-slider__viewport{aspect-ratio:4/3}
   .facility-slider__arrow{width:38px;height:38px}
@@ -94,6 +96,8 @@
   .journey-aside__card{padding:20px}
   .team-card__body{padding:18px}
   .tabs-wrap--center .tabs{justify-content:center;flex-wrap:wrap;overflow:visible}
+  .process-flow{grid-template-columns:1fr;padding:var(--s-4)}
+  .process-flow .process-step{padding:var(--s-5)}
   .home-stats{padding:20px 14px;border-radius:28px}
   .home-stats__grid{grid-template-columns:1fr 1fr}
   .home-stats .stat{padding:10px 6px}

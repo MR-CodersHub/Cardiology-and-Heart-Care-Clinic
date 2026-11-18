@@ -19,7 +19,7 @@
 <link rel="stylesheet" href="assets/css/dashboard.css">
 <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
-<body><a class="skip-link" href="#main">Skip to content</a>
+<body class="page-services"><a class="skip-link" href="#main">Skip to content</a>
 <div class="topbar">
   <div class="container container--wide topbar__inner">
     <span class="topbar__badge">24/7 Available</span>
@@ -95,22 +95,40 @@
 
   <section class="section">
     <div class="container container--wide">
-      <div class="sec-head" data-reveal><span class="eyebrow">Care categories</span><h2 class="h-2 sec-title">The right care, at the right time.</h2><p class="sec-sub">Browse our core pathways. Not sure which you need? Our team will guide you.</p></div>
+      <div class="sec-head sec-head--center" data-reveal><span class="eyebrow eyebrow--center">Care categories</span><h2 class="h-2 sec-title">The right care, at the right time.</h2><p class="sec-sub">Browse our core pathways. Not sure which you need? Our team will guide you.</p></div>
       <div class="grid-3">
-        <a class="service-card card--hover" href="service-details.html" data-reveal><div class="service-card__no">01</div><div class="card__icon"><svg class="ico"><use href="#i-steth"/></svg></div><h3 class="service-card__title">Clinical Cardiology</h3><p class="service-card__text">Consultations for symptoms, risk factors, family history and ongoing heart conditions.</p><span class="service-card__arrow"><svg class="ico ico--sm"><use href="#i-arrow"/></svg></span></a>
-        <a class="service-card card--hover" href="service-details.html" data-reveal data-reveal-delay="1"><div class="service-card__no">02</div><div class="card__icon card__icon--teal"><svg class="ico"><use href="#i-activity"/></svg></div><h3 class="service-card__title">Diagnostic Testing</h3><p class="service-card__text">ECG, echocardiography, stress tests and ambulatory rhythm monitoring on site.</p><span class="service-card__arrow"><svg class="ico ico--sm"><use href="#i-arrow"/></svg></span></a>
-        <a class="service-card card--hover" href="service-details.html" data-reveal data-reveal-delay="2"><div class="service-card__no">03</div><div class="card__icon"><svg class="ico"><use href="#i-shield"/></svg></div><h3 class="service-card__title">Preventive Cardiology</h3><p class="service-card__text">Risk mapping, lipid management and lifestyle programmes to stop disease before it starts.</p><span class="service-card__arrow"><svg class="ico ico--sm"><use href="#i-arrow"/></svg></span></a>
-        <a class="service-card card--hover" href="service-details.html" data-reveal><div class="service-card__no">04</div><div class="card__icon card__icon--teal"><svg class="ico"><use href="#i-pulse"/></svg></div><h3 class="service-card__title">Interventional Care</h3><p class="service-card__text">Minimally invasive procedures delivered by experienced interventional specialists.</p><span class="service-card__arrow"><svg class="ico ico--sm"><use href="#i-arrow"/></svg></span></a>
-        <a class="service-card card--hover" href="service-details.html" data-reveal data-reveal-delay="1"><div class="service-card__no">05</div><div class="card__icon"><svg class="ico"><use href="#i-heart"/></svg></div><h3 class="service-card__title">Heart Failure Clinic</h3><p class="service-card__text">Specialist management, medication optimisation and day-to-day support for longer, better lives.</p><span class="service-card__arrow"><svg class="ico ico--sm"><use href="#i-arrow"/></svg></span></a>
-        <a class="service-card card--hover" href="service-details.html" data-reveal data-reveal-delay="2"><div class="service-card__no">06</div><div class="card__icon card__icon--teal"><svg class="ico"><use href="#i-video"/></svg></div><h3 class="service-card__title">Virtual &amp; Follow-up Care</h3><p class="service-card__text">Secure video consultations, result reviews and remote monitoring from home.</p><span class="service-card__arrow"><svg class="ico ico--sm"><use href="#i-arrow"/></svg></span></a>
+        <article class="service-card service-card--media card--hover" data-reveal>
+          <div class="service-card__media"><img src="assets/img/service-consultation.jpg" alt="Cardiologist discussing a care plan with a patient" loading="lazy"><span class="service-card__num-badge">01</span></div>
+          <div class="service-card__body"><div class="service-card__head"><div class="card__icon"><svg class="ico"><use href="#i-steth"/></svg></div><h3 class="service-card__title">Clinical Cardiology</h3></div><p class="service-card__text">Consultations for symptoms, risk factors, family history and ongoing heart conditions.</p><a class="service-card__cta btn btn--primary btn--sm" href="service-details.html?service=clinical-cardiology" aria-label="View details for Clinical Cardiology">View Details <svg class="ico ico--sm"><use href="#i-arrow"/></svg></a></div>
+        </article>
+        <article class="service-card service-card--media card--hover" data-reveal data-reveal-delay="1">
+          <div class="service-card__media"><img src="assets/img/service-ecg.jpg" alt="Cardiac technician preparing ECG monitoring equipment" loading="lazy"><span class="service-card__num-badge">02</span></div>
+          <div class="service-card__body"><div class="service-card__head"><div class="card__icon card__icon--teal"><svg class="ico"><use href="#i-activity"/></svg></div><h3 class="service-card__title">Diagnostic Testing</h3></div><p class="service-card__text">ECG, echocardiography, stress tests and ambulatory rhythm monitoring on site.</p><a class="service-card__cta btn btn--primary btn--sm" href="service-details.html?service=diagnostic-testing" aria-label="View details for Diagnostic Testing">View Details <svg class="ico ico--sm"><use href="#i-arrow"/></svg></a></div>
+        </article>
+        <article class="service-card service-card--media card--hover" data-reveal data-reveal-delay="2">
+          <div class="service-card__media"><img src="assets/img/service-screening.jpg" alt="Doctor checking blood pressure during preventive heart screening" loading="lazy"><span class="service-card__num-badge">03</span></div>
+          <div class="service-card__body"><div class="service-card__head"><div class="card__icon"><svg class="ico"><use href="#i-shield"/></svg></div><h3 class="service-card__title">Preventive Cardiology</h3></div><p class="service-card__text">Risk mapping, lipid management and lifestyle programmes to stop disease before it starts.</p><a class="service-card__cta btn btn--primary btn--sm" href="service-details.html?service=preventive-cardiology" aria-label="View details for Preventive Cardiology">View Details <svg class="ico ico--sm"><use href="#i-arrow"/></svg></a></div>
+        </article>
+        <article class="service-card service-card--media card--hover" data-reveal>
+          <div class="service-card__media"><img src="assets/img/service-echo.jpg" alt="Cardiac imaging suite used for interventional care" loading="lazy"><span class="service-card__num-badge">04</span></div>
+          <div class="service-card__body"><div class="service-card__head"><div class="card__icon card__icon--teal"><svg class="ico"><use href="#i-pulse"/></svg></div><h3 class="service-card__title">Interventional Care</h3></div><p class="service-card__text">Minimally invasive procedures delivered by experienced interventional specialists.</p><a class="service-card__cta btn btn--primary btn--sm" href="service-details.html?service=interventional-care" aria-label="View details for Interventional Care">View Details <svg class="ico ico--sm"><use href="#i-arrow"/></svg></a></div>
+        </article>
+        <article class="service-card service-card--media card--hover" data-reveal data-reveal-delay="1">
+          <div class="service-card__media"><img src="assets/img/service-stress.jpg" alt="Supervised cardiac monitoring during a stress test" loading="lazy"><span class="service-card__num-badge">05</span></div>
+          <div class="service-card__body"><div class="service-card__head"><div class="card__icon"><svg class="ico"><use href="#i-heart"/></svg></div><h3 class="service-card__title">Heart Failure Clinic</h3></div><p class="service-card__text">Specialist management, medication optimisation and day-to-day support for longer, better lives.</p><a class="service-card__cta btn btn--primary btn--sm" href="service-details.html?service=heart-failure-clinic" aria-label="View details for Heart Failure Clinic">View Details <svg class="ico ico--sm"><use href="#i-arrow"/></svg></a></div>
+        </article>
+        <article class="service-card service-card--media card--hover" data-reveal data-reveal-delay="2">
+          <div class="service-card__media"><img src="assets/img/service-virtual.jpg" alt="Cardiologist conducting a virtual follow-up consultation" loading="lazy"><span class="service-card__num-badge">06</span></div>
+          <div class="service-card__body"><div class="service-card__head"><div class="card__icon card__icon--teal"><svg class="ico"><use href="#i-video"/></svg></div><h3 class="service-card__title">Virtual &amp; Follow-up Care</h3></div><p class="service-card__text">Secure video consultations, result reviews and remote monitoring from home.</p><a class="service-card__cta btn btn--primary btn--sm" href="service-details.html?service=virtual-follow-up" aria-label="View details for Virtual and Follow-up Care">View Details <svg class="ico ico--sm"><use href="#i-arrow"/></svg></a></div>
+        </article>
       </div>
     </div>
   </section>
 
   <section class="section section--tint">
     <div class="container container--wide">
-      <div class="sec-head" data-reveal><span class="eyebrow">Diagnostics</span><h2 class="h-2 sec-title">Advanced testing, explained simply.</h2><p class="sec-sub">Select a test to learn what it involves, how long it takes and when results arrive.</p></div>
-      <div class="tabs-wrap">
+      <div class="sec-head sec-head--center" data-reveal><span class="eyebrow eyebrow--center">Diagnostics</span><h2 class="h-2 sec-title">Advanced testing, explained simply.</h2><p class="sec-sub">Select a test to learn what it involves, how long it takes and when results arrive.</p></div>
+      <div class="tabs-wrap tabs-wrap--center">
         <div class="tabs" role="tablist"><button class="tab is-active" data-tab="diag-ecg">ECG</button><button class="tab" data-tab="diag-echo">Echocardiogram</button><button class="tab" data-tab="diag-stress">Stress Test</button><button class="tab" data-tab="diag-holter">Holter Monitor</button></div>
         <div class="tab-panel is-active" id="diag-ecg"><div class="grid-2 items-center gap-6"><div class="ratio ratio--16-9"><img src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=1100&q=85" alt="Stethoscope and clinical instruments"></div><div><h3 class="h-3">Electrocardiogram (ECG)</h3><p class="text-muted">A quick, painless recording of your heart's electrical activity. It can reveal irregular rhythms, previous heart attacks and conduction problems.</p><div class="grid-2 gap-3 small"><div><strong>Duration:</strong> 10 minutes</div><div><strong>Results:</strong> Same day</div><div><strong>Preparation:</strong> None</div><div><strong>Where:</strong> Diagnostics lab</div></div><button class="btn btn--primary mt-4" data-book="ECG &amp; Heart Rhythm Test">Book an ECG <svg class="ico ico--sm"><use href="#i-arrow"/></svg></button></div></div></div>
         <div class="tab-panel" id="diag-echo"><div class="grid-2 items-center gap-6"><div class="ratio ratio--16-9"><img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1100&q=85" alt="Echocardiogram scan"></div><div><h3 class="h-3">Echocardiogram</h3><p class="text-muted">An ultrasound of your heart that shows how the chambers and valves work. We use it to assess function, valve disease and congenital conditions.</p><div class="grid-2 gap-3 small"><div><strong>Duration:</strong> 45 minutes</div><div><strong>Results:</strong> Within 24 hours</div><div><strong>Preparation:</strong> None</div><div><strong>Where:</strong> Imaging suite</div></div><button class="btn btn--primary mt-4" data-book="Echocardiogram">Book a Scan <svg class="ico ico--sm"><use href="#i-arrow"/></svg></button></div></div></div>
@@ -120,15 +138,36 @@
     </div>
   </section>
 
-  <section class="section">
+  <section class="section section--sm process-section">
     <div class="container container--wide">
-      <div class="sec-head sec-head--center" data-reveal><span class="eyebrow eyebrow--center">How it works</span><h2 class="h-2 sec-title">A seamless path from question to answer.</h2></div>
-      <div class="grid-4">
-        <div class="process-step" data-reveal><div class="process-step__num">1</div><h5>Choose your service</h5><p>Browse or speak with our care team for guidance.</p></div>
-        <div class="process-step" data-reveal data-reveal-delay="1"><div class="process-step__num">2</div><h5>Book your slot</h5><p>Pick a date, time and consultation type that suits you.</p></div>
-        <div class="process-step" data-reveal data-reveal-delay="2"><div class="process-step__num">3</div><h5>Attend &amp; get tested</h5><p>Everything happens in one calm, connected location.</p></div>
-        <div class="process-step" data-reveal data-reveal-delay="3"><div class="process-step__num">4</div><h5>Review your plan</h5><p>Results and next steps appear in your portal.</p></div>
+      <div class="sec-head sec-head--center" data-reveal><span class="eyebrow eyebrow--center">How it works</span><h2 class="h-2 sec-title">A seamless path from question to answer.</h2><p class="sec-sub">Four calm, connected steps take you from your first question to a clear plan you can trust.</p></div>
+      <div class="process-flow" data-reveal>
+        <div class="process-step">
+          <span class="process-step__num">Step 01</span>
+          <div class="process-step__icon"><svg class="ico"><use href="#i-steth"/></svg></div>
+          <h5>Choose your service</h5>
+          <p>Browse or speak with our care team for guidance.</p>
+        </div>
+        <div class="process-step">
+          <span class="process-step__num">Step 02</span>
+          <div class="process-step__icon"><svg class="ico"><use href="#i-calendar"/></svg></div>
+          <h5>Book your slot</h5>
+          <p>Pick a date, time and consultation type that suits you.</p>
+        </div>
+        <div class="process-step">
+          <span class="process-step__num">Step 03</span>
+          <div class="process-step__icon"><svg class="ico"><use href="#i-activity"/></svg></div>
+          <h5>Attend &amp; get tested</h5>
+          <p>Everything happens in one calm, connected location.</p>
+        </div>
+        <div class="process-step">
+          <span class="process-step__num">Step 04</span>
+          <div class="process-step__icon"><svg class="ico"><use href="#i-file"/></svg></div>
+          <h5>Review your plan</h5>
+          <p>Results and next steps appear in your portal.</p>
+        </div>
       </div>
+      <div class="text-center mt-8" data-reveal><button class="btn btn--primary btn--lg" data-book>Start with a consultation <svg class="ico ico--sm"><use href="#i-arrow"/></svg></button></div>
     </div>
   </section>
 
@@ -150,7 +189,7 @@
     <div class="container container--narrow">
       <div class="sec-head sec-head--center" data-reveal><span class="eyebrow eyebrow--center">Good to know</span><h2 class="h-2 sec-title">Frequently asked questions.</h2></div>
       <div class="accordion" data-reveal>
-        <div class="accordion-item is-open"><button class="accordion-head">Do I need a referral for a consultation?<span class="accordion-icon"></span></button><div class="accordion-body"><div class="accordion-body__inner">No referral is required for most consultations. Some specialised tests and insurance plans may need one — our team will confirm when you book.</div></div></div>
+        <div class="accordion-item"><button class="accordion-head">Do I need a referral for a consultation?<span class="accordion-icon"></span></button><div class="accordion-body"><div class="accordion-body__inner">No referral is required for most consultations. Some specialised tests and insurance plans may need one — our team will confirm when you book.</div></div></div>
         <div class="accordion-item"><button class="accordion-head">How quickly will I get my test results?<span class="accordion-icon"></span></button><div class="accordion-body"><div class="accordion-body__inner">ECG results are usually available the same day. Echocardiograms are typically reported within 24 hours and stress tests within one to two working days. All reports appear in your patient portal.</div></div></div>
         <div class="accordion-item"><button class="accordion-head">Can I consult a cardiologist online?<span class="accordion-icon"></span></button><div class="accordion-body"><div class="accordion-body__inner">Yes. Secure video consultations are available for follow-ups, result reviews and medication management. Your doctor will advise if an in-person visit is needed.</div></div></div>
         <div class="accordion-item"><button class="accordion-head">What should I bring to my first appointment?<span class="accordion-icon"></span></button><div class="accordion-body"><div class="accordion-body__inner">Bring a list of current medications, any previous cardiac reports, your insurance details and a short note of your symptoms and questions.</div></div></div>

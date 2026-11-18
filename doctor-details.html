@@ -19,7 +19,7 @@
 <link rel="stylesheet" href="assets/css/dashboard.css">
 <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
-<body><a class="skip-link" href="#main">Skip to content</a>
+<body class="page-doctor-details"><a class="skip-link" href="#main">Skip to content</a>
 <div class="topbar">
   <div class="container container--wide topbar__inner">
     <span class="topbar__badge">24/7 Available</span>
@@ -87,9 +87,9 @@
     <img class="page-hero__bg" src="https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?auto=format&fit=crop&w=1600&q=82" alt="" aria-hidden="true">
     <div class="page-hero__overlay" aria-hidden="true"></div>
     <div class="container container--wide page-hero__inner">
-      <span class="eyebrow">Cardiology specialist</span>
-      <h1 class="h-1">Dr. Amelia Hart</h1>
-      <p>MD, FACC · Director of Preventive Cardiology dedicated to clear, proactive heart care.</p>
+      <span class="eyebrow" data-dd="heroEyebrow">Cardiology specialist</span>
+      <h1 class="h-1" data-dd="heroName">Dr. Amelia Hart</h1>
+      <p data-dd="heroSub">MD, FACC · Director of Preventive Cardiology dedicated to clear, proactive heart care.</p>
     </div>
   </section>
 
@@ -97,21 +97,21 @@
     <div class="container container--wide">
       <div class="doctor-profile">
         <div data-reveal="left">
-          <div class="doctor-profile__photo ratio"><img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?auto=format&fit=crop&w=900&q=88" alt="Dr. Amelia Hart, cardiologist"></div>
+          <div class="doctor-profile__photo ratio"><img data-dd="photo" src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?auto=format&fit=crop&w=900&q=88" alt="Dr. Amelia Hart, cardiologist"></div>
           <div class="doctor-profile__contact">
             <h5 class="mb-4">Contact &amp; availability</h5>
-            <ul><li><svg class="ico"><use href="#i-pin"/></svg> Cardia Clinic, 1200 Park Avenue</li><li><svg class="ico"><use href="#i-phone"/></svg> +1 (800) 555-0192</li><li><svg class="ico"><use href="#i-mail"/></svg> a.hart@cardiaclinic.com</li><li><svg class="ico"><use href="#i-clock"/></svg> Mon, Tue, Thu · 9:00–17:00</li></ul>
+            <ul><li><svg class="ico"><use href="#i-pin"/></svg><span data-dd="address">Cardia Clinic, 1200 Park Avenue</span></li><li><svg class="ico"><use href="#i-phone"/></svg><span data-dd="phone">+1 (800) 555-0192</span></li><li><svg class="ico"><use href="#i-mail"/></svg><span data-dd="email">a.hart@cardiaclinic.com</span></li><li><svg class="ico"><use href="#i-clock"/></svg><span data-dd="hours">Mon, Tue, Thu · 9:00–17:00</span></li></ul>
             <button class="btn btn--primary btn--block" data-book data-doctor="Dr. Amelia Hart">Book Appointment <svg class="ico ico--sm"><use href="#i-arrow"/></svg></button>
           </div>
         </div>
         <div data-reveal="right">
-          <span class="badge badge--teal badge--dot">Accepting new patients</span>
-          <h2 class="h-2 mt-4" style="margin-bottom:6px">Dr. Amelia Hart</h2>
-          <p class="lead" style="color:var(--teal);font-weight:600;margin-bottom:18px">MD, FACC · Director of Preventive Cardiology</p>
-          <p class="lead">Dr. Hart believes the most powerful cardiology happens before a crisis. She has spent fourteen years helping people understand their risk, change the trajectory of their heart health and feel genuinely confident about the future.</p>
-          <p class="text-muted">Her clinic focuses on thorough assessment, clear explanation and practical plans that fit real lives. She works closely with imaging and intervention colleagues so every patient receives connected, continuous care.</p>
-          <div class="grid-3 gap-3 mt-6"><div class="stat" style="background:var(--surface);border:1px solid var(--border);border-radius:var(--r-sm)"><div class="stat__num">14</div><div class="stat__label">Years experience</div></div><div class="stat" style="background:var(--surface);border:1px solid var(--border);border-radius:var(--r-sm)"><div class="stat__num">2.4k</div><div class="stat__label">Patients guided</div></div><div class="stat" style="background:var(--surface);border:1px solid var(--border);border-radius:var(--r-sm)"><div class="stat__num">4.9</div><div class="stat__label">Patient rating</div></div></div>
-          <div class="mt-7"><h3 class="h-4 mb-4">Areas of expertise</h3><div class="flex flex-wrap gap-2"><span class="badge badge--mist">Preventive cardiology</span><span class="badge badge--mist">Lipid management</span><span class="badge badge--mist">Hypertension</span><span class="badge badge--mist">Women's heart health</span><span class="badge badge--mist">Lifestyle medicine</span></div></div>
+          <span class="badge badge--teal badge--dot" data-dd="status">Accepting new patients</span>
+          <h2 class="h-2 mt-4" style="margin-bottom:6px" data-dd="name">Dr. Amelia Hart</h2>
+          <p class="lead" style="color:var(--teal);font-weight:600;margin-bottom:18px" data-dd="role">MD, FACC · Director of Preventive Cardiology</p>
+          <p class="lead" data-dd="bio1">Dr. Hart believes the most powerful cardiology happens before a crisis. She has spent fourteen years helping people understand their risk, change the trajectory of their heart health and feel genuinely confident about the future.</p>
+          <p class="text-muted" data-dd="bio2">Her clinic focuses on thorough assessment, clear explanation and practical plans that fit real lives. She works closely with imaging and intervention colleagues so every patient receives connected, continuous care.</p>
+          <div class="grid-3 gap-3 mt-6"><div class="stat" style="background:var(--surface);border:1px solid var(--border);border-radius:var(--r-sm)"><div class="stat__num" data-dd="statYears">14</div><div class="stat__label">Years experience</div></div><div class="stat" style="background:var(--surface);border:1px solid var(--border);border-radius:var(--r-sm)"><div class="stat__num" data-dd="statPatients">2.4k</div><div class="stat__label">Patients guided</div></div><div class="stat" style="background:var(--surface);border:1px solid var(--border);border-radius:var(--r-sm)"><div class="stat__num" data-dd="statRating">4.9</div><div class="stat__label">Patient rating</div></div></div>
+          <div class="mt-7"><h3 class="h-4 mb-4">Areas of expertise</h3><div class="flex flex-wrap gap-2" data-dd="expertise"><span class="badge badge--mist">Preventive cardiology</span><span class="badge badge--mist">Lipid management</span><span class="badge badge--mist">Hypertension</span><span class="badge badge--mist">Women's heart health</span><span class="badge badge--mist">Lifestyle medicine</span></div></div>
         </div>
       </div>
     </div>
@@ -119,18 +119,18 @@
 
   <section class="section section--tint">
     <div class="container container--wide">
-      <div class="sec-head" data-reveal><span class="eyebrow">Background</span><h2 class="h-2 sec-title">Qualifications &amp; experience.</h2></div>
-      <div class="doctor-qual" data-reveal>
-        <div class="doctor-qual__item"><strong>MD, Medicine</strong><span>Columbia University, 2010</span></div>
-        <div class="doctor-qual__item"><strong>Cardiology Fellowship</strong><span>New York Presbyterian, 2016</span></div>
-        <div class="doctor-qual__item"><strong>FACC</strong><span>American College of Cardiology</span></div>
-        <div class="doctor-qual__item"><strong>MPH, Public Health</strong><span>Johns Hopkins University, 2018</span></div>
-        <div class="doctor-qual__item"><strong>Certified Lipidologist</strong><span>NLA, 2019</span></div>
-        <div class="doctor-qual__item"><strong>Preventive Cardiology Fellow</strong><span>Cleveland Clinic, 2017</span></div>
+      <div class="sec-head sec-head--center background-head" data-reveal><span class="eyebrow eyebrow--center">Background</span><h2 class="h-2 sec-title">Qualifications &amp; experience.</h2></div>
+      <div class="doctor-qual" data-reveal data-dd="qualifications">
+        <div class="doctor-qual__item"><span class="doctor-qual__icon"><svg class="ico"><use href="#i-steth"/></svg></span><div class="doctor-qual__body"><strong>MD, Medicine</strong><span>Columbia University, 2010</span></div></div>
+        <div class="doctor-qual__item"><span class="doctor-qual__icon doctor-qual__icon--teal"><svg class="ico"><use href="#i-heart"/></svg></span><div class="doctor-qual__body"><strong>Cardiology Fellowship</strong><span>New York Presbyterian, 2016</span></div></div>
+        <div class="doctor-qual__item"><span class="doctor-qual__icon"><svg class="ico"><use href="#i-shield"/></svg></span><div class="doctor-qual__body"><strong>FACC</strong><span>American College of Cardiology</span></div></div>
+        <div class="doctor-qual__item"><span class="doctor-qual__icon doctor-qual__icon--teal"><svg class="ico"><use href="#i-users"/></svg></span><div class="doctor-qual__body"><strong>MPH, Public Health</strong><span>Johns Hopkins University, 2018</span></div></div>
+        <div class="doctor-qual__item"><span class="doctor-qual__icon"><svg class="ico"><use href="#i-pill"/></svg></span><div class="doctor-qual__body"><strong>Certified Lipidologist</strong><span>NLA, 2019</span></div></div>
+        <div class="doctor-qual__item"><span class="doctor-qual__icon doctor-qual__icon--teal"><svg class="ico"><use href="#i-pulse"/></svg></span><div class="doctor-qual__body"><strong>Preventive Cardiology Fellow</strong><span>Cleveland Clinic, 2017</span></div></div>
       </div>
       <div class="grid-2 gap-6 mt-8">
-        <div data-reveal><h3 class="h-4 mb-4">Professional highlights</h3><ul class="check-list"><li>Former chair of the regional preventive cardiology advisory board</li><li>Published over 30 papers on cardiovascular risk reduction</li><li>Regular speaker on women's heart health and lipid management</li><li>Recipient of the 2024 Excellence in Patient Education award</li></ul></div>
-        <div data-reveal="right"><h3 class="h-4 mb-4">Languages</h3><p class="text-muted">English, Spanish and French. Interpretation services are available for other languages on request.</p><h3 class="h-4 mt-6 mb-4">Consultation approach</h3><p class="text-muted">Dr. Hart begins with a full 40-minute conversation, reviews your history and results, then creates a written plan you can take home. Follow-up is always included.</p></div>
+        <div data-reveal><h3 class="h-4 mb-4">Professional highlights</h3><ul class="check-list" data-dd="highlights"><li>Former chair of the regional preventive cardiology advisory board</li><li>Published over 30 papers on cardiovascular risk reduction</li><li>Regular speaker on women's heart health and lipid management</li><li>Recipient of the 2024 Excellence in Patient Education award</li></ul></div>
+        <div data-reveal="right"><h3 class="h-4 mb-4">Languages</h3><p class="text-muted" data-dd="languages">English, Spanish and French. Interpretation services are available for other languages on request.</p><h3 class="h-4 mt-6 mb-4">Consultation approach</h3><p class="text-muted" data-dd="approach">Dr. Hart begins with a full 40-minute conversation, reviews your history and results, then creates a written plan you can take home. Follow-up is always included.</p></div>
       </div>
     </div>
   </section>
@@ -139,12 +139,12 @@
     <div class="container container--wide">
       <div class="grid-2 gap-6">
         <div data-reveal><span class="eyebrow">Book your visit</span><h2 class="h-2 sec-title">Availability this week.</h2><p class="lead">Choose a time that works for you. Online consultations are available for follow-ups and result reviews.</p>
-          <div class="mt-6"><h5 class="mb-3">Clinic availability</h5><div class="availability"><span>Mon 9:00–17:00</span><span>Tue 10:00–18:00</span><span class="off">Wed —</span><span>Thu 9:00–17:00</span><span class="off">Fri —</span><span class="off">Sat —</span></div></div>
+          <div class="mt-6"><h5 class="mb-3">Clinic availability</h5><div class="availability" data-dd="availability"><span>Mon 9:00–17:00</span><span>Tue 10:00–18:00</span><span class="off">Wed —</span><span>Thu 9:00–17:00</span><span class="off">Fri —</span><span class="off">Sat —</span></div></div>
           <div class="mt-6"><h5 class="mb-3">Consultation types</h5><div class="grid-2 gap-3"><div class="diag-card"><div class="diag-card__icon"><svg class="ico"><use href="#i-building"/></svg></div><div><h5>Clinic visit</h5><p>Full consultation and examination.</p></div></div><div class="diag-card"><div class="diag-card__icon"><svg class="ico"><use href="#i-video"/></svg></div><div><h5>Online</h5><p>Follow-ups and result reviews.</p></div></div></div></div>
           <button class="btn btn--primary btn--lg mt-6" data-book data-doctor="Dr. Amelia Hart">Check Available Slots <svg class="ico ico--sm"><use href="#i-arrow"/></svg></button>
         </div>
-        <div data-reveal="right"><div class="testimonial"><div class="testimonial__stars">★★★★★</div><p class="testimonial__text" style="font-size:1.05rem">Dr. Hart is the reason I stopped dreading check-ups. She is thorough, kind and incredibly clear. I finally understand my numbers and what to do about them.</p><div class="testimonial__author"><img class="testimonial__avatar" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=200&q=80" alt="Eleanor W."><div><div class="testimonial__name">Eleanor W.</div><div class="testimonial__role">Patient, 3 years</div></div></div></div>
-          <div class="card card__body mt-5"><h5 class="mb-3">Patient rating breakdown</h5><div class="flex items-center gap-3 mb-3"><span class="small" style="width:64px">Listening</span><div style="flex:1;height:7px;background:var(--surface-3);border-radius:5px;overflow:hidden"><div style="width:98%;height:100%;background:var(--teal)"></div></div><span class="small">4.9</span></div><div class="flex items-center gap-3 mb-3"><span class="small" style="width:64px">Clarity</span><div style="flex:1;height:7px;background:var(--surface-3);border-radius:5px;overflow:hidden"><div style="width:96%;height:100%;background:var(--teal)"></div></div><span class="small">4.8</span></div><div class="flex items-center gap-3"><span class="small" style="width:64px">Wait time</span><div style="flex:1;height:7px;background:var(--surface-3);border-radius:5px;overflow:hidden"><div style="width:92%;height:100%;background:var(--teal)"></div></div><span class="small">4.6</span></div></div>
+        <div class="visit-panel" data-reveal="right"><div class="testimonial"><div class="testimonial__stars">★★★★★</div><p class="testimonial__text" style="font-size:1.05rem" data-dd="testimonialText">Dr. Hart is the reason I stopped dreading check-ups. She is thorough, kind and incredibly clear. I finally understand my numbers and what to do about them.</p><div class="testimonial__author"><img class="testimonial__avatar" data-dd="testimonialAvatar" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=200&q=80" alt="Eleanor W."><div><div class="testimonial__name" data-dd="testimonialName">Eleanor W.</div><div class="testimonial__role" data-dd="testimonialRole">Patient, 3 years</div></div></div></div>
+          <div class="card rating-card"><h5>Patient rating breakdown</h5><div data-dd="ratings"><div class="rating-row"><span class="rating-row__label">Listening</span><div class="rating-row__track"><div class="rating-row__fill" style="width:98%"></div></div><span class="rating-row__value">4.9</span></div><div class="rating-row"><span class="rating-row__label">Clarity</span><div class="rating-row__track"><div class="rating-row__fill" style="width:96%"></div></div><span class="rating-row__value">4.8</span></div><div class="rating-row"><span class="rating-row__label">Wait time</span><div class="rating-row__track"><div class="rating-row__fill" style="width:92%"></div></div><span class="rating-row__value">4.6</span></div></div></div>
         </div>
       </div>
     </div>
@@ -152,8 +152,8 @@
 
     <section class="section section--blush">
     <div class="container container--wide">
-      <div class="sec-head" data-reveal><span class="eyebrow">Beyond the clinic</span><h2 class="h-2 sec-title">Research, teaching &amp; advocacy.</h2><p class="sec-sub">Dr. Hart's work extends well beyond her consultation room.</p></div>
-      <div class="grid-3">
+      <div class="sec-head" data-reveal><span class="eyebrow">Beyond the clinic</span><h2 class="h-2 sec-title">Research, teaching &amp; advocacy.</h2><p class="sec-sub" data-dd="beyondSub">Dr. Hart's work extends well beyond her consultation room.</p></div>
+      <div class="grid-3" data-dd="beyond">
         <div class="card card__body" data-reveal><div class="card__icon"><svg class="ico"><use href="#i-brain"/></svg></div><h3 class="card__title">Published research</h3><p class="card__text">Over 30 peer-reviewed papers on lipid management, risk assessment and women's cardiovascular health.</p></div>
         <div class="card card__body" data-reveal data-reveal-delay="1"><div class="card__icon card__icon--teal"><svg class="ico"><use href="#i-users"/></svg></div><h3 class="card__title">Medical education</h3><p class="card__text">Teaching the next generation of cardiologists and hosting regional clinical workshops.</p></div>
         <div class="card card__body" data-reveal data-reveal-delay="2"><div class="card__icon"><svg class="ico"><use href="#i-heart"/></svg></div><h3 class="card__title">Community advocacy</h3><p class="card__text">Regular talks and screening events helping women understand their unique heart risks.</p></div>
@@ -162,17 +162,17 @@
   </section>
 <section class="section section--mist">
     <div class="container container--wide">
-      <div class="sec-head sec-head--split" data-reveal><div><span class="eyebrow">More of our team</span><h2 class="h-2 sec-title">Specialists you may also like.</h2></div><a class="link-more" href="doctors.html">View all doctors <svg class="ico ico--sm"><use href="#i-arrow"/></svg></a></div>
-      <div class="grid-3">
-        <article class="doctor-card" data-reveal><div class="doctor-card__media"><div class="ratio"><img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=800&q=85" alt="Dr. Marcus Chen"></div></div><div class="doctor-card__body"><h3 class="doctor-card__name">Dr. Marcus Chen</h3><p class="doctor-card__spec">Interventional Cardiology</p><div class="doctor-card__actions"><a class="btn btn--primary btn--sm" href="doctor-details.html">View Profile</a><button class="btn btn--outline btn--sm" data-book data-doctor="Dr. Marcus Chen">Book</button></div></div></article>
-        <article class="doctor-card" data-reveal data-reveal-delay="1"><div class="doctor-card__media"><div class="ratio"><img src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?auto=format&fit=crop&w=800&q=85" alt="Dr. Priya Raman"></div></div><div class="doctor-card__body"><h3 class="doctor-card__name">Dr. Priya Raman</h3><p class="doctor-card__spec">Cardiac Imaging</p><div class="doctor-card__actions"><a class="btn btn--primary btn--sm" href="doctor-details.html">View Profile</a><button class="btn btn--outline btn--sm" data-book data-doctor="Dr. Priya Raman">Book</button></div></div></article>
-        <article class="doctor-card" data-reveal data-reveal-delay="2"><div class="doctor-card__media"><div class="ratio"><img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=800&q=85" alt="Dr. Daniel Ortiz"></div></div><div class="doctor-card__body"><h3 class="doctor-card__name">Dr. Daniel Ortiz</h3><p class="doctor-card__spec">Heart Rhythm</p><div class="doctor-card__actions"><a class="btn btn--primary btn--sm" href="doctor-details.html">View Profile</a><button class="btn btn--outline btn--sm" data-book data-doctor="Dr. Daniel Ortiz">Book</button></div></div></article>
+      <div class="sec-head sec-head--split sec-head--split--center" data-reveal><div><span class="eyebrow">More of our team</span><h2 class="h-2 sec-title">Specialists you may also like.</h2></div><a class="link-more" href="doctors.html">View all doctors <svg class="ico ico--sm"><use href="#i-arrow"/></svg></a></div>
+      <div class="grid-3" data-dd="team">
+        <article class="doctor-card" data-reveal><div class="doctor-card__media"><div class="ratio"><img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=800&q=85" alt="Dr. Marcus Chen"></div></div><div class="doctor-card__body"><h3 class="doctor-card__name">Dr. Marcus Chen</h3><p class="doctor-card__spec">Interventional Cardiology</p><div class="doctor-card__actions"><a class="btn btn--primary btn--sm" href="doctor-details.html?doctor=dr-marcus-chen">View Profile</a><button class="btn btn--outline btn--sm" data-book data-doctor="Dr. Marcus Chen">Book</button></div></div></article>
+        <article class="doctor-card" data-reveal data-reveal-delay="1"><div class="doctor-card__media"><div class="ratio"><img src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?auto=format&fit=crop&w=800&q=85" alt="Dr. Priya Raman"></div></div><div class="doctor-card__body"><h3 class="doctor-card__name">Dr. Priya Raman</h3><p class="doctor-card__spec">Cardiac Imaging</p><div class="doctor-card__actions"><a class="btn btn--primary btn--sm" href="doctor-details.html?doctor=dr-priya-raman">View Profile</a><button class="btn btn--outline btn--sm" data-book data-doctor="Dr. Priya Raman">Book</button></div></div></article>
+        <article class="doctor-card" data-reveal data-reveal-delay="2"><div class="doctor-card__media"><div class="ratio"><img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=800&q=85" alt="Dr. Daniel Ortiz"></div></div><div class="doctor-card__body"><h3 class="doctor-card__name">Dr. Daniel Ortiz</h3><p class="doctor-card__spec">Heart Rhythm</p><div class="doctor-card__actions"><a class="btn btn--primary btn--sm" href="doctor-details.html?doctor=dr-daniel-ortiz">View Profile</a><button class="btn btn--outline btn--sm" data-book data-doctor="Dr. Daniel Ortiz">Book</button></div></div></article>
       </div>
     </div>
   </section>
 
-  <section class="section section--sm">
-    <div class="container container--wide"><div class="cta-band" data-reveal><div class="cta-band__inner"><div><span class="eyebrow eyebrow--light">Your heart, in expert hands</span><h2>Book a consultation with Dr. Hart.</h2><p>New patients welcome. Same-week appointments often available.</p></div><div class="cta-band__actions"><button class="btn btn--light btn--lg" data-book data-doctor="Dr. Amelia Hart">Book Now <svg class="ico ico--sm"><use href="#i-arrow"/></svg></button><a class="btn btn--ghost-light btn--lg" href="contact.html">Call Our Team</a></div></div></div></div>
+  <section class="section section--sm section--border">
+    <div class="container container--wide"><div class="cta-band" data-reveal><div class="cta-band__inner"><div><span class="eyebrow eyebrow--light">Your heart, in expert hands</span><h2 data-dd="ctaTitle">Book a consultation with Dr. Hart.</h2><p>New patients welcome. Same-week appointments often available.</p></div><div class="cta-band__actions"><button class="btn btn--light btn--lg" data-book data-doctor="Dr. Amelia Hart">Book Now <svg class="ico ico--sm"><use href="#i-arrow"/></svg></button><a class="btn btn--ghost-light btn--lg" href="contact.html">Call Our Team</a></div></div></div></div>
   </section>
 </main><div class="modal" id="bookingModal" role="dialog" aria-modal="true" aria-labelledby="bookingTitle">
   <div class="modal__backdrop" data-modal-close></div>
@@ -190,7 +190,7 @@
         <div class="form-group"><label class="form-label" for="bookEmail">Email address *</label><input class="form-control" type="email" id="bookEmail" data-validate="email" placeholder="you@example.com"></div>
         <div class="form-row">
           <div class="form-group"><label class="form-label" for="bookService">Service</label><select class="form-control" id="bookService"><option>General Cardiology Consultation</option><option>ECG &amp; Heart Rhythm Test</option><option>Echocardiogram</option><option>Stress Test</option><option>Preventive Heart Screening</option></select></div>
-          <div class="form-group"><label class="form-label" for="bookDoctor">Preferred cardiologist</label><select class="form-control" id="bookDoctor"><option>No preference</option><option>Dr. Amelia Hart</option><option>Dr. Marcus Chen</option><option>Dr. Priya Raman</option><option>Dr. Daniel Ortiz</option></select></div>
+          <div class="form-group"><label class="form-label" for="bookDoctor">Preferred cardiologist</label><select class="form-control" id="bookDoctor"><option>No preference</option><option>Dr. Amelia Hart</option><option>Dr. Marcus Chen</option><option>Dr. Priya Raman</option><option>Dr. Daniel Ortiz</option><option>Dr. Jonathan Reyes</option><option>Dr. Sofia Bennett</option><option>Dr. Nathan Cole</option><option>Dr. Olivia Grant</option></select></div>
         </div>
         <div class="form-row">
           <div class="form-group"><label class="form-label" for="bookDate">Preferred date *</label><input class="form-control" type="date" id="bookDate" data-validate="text"></div>
@@ -279,6 +279,7 @@
 
 <div class="toast-wrap" aria-live="polite"></div>
 <button class="to-top" id="toTop" aria-label="Back to top"><svg class="ico"><use href="#i-arrow-up"/></svg></button>
+<script src="assets/js/doctor-details.js"></script>
 <script src="assets/js/main.js"></script>
 </body>
 </html>
