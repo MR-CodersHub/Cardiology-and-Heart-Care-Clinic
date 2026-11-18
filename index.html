@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#FAF9F6">
+<meta name="description" content="Expert cardiologists, advanced cardiac diagnostics and preventive heart care in a calm, modern clinic.">
+<meta name="keywords" content="cardiology, heart care, cardiologist, cardiac diagnostics, preventive cardiology">
+<title>Cardia | Premium Cardiology & Heart Care Clinic</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/variables.css">
+<link rel="stylesheet" href="assets/css/base.css">
+<link rel="stylesheet" href="assets/css/components.css">
+<link rel="stylesheet" href="assets/css/layout.css">
+<link rel="stylesheet" href="assets/css/pages.css">
+<link rel="stylesheet" href="assets/css/dashboard.css">
+<link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body><a class="skip-link" href="#main">Skip to content</a>
+<div class="topbar">
+  <div class="container container--wide topbar__inner">
+    <ul class="topbar__list">
+      <li><a href="tel:+18005550192"><svg class="ico ico--sm"><use href="#i-phone"/></svg> +1 (800) 555-0192</a></li>
+      <li><a href="mailto:care@cardiaclinic.com"><svg class="ico ico--sm"><use href="#i-mail"/></svg> care@cardiaclinic.com</a></li>
+      <li><span><svg class="ico ico--sm"><use href="#i-clock"/></svg> Mon–Sat · 8:00–20:00</span></li>
+      <li><span><svg class="ico ico--sm"><use href="#i-pin"/></svg> 1200 Park Avenue, New York</span></li>
+    </ul>
+    <div class="topbar__tools">
+      <button class="tool-btn" id="themeToggle" data-theme-toggle aria-label="Toggle theme"><span data-theme-icon></span></button>
+      <button class="tool-btn" id="dirToggle" data-dir-toggle aria-label="Toggle layout direction"><span data-dir-label>RTL</span></button>
+    </div>
+  </div>
+</div>
+<header class="header">
+  <div class="container container--wide header__inner">
+    <a href="index.html" class="logo" aria-label="Cardia Heart Clinic home">
+      <span class="logo__mark"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#fff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l7.8-7.6 1.1-1.1a5.5 5.5 0 0 0-.1-7.7z"/><path d="M3 12h4l2-4 3 8 2-4h4"/></svg></span>
+      <span class="logo__text"><span class="logo__name">Cardia</span><span class="logo__sub">Heart &amp; Vascular Care</span></span>
+    </a>
+    <nav class="nav" aria-label="Primary navigation">
+      <div class="nav__item"><a class="nav__link" href="index.html">Home</a></div>
+      <div class="nav__item"><a class="nav__link" href="about.html">About</a></div>
+      <div class="nav__item"><a class="nav__link" href="services.html">Services <svg class="ico ico--sm"><use href="#i-chevron"/></svg></a>
+        <div class="nav__dropdown">
+          <a href="services.html">Cardiac Diagnostics <span>›</span></a>
+          <a href="service-details.html">Consultations <span>›</span></a>
+          <a href="service-details.html">Interventional Care <span>›</span></a>
+          <a href="pricing.html">Packages &amp; Pricing <span>›</span></a>
+        </div>
+      </div>
+      <div class="nav__item"><a class="nav__link" href="doctors.html">Doctors</a></div>
+      <div class="nav__item"><a class="nav__link" href="blog.html">Insights</a></div>
+      <div class="nav__item"><a class="nav__link" href="pricing.html">Pricing</a></div>
+      <div class="nav__item"><a class="nav__link" href="contact.html">Contact</a></div>
+      <div class="nav__item"><a class="nav__link nav__link--port" href="patient-dashboard.html">Patient Portal</a></div>
+    </nav>
+    <div class="header__cta">
+      <div class="header__phone"><i><svg class="ico"><use href="#i-phone"/></svg></i><div><small>Need help?</small><strong>+1 (800) 555-0192</strong></div></div>
+      <button class="btn btn--primary btn--sm" data-book>Book Appointment <svg class="ico ico--sm"><use href="#i-arrow"/></svg></button>
+      <button class="burger" data-menu-open aria-label="Open navigation"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header><div class="mobile-menu" id="mobileMenu">
+  <div class="mobile-menu__backdrop" data-menu-close></div>
+  <div class="mobile-menu__panel">
+    <div class="mobile-menu__head">
+      <span class="logo"><span class="logo__mark"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#fff" stroke-width="1.7"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l7.8-7.6 1.1-1.1a5.5 5.5 0 0 0-.1-7.7z"/></svg></span><span class="logo__text"><span class="logo__name">Cardia</span><span class="logo__sub">Heart Care</span></span></span>
+      <button class="modal__close" data-menu-close aria-label="Close menu"><svg class="ico"><use href="#i-close"/></svg></button>
+    </div>
+    <nav class="mobile-nav" aria-label="Mobile navigation">
+      <a href="index.html">Home <span>›</span></a>
+      <a href="about.html">About Us <span>›</span></a>
+      <a href="services.html">Services <span>›</span></a>
+      <a href="service-details.html">Service Details <span>›</span></a>
+      <a href="doctors.html">Our Doctors <span>›</span></a>
+      <a href="doctor-details.html">Doctor Profile <span>›</span></a>
+      <a href="blog.html">Insights <span>›</span></a>
+      <a href="contact.html">Contact <span>›</span></a>
+      <a href="pricing.html">Pricing <span>›</span></a>
+      <a href="patient-dashboard.html">Patient Portal <span>›</span></a>
+      <a href="admin-dashboard.html">Admin Portal <span>›</span></a>
+    </nav>
+    <div class="mobile-menu__foot"><a class="btn btn--primary btn--block" href="contact.html" data-book>Book an Appointment <svg class="ico ico--sm"><use href="#i-arrow"/></svg></a></div>
+  </div>
+</div><main id="main">
+  <section class="hero-slider" aria-label="Heart care highlights">
+    <div class="hero-slide is-active">
+      <img class="hero-slide__bg" src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=1920&q=85" alt="Cardiologist in a quiet outdoor moment">
+      <div class="hero-slide__overlay"></div>
+      <div class="hero-slide__content">
+        <div class="container container--wide">
+          <div class="hero-split">
+            <div>
+              <span class="eyebrow eyebrow--light">Compassionate cardiology · Est. 2009</span>
+              <h1 class="hero-slide__title display-1">Your heart deserves <em>exceptional</em> care.</h1>
+              <p class="hero-slide__sub">Board-certified cardiologists, advanced diagnostics and a calm, personal approach ” all under one roof.</p>
+              <div class="hero-slide__actions">
+                <button class="btn btn--teal btn--lg" data-book>Book a Consultation <svg class="ico ico--sm"><use href="#i-arrow"/></svg></button>
+                <a class="btn btn--ghost-light btn--lg" href="services.html">Explore Services</a>
+              </div>
+            </div>
+            <div class="hero-feature">
+              <div class="hero-mini-card"><i><svg class="ico"><use href="#i-pulse"/></svg></i><div><strong>24/7 Cardiac Monitoring</strong><small>Rapid response when every second counts</small></div></div>
+              <div class="hero-mini-card hero-mini-card--offset"><i><svg class="ico"><use href="#i-shield"/></svg></i><div><strong>98% Patient Satisfaction</strong><small>Trusted by thousands of families</small></div></div>
+              <div class="hero-mini-card"><i><svg class="ico"><use href="#i-video"/></svg></i><div><strong>Online Consultations</strong><small>Expert advice from the comfort of home</small></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-slide">
+      <img class="hero-slide__bg" src="https://images.unsplash.com/photo-1666214280557-f1b5022eb634?auto=format&fit=crop&w=1920&q=85" alt="Modern cardiac imaging equipment">
+      <div class="hero-slide__overlay"></div>
+      <div class="hero-slide__content">
+        <div class="container container--wide">
+          <span class="eyebrow eyebrow--light">Precision diagnostics</span>
+          <h1 class="hero-slide__title display-1">Answers that bring <em>peace of mind.</em></h1>
+          <p class="hero-slide__sub">ECG, echocardiography and stress testing with same-day reporting and clear, jargon-free explanations.</p>
+          <div class="hero-slide__actions"><button class="btn btn--teal btn--lg" data-book="Echocardiogram">Schedule a Test <svg class="ico ico--sm"><use href="#i-arrow"/></svg></button><a class="btn btn--ghost-light btn--lg" href="services.html">Our Diagnostics</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-slide">
+      <img class="hero-slide__bg" src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=1920&q=85" alt="Welcoming modern clinic interior">
+      <div class="hero-slide__overlay"></div>
+      <div class="hero-slide__content">
+        <div class="container container--wide">
+          <span class="eyebrow eyebrow--light">A calmer kind of clinic</span>
+          <h1 class="hero-slide__title display-1">Clinical excellence, <em>humanely</em> delivered.</h1>
+          <p class="hero-slide__sub">Thoughtful spaces, unhurried appointments and a care team that remembers your name.</p>
+          <div class="hero-slide__actions"><button class="btn btn--teal btn--lg" data-book>Meet Our Team <svg class="ico ico--sm"><use href="#i-arrow"/></svg></button><a class="btn btn--ghost-light btn--lg" href="about.html">Our Story</a></div>
+        </div>
+      </div>
+    </div>
+    <button class="slider-arrow slider-arrow--prev" aria-label="Previous slide"><svg class="ico"><use href="#i-arrow"/></svg></button>
+    <button class="slider-arrow slider-arrow--next" aria-label="Next slide"><svg class="ico"><use href="#i-arrow"/></svg></button>
+    <div class="slider-nav" aria-label="Slides"><button class="slider-dot is-active" aria-label="Slide 1"></button><button class="slider-dot" aria-label="Slide 2"></button><button class="slider-dot" aria-label="Slide 3"></button></div>
+  </section>
+
+  <section class="section section--sm">
+    <div class="container container--wide">
+      <div class="trust-strip" data-reveal>
+        <div class="trust-strip__item"><svg class="ico"><use href="#i-shield"/></svg> Board-certified specialists</div>
+        <div class="trust-strip__item"><svg class="ico"><use href="#i-activity"/></svg> 15,000+ hearts monitored</div>
+        <div class="trust-strip__item"><svg class="ico"><use href="#i-clock"/></svg> Same-day appointments</div>
+        <div class="trust-strip__item"><svg class="ico"><use href="#i-heart"/></svg> Preventive-first philosophy</div>
+      </div>
+      <div class="grid-2 items-center gap-6 mt-11" style="grid-template-columns:1fr 1fr">
+        <div data-reveal="left">
+          <span class="eyebrow">A different standard of heart care</span>
+          <h2 class="h-2 sec-title">Medicine with warmth. <span class="text-accent">Precision with perspective.</span></h2>
+          <p class="lead">Heart care can feel overwhelming. We built Cardia to feel like the opposite ” clear, unhurried and deeply personal, without compromising on clinical rigour.</p>
+          <p class="text-muted">From your first consultation to long-term prevention, one coordinated team guides every step. You will always know what is happening, why it matters and what comes next.</p>
+          <a class="link-more mt-4" href="about.html">Learn about our philosophy <svg class="ico ico--sm"><use href="#i-arrow"/></svg></a>
+        </div>
+        <div class="grid-2 gap-4" data-reveal="right">
+          <div class="value-item card"><div class="value-item__icon"><svg class="ico"><use href="#i-user"/></svg></div><div><h5>One-to-one time</h5><p>40-minute consultations, never rushed.</p></div></div>
+          <div class="value-item card"><div class="value-item__icon card__icon--teal"><svg class="ico"><use href="#i-brain"/></svg></div><div><h5>Clear explanations</h5><p>We translate results into plain language.</p></div></div>
+          <div class="value-item card"><div class="value-item__icon"><svg class="ico"><use href="#i-shield"/></svg></div><div><h5>Prevention first</h5><p>Catch risks early, live longer and better.</p></div></div>
+          <div class="value-item card"><div class="value-item__icon card__icon--teal"><svg class="ico"><use href="#i-heart"/></svg></div><div><h5>Whole-person care</h5><p>Lifestyle, mind and family considered.</p></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--tint">
+    <div class="container container--wide">
+      <div class="sec-head sec-head--split" data-reveal>
+        <div><span class="eyebrow">What we do</span><h2 class="h-2 sec-title">Complete heart care, thoughtfully connected.</h2><p class="sec-sub">Every service is designed around you ” from the first question to lifelong wellbeing.</p></div>
+        <a class="link-more" href="services.html">View all services <svg class="ico ico--sm"><use href="#i-arrow"/></svg></a>
+      </div>
+      <div class="grid-3">
+        <article class="service-card card--hover" data-reveal><div class="service-card__no">01</div><div class="card__icon"><svg class="ico"><use href="#i-steth"/></svg></div><h3 class="service-card__title">Cardiology Consultation</h3><p class="service-card__text">In-depth assessment of symptoms, history and risk, with a clear plan you can actually follow.</p><span class="service-card__arrow"><svg class="ico ico--sm"><use href="#i-arrow"/></svg></span></article>
+        <article class="service-card card--hover" data-reveal data-reveal-delay="1"><div class="service-card__no">02</div><div class="card__icon card__icon--teal"><svg class="ico"><use href="#i-activity"/></svg></div><h3 class="service-card__title">ECG &amp; Rhythm Testing</h3><p class="service-card__text">Fast, non-invasive heart rhythm analysis with same-day interpretation by a specialist.</p><span class="service-card__arrow"><svg class="ico ico--sm"><use href="#i-arrow"/></svg></span></article>
+        <article class="service-card card--hover" data-reveal data-reveal-delay="2"><div class="service-card__no">03</div><div class="card__icon"><svg class="ico"><use href="#i-heart"/></svg></div><h3 class="service-card__title">Echocardiogram</h3><p class="service-card__text">Detailed ultrasound imaging of heart structure and function in a calm, private suite.</p><span class="service-card__arrow"><svg class="ico ico--sm"><use href="#i-arrow"/></svg></span></article>
+        <article class="service-card card--hover" data-reveal><div class="service-card__no">04</div><div class="card__icon card__icon--teal"><svg class="ico"><use href="#i-pulse"/></svg></div><h3 class="service-card__title">Stress Testing</h3><p class="service-card__text">Supervised exercise and pharmacological tests to understand how your heart responds.</p><span class="service-card__arrow"><svg class="ico ico--sm"><use href="#i-arrow"/></svg></span></article>
+        <article class="service-card card--hover" data-reveal data-reveal-delay="1"><div class="service-card__no">05</div><div class="card__icon"><svg class="ico"><use href="#i-shield"/></svg></div><h3 class="service-card__title">Preventive Screening</h3><p class="service-card__text">Personalised risk profiling, lipid and blood pressure management, and lifestyle planning.</p><span class="service-card__arrow"><svg class="ico ico--sm"><use href="#i-arrow"/></svg></span></article>
+        <article class="service-card card--hover" data-reveal data-reveal-delay="2"><div class="service-card__no">06</div><div class="card__icon card__icon--teal"><svg class="ico"><use href="#i-video"/></svg></div><h3 class="service-card__title">Virtual Follow-ups</h3><p class="service-card__text">Review results and adjust treatment from home with secure video consultations.</p><span class="service-card__arrow"><svg class="ico ico--sm"><use href="#i-arrow"/></svg></span></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container container--wide">
+      <div class="grid-2 gap-6 items-center">
+        <div class="media-compose" data-reveal="left">
+          <img src="https://images.unsplash.com/photo-1579154204601-01588f351e67?auto=format&fit=crop&w=1200&q=85" alt="Advanced cardiac diagnostic laboratory">
+          <span class="media-compose__badge"><svg class="ico ico--sm"><use href="#i-star"/></svg> Centre of Excellence</span>
+          <div class="media-compose__float"><i><svg class="ico"><use href="#i-clock"/></svg></i><div><strong>Same-day results</strong><small>Most diagnostic reports within hours</small></div></div>
+        </div>
+        <div data-reveal="right">
+          <span class="eyebrow">Technology with a purpose</span>
+          <h2 class="h-2 sec-title">Advanced diagnostics. Reassuringly simple.</h2>
+          <p class="lead">Our on-site imaging and rhythm labs mean fewer visits, faster answers and one team who knows your whole story.</p>
+          <ul class="check-list">
+            <li>High-resolution 3D echocardiography and strain imaging</li>
+            <li>24-hour Holter and event rhythm monitoring</li>
+            <li>Cardiac CT and stress echocardiography</li>
+            <li>Digital reports accessible in your patient portal</li>
+          </ul>
+          <div class="grid-4 gap-3 mt-8">
+            <div class="stat"><div class="stat__num"><span data-count="15">0</span>k+</div><div class="stat__label">Scans yearly</div></div>
+            <div class="stat stat__divider"><div class="stat__num"><span data-count="98">0</span>%</div><div class="stat__label">Would recommend</div></div>
+            <div class="stat stat__divider"><div class="stat__num"><span data-count="24">0</span>/7</div><div class="stat__label">Monitoring</div></div>
+            <div class="stat stat__divider"><div class="stat__num"><span data-count="17">0</span></div><div class="stat__label">Specialists</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--blush">
+    <div class="container container--wide">
+      <div class="sec-head sec-head--split" data-reveal>
+        <div><span class="eyebrow">Meet your team</span><h2 class="h-2 sec-title">Specialists who listen first.</h2><p class="sec-sub">Leading experts in preventive, interventional and imaging cardiology.</p></div>
+        <a class="link-more" href="doctors.html">All cardiologists <svg class="ico ico--sm"><use href="#i-arrow"/></svg></a>
+      </div>
+      <div class="grid-4">
+        <article class="doctor-card" data-reveal>
+          <div class="doctor-card__media"><div class="ratio"><img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?auto=format&fit=crop&w=800&q=85" alt="Dr. Amelia Hart"></div><span class="badge badge--teal doctor-card__badge">Available today</span></div>
+          <div class="doctor-card__body"><h3 class="doctor-card__name">Dr. Amelia Hart</h3><p class="doctor-card__spec">MD, FACC · Preventive Cardiology</p><div class="doctor-card__meta"><span><svg class="ico ico--sm"><use href="#i-star"/></svg> 14 yrs</span><span><svg class="ico ico--sm"><use href="#i-pin"/></svg> New York</span></div><div class="doctor-card__actions"><a class="btn btn--primary btn--sm" href="doctor-details.html">View Profile</a><button class="btn btn--outline btn--sm" data-book data-doctor="Dr. Amelia Hart">Book</button></div></div>
+        </article>
+        <article class="doctor-card" data-reveal data-reveal-delay="1">
+          <div class="doctor-card__media"><div class="ratio"><img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=800&q=85" alt="Dr. Marcus Chen"></div><span class="badge badge--teal doctor-card__badge">Available today</span></div>
+          <div class="doctor-card__body"><h3 class="doctor-card__name">Dr. Marcus Chen</h3><p class="doctor-card__spec">MD, PhD · Interventional</p><div class="doctor-card__meta"><span><svg class="ico ico--sm"><use href="#i-star"/></svg> 18 yrs</span><span><svg class="ico ico--sm"><use href="#i-pin"/></svg> New York</span></div><div class="doctor-card__actions"><a class="btn btn--primary btn--sm" href="doctor-details.html">View Profile</a><button class="btn btn--outline btn--sm" data-book data-doctor="Dr. Marcus Chen">Book</button></div></div>
+        </article>
+        <article class="doctor-card" data-reveal data-reveal-delay="2">
+          <div class="doctor-card__media"><div class="ratio"><img src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?auto=format&fit=crop&w=800&q=85" alt="Dr. Priya Raman"></div><span class="badge badge--mist doctor-card__badge">Next Mon</span></div>
+          <div class="doctor-card__body"><h3 class="doctor-card__name">Dr. Priya Raman</h3><p class="doctor-card__spec">MD · Cardiac Imaging</p><div class="doctor-card__meta"><span><svg class="ico ico--sm"><use href="#i-star"/></svg> 11 yrs</span><span><svg class="ico ico--sm"><use href="#i-pin"/></svg> Brooklyn</span></div><div class="doctor-card__actions"><a class="btn btn--primary btn--sm" href="doctor-details.html">View Profile</a><button class="btn btn--outline btn--sm" data-book data-doctor="Dr. Priya Raman">Book</button></div></div>
+        </article>
+        <article class="doctor-card" data-reveal data-reveal-delay="3">
+          <div class="doctor-card__media"><div class="ratio"><img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=800&q=85" alt="Dr. Daniel Ortiz"></div><span class="badge badge--teal doctor-card__badge">Available today</span></div>
+          <div class="doctor-card__body"><h3 class="doctor-card__name">Dr. Daniel Ortiz</h3><p class="doctor-card__spec">DO · Heart Rhythm</p><div class="doctor-card__meta"><span><svg class="ico ico--sm"><use href="#i-star"/></svg> 9 yrs</span><span><svg class="ico ico--sm"><use href="#i-pin"/></svg> Manhattan</span></div><div class="doctor-card__actions"><a class="btn btn--primary btn--sm" href="doctor-details.html">View Profile</a><button class="btn btn--outline btn--sm" data-book data-doctor="Dr. Daniel Ortiz">Book</button></div></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--sm">
+    <div class="container container--wide">
+      <div class="sec-head sec-head--center" data-reveal><span class="eyebrow eyebrow--center">In their words</span><h2 class="h-2 sec-title">Stories from the hearts we care for.</h2></div>
+      <div class="grid-3">
+        <div class="testimonial" data-reveal><div class="testimonial__quote">“</div><div class="testimonial__stars">★★★★★</div><p class="testimonial__text">I arrived anxious and left with a plan. Dr. Hart explained everything in language I could understand, and the whole team made me feel safe.</p><div class="testimonial__author"><img class="testimonial__avatar" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=200&q=80" alt="Eleanor W."><div><div class="testimonial__name">Eleanor W.</div><div class="testimonial__role">Preventive care patient</div></div></div></div>
+        <div class="testimonial" data-reveal data-reveal-delay="1"><div class="testimonial__quote">“</div><div class="testimonial__stars">★★★★★</div><p class="testimonial__text">The echocardiogram was same-day and the report appeared in my portal that evening. Modern, calm and genuinely efficient.</p><div class="testimonial__author"><img class="testimonial__avatar" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80" alt="James R."><div><div class="testimonial__name">James R.</div><div class="testimonial__role">Cardiac imaging patient</div></div></div></div>
+        <div class="testimonial" data-reveal data-reveal-delay="2"><div class="testimonial__quote">“</div><div class="testimonial__stars">★★★★★</div><p class="testimonial__text">Online follow-ups meant I didn't need to travel after my procedure. The medication reminders in the portal kept me on track.</p><div class="testimonial__author"><img class="testimonial__avatar" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80" alt="Sofia M."><div><div class="testimonial__name">Sofia M.</div><div class="testimonial__role">Follow-up care patient</div></div></div></div>
+      </div>
+      <div class="cta-band mt-11" data-reveal><div class="cta-band__inner"><div><span class="eyebrow eyebrow--light">Take the first step</span><h2>Your heart will thank you for it.</h2><p>Book a consultation today and get clarity, confidence and a plan made for you.</p></div><div class="cta-band__actions"><button class="btn btn--light btn--lg" data-book>Book Appointment <svg class="ico ico--sm"><use href="#i-arrow"/></svg></button><a class="btn btn--ghost-light btn--lg" href="contact.html">Ask a Question</a></div></div></div>
+    </div>
+  </section>
+</main><div class="modal" id="bookingModal" role="dialog" aria-modal="true" aria-labelledby="bookingTitle">
+  <div class="modal__backdrop" data-modal-close></div>
+  <div class="modal__dialog">
+    <div class="modal__head">
+      <div><span class="eyebrow">Patient care</span><h3 class="modal__title" id="bookingTitle">Book an Appointment</h3></div>
+      <button class="modal__close" data-modal-close aria-label="Close"><svg class="ico"><use href="#i-close"/></svg></button>
+    </div>
+    <div class="modal__body">
+      <form id="bookingForm" novalidate>
+        <div class="form-row">
+          <div class="form-group"><label class="form-label" for="bookName">Full name *</label><input class="form-control" id="bookName" data-validate="text" placeholder="Your full name"></div>
+          <div class="form-group"><label class="form-label" for="bookPhone">Phone *</label><input class="form-control" id="bookPhone" data-validate="phone" placeholder="+1 800 000 0000"></div>
+        </div>
+        <div class="form-group"><label class="form-label" for="bookEmail">Email address *</label><input class="form-control" type="email" id="bookEmail" data-validate="email" placeholder="you@example.com"></div>
+        <div class="form-row">
+          <div class="form-group"><label class="form-label" for="bookService">Service</label><select class="form-control" id="bookService"><option>General Cardiology Consultation</option><option>ECG &amp; Heart Rhythm Test</option><option>Echocardiogram</option><option>Stress Test</option><option>Preventive Heart Screening</option></select></div>
+          <div class="form-group"><label class="form-label" for="bookDoctor">Preferred cardiologist</label><select class="form-control" id="bookDoctor"><option>No preference</option><option>Dr. Amelia Hart</option><option>Dr. Marcus Chen</option><option>Dr. Priya Raman</option><option>Dr. Daniel Ortiz</option></select></div>
+        </div>
+        <div class="form-row">
+          <div class="form-group"><label class="form-label" for="bookDate">Preferred date *</label><input class="form-control" type="date" id="bookDate" data-validate="text"></div>
+          <div class="form-group"><label class="form-label" for="bookType">Consultation type</label><select class="form-control" id="bookType"><option>At the clinic</option><option>Online / video consultation</option><option>Home visit</option></select></div>
+        </div>
+        <div class="form-group"><label class="form-label">Available time slots</label><div class="flex flex-wrap gap-2"><button type="button" class="filter-btn time-slot">09:00 AM</button><button type="button" class="filter-btn time-slot is-active">10:30 AM</button><button type="button" class="filter-btn time-slot">12:00 PM</button><button type="button" class="filter-btn time-slot">02:30 PM</button><button type="button" class="filter-btn time-slot">04:00 PM</button></div></div>
+        <div class="form-group"><label class="form-label">Consultation preference</label><div class="flex flex-wrap gap-2"><button type="button" class="filter-btn consult-opt is-active"><svg class="ico ico--sm"><use href="#i-building"/></svg> Clinic visit</button><button type="button" class="filter-btn consult-opt"><svg class="ico ico--sm"><use href="#i-video"/></svg> Online</button></div></div>
+        <div class="form-group"><label class="form-label" for="bookNotes">Anything we should know?</label><textarea class="form-control" id="bookNotes" placeholder="Optional notes for your care team"></textarea></div>
+        <button class="btn btn--primary btn--block btn--lg" type="submit">Confirm Appointment <svg class="ico ico--sm"><use href="#i-arrow"/></svg></button>
+        <p class="tiny text-muted text-center mt-4 mb-0">This is a demonstration form. No real appointment is created.</p>
+      </form>
+    </div>
+  </div>
+</div><footer class="footer">
+  <div class="container container--wide">
+    <div class="footer__grid">
+      <div class="footer__about">
+        <a href="index.html" class="logo"><span class="logo__mark"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#fff" stroke-width="1.7"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l7.8-7.6 1.1-1.1a5.5 5.5 0 0 0-.1-7.7z"/><path d="M3 12h4l2-4 3 8 2-4h4"/></svg></span><span class="logo__text"><span class="logo__name">Cardia</span><span class="logo__sub">Heart &amp; Vascular Care</span></span></a>
+        <p>A modern cardiology practice combining clinical precision with genuinely human care. Your heart, in expert hands.</p>
+        <ul class="footer__contact mt-5">
+          <li><svg class="ico"><use href="#i-pin"/></svg><span>1200 Park Avenue, Suite 400<br>New York, NY 10029</span></li>
+          <li><svg class="ico"><use href="#i-phone"/></svg><span>+1 (800) 555-0192</span></li>
+          <li><svg class="ico"><use href="#i-mail"/></svg><span>care@cardiaclinic.com</span></li>
+        </ul>
+        <div class="footer__social"><a href="#" aria-label="Instagram">ig</a><a href="#" aria-label="Facebook">fb</a><a href="#" aria-label="LinkedIn">in</a><a href="#" aria-label="X">x</a></div>
+      </div>
+      <div>
+        <h4 class="footer__title">Explore</h4>
+        <ul class="footer__links">
+          <li><a href="about.html">About Our Clinic</a></li>
+          <li><a href="doctors.html">Our Cardiologists</a></li>
+          <li><a href="services.html">Services &amp; Diagnostics</a></li>
+          <li><a href="pricing.html">Packages &amp; Pricing</a></li>
+          <li><a href="blog.html">Heart Health Journal</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer__title">Patient Care</h4>
+        <ul class="footer__links">
+          <li><a href="patient-dashboard.html">Patient Portal</a></li>
+          <li><a href="patient-dashboard.html#reports">Test Reports</a></li>
+          <li><a href="patient-dashboard.html#medications">Medication Reminders</a></li>
+          <li><a href="service-details.html">Appointments</a></li>
+          <li><a href="contact.html">Help &amp; Support</a></li>
+        </ul>
+      </div>
+      <div class="footer__news">
+        <h4 class="footer__title">Heart Health, Delivered</h4>
+        <p>Monthly insights from our cardiologists — prevention, nutrition and the latest in cardiac care.</p>
+        <form class="newsletter" data-newsletter><input type="email" placeholder="Your email address" aria-label="Email address"><button class="btn btn--teal btn--sm" type="submit">Subscribe</button></form>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2026 Cardia Heart &amp; Vascular Clinic. All rights reserved.</span>
+      <span><a href="#">Privacy</a> · <a href="#">Terms</a> · <a href="#">Accessibility</a> · Fictional demo content</span>
+    </div>
+  </div>
+</footer><div class="toast-wrap" aria-live="polite"></div>
+<button class="to-top" id="toTop" aria-label="Back to top"><svg class="ico"><use href="#i-arrow-up"/></svg></button>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

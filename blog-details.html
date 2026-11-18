@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#FAF9F6">
+<meta name="description" content="Evidence-based guidance on building a sustainable heart-healthy diet, written by Cardia preventive cardiologist Dr. Amelia Hart.">
+<meta name="keywords" content="cardiology, heart care, cardiologist, cardiac diagnostics, preventive cardiology">
+<title>The Heart-Healthy Plate | Cardia Heart Journal</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/variables.css">
+<link rel="stylesheet" href="assets/css/base.css">
+<link rel="stylesheet" href="assets/css/components.css">
+<link rel="stylesheet" href="assets/css/layout.css">
+<link rel="stylesheet" href="assets/css/pages.css">
+<link rel="stylesheet" href="assets/css/dashboard.css">
+<link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body><a class="skip-link" href="#main">Skip to content</a>
+<div class="topbar">
+  <div class="container container--wide topbar__inner">
+    <ul class="topbar__list">
+      <li><a href="tel:+18005550192"><svg class="ico ico--sm"><use href="#i-phone"/></svg> +1 (800) 555-0192</a></li>
+      <li><a href="mailto:care@cardiaclinic.com"><svg class="ico ico--sm"><use href="#i-mail"/></svg> care@cardiaclinic.com</a></li>
+      <li><span><svg class="ico ico--sm"><use href="#i-clock"/></svg> Mon–Sat · 8:00–20:00</span></li>
+      <li><span><svg class="ico ico--sm"><use href="#i-pin"/></svg> 1200 Park Avenue, New York</span></li>
+    </ul>
+    <div class="topbar__tools">
+      <button class="tool-btn" id="themeToggle" data-theme-toggle aria-label="Toggle theme"><span data-theme-icon></span></button>
+      <button class="tool-btn" id="dirToggle" data-dir-toggle aria-label="Toggle layout direction"><span data-dir-label>RTL</span></button>
+    </div>
+  </div>
+</div>
+<header class="header">
+  <div class="container container--wide header__inner">
+    <a href="index.html" class="logo" aria-label="Cardia Heart Clinic home">
+      <span class="logo__mark"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#fff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l7.8-7.6 1.1-1.1a5.5 5.5 0 0 0-.1-7.7z"/><path d="M3 12h4l2-4 3 8 2-4h4"/></svg></span>
+      <span class="logo__text"><span class="logo__name">Cardia</span><span class="logo__sub">Heart &amp; Vascular Care</span></span>
+    </a>
+    <nav class="nav" aria-label="Primary navigation">
+      <div class="nav__item"><a class="nav__link" href="index.html">Home</a></div>
+      <div class="nav__item"><a class="nav__link" href="about.html">About</a></div>
+      <div class="nav__item"><a class="nav__link" href="services.html">Services <svg class="ico ico--sm"><use href="#i-chevron"/></svg></a>
+        <div class="nav__dropdown">
+          <a href="services.html">Cardiac Diagnostics <span>›</span></a>
+          <a href="service-details.html">Consultations <span>›</span></a>
+          <a href="service-details.html">Interventional Care <span>›</span></a>
+          <a href="pricing.html">Packages &amp; Pricing <span>›</span></a>
+        </div>
+      </div>
+      <div class="nav__item"><a class="nav__link" href="doctors.html">Doctors</a></div>
+      <div class="nav__item"><a class="nav__link" href="blog.html">Insights</a></div>
+      <div class="nav__item"><a class="nav__link" href="pricing.html">Pricing</a></div>
+      <div class="nav__item"><a class="nav__link" href="contact.html">Contact</a></div>
+      <div class="nav__item"><a class="nav__link nav__link--port" href="patient-dashboard.html">Patient Portal</a></div>
+    </nav>
+    <div class="header__cta">
+      <div class="header__phone"><i><svg class="ico"><use href="#i-phone"/></svg></i><div><small>Need help?</small><strong>+1 (800) 555-0192</strong></div></div>
+      <button class="btn btn--primary btn--sm" data-book>Book Appointment <svg class="ico ico--sm"><use href="#i-arrow"/></svg></button>
+      <button class="burger" data-menu-open aria-label="Open navigation"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header><div class="mobile-menu" id="mobileMenu">
+  <div class="mobile-menu__backdrop" data-menu-close></div>
+  <div class="mobile-menu__panel">
+    <div class="mobile-menu__head">
+      <span class="logo"><span class="logo__mark"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#fff" stroke-width="1.7"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l7.8-7.6 1.1-1.1a5.5 5.5 0 0 0-.1-7.7z"/></svg></span><span class="logo__text"><span class="logo__name">Cardia</span><span class="logo__sub">Heart Care</span></span></span>
+      <button class="modal__close" data-menu-close aria-label="Close menu"><svg class="ico"><use href="#i-close"/></svg></button>
+    </div>
+    <nav class="mobile-nav" aria-label="Mobile navigation">
+      <a href="index.html">Home <span>›</span></a>
+      <a href="about.html">About Us <span>›</span></a>
+      <a href="services.html">Services <span>›</span></a>
+      <a href="service-details.html">Service Details <span>›</span></a>
+      <a href="doctors.html">Our Doctors <span>›</span></a>
+      <a href="doctor-details.html">Doctor Profile <span>›</span></a>
+      <a href="blog.html">Insights <span>›</span></a>
+      <a href="contact.html">Contact <span>›</span></a>
+      <a href="pricing.html">Pricing <span>›</span></a>
+      <a href="patient-dashboard.html">Patient Portal <span>›</span></a>
+      <a href="admin-dashboard.html">Admin Portal <span>›</span></a>
+    </nav>
+    <div class="mobile-menu__foot"><a class="btn btn--primary btn--block" href="contact.html" data-book>Book an Appointment <svg class="ico ico--sm"><use href="#i-arrow"/></svg></a></div>
+  </div>
+</div><main id="main">
+  <section class="section" style="padding-top:var(--s-9)">
+    <div class="container container--narrow">
+      <nav class="breadcrumb" aria-label="Breadcrumb"><a href="index.html">Home</a><svg class="ico ico--sm"><use href="#i-arrow"/></svg><a href="blog.html">Heart Journal</a><svg class="ico ico--sm"><use href="#i-arrow"/></svg><span>Heart-Healthy Plate</span></nav>
+      <div class="text-center"><span class="badge badge--teal">Nutrition · 7 min read</span><h1 class="h-1 mt-4">The heart-healthy plate: what the evidence actually says</h1><div class="post-card__meta justify-center mt-5" style="justify-content:center"><span><svg class="ico ico--sm"><use href="#i-user"/></svg> Dr. Amelia Hart</span><span><svg class="ico ico--sm"><use href="#i-calendar"/></svg> 12 November 2026</span></div></div>
+      <div class="ratio ratio--16-9 mt-8 rounded-lg"><img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=1400&q=85" alt="A colourful, heart-healthy meal"></div>
+    </div>
+  </section>
+
+  <section class="section section--sm">
+    <div class="container container--narrow article-body" data-reveal>
+      <p class="lead">If you have ever tried to eat "better" for your heart, you have probably met a bewildering array of advice — low fat, low carb, superfoods, detoxes. The good news is that the evidence is far simpler and far less dramatic than the headlines suggest.</p>
+      <p>A heart-healthy diet is not a short-term intervention. It is a flexible pattern of eating that you can sustain for years. The most consistently supported approach emphasises whole foods, plants and healthy fats while limiting highly processed products.</p>
+      <h3>Build the plate, not the rules</h3>
+      <p>Rather than counting every calorie, start with the proportions on your plate. A useful visual is to divide it into roughly half vegetables and fruit, a quarter whole grains and a quarter quality protein, with a small amount of unsaturated fat.</p>
+      <ul><li><strong>Colour is a clue.</strong> Different coloured plants provide different antioxidants and fibres. Aim for variety across the week rather than perfection on any single day.</li><li><strong>Choose whole grains.</strong> Oats, brown rice, quinoa and wholegrain bread retain fibre that helps manage cholesterol and blood sugar.</li><li><strong>Prioritise unsaturated fats.</strong> Olive oil, nuts, seeds and oily fish support healthy cholesterol profiles when they replace saturated fats.</li><li><strong>Reduce, don't eliminate.</strong> Highly processed foods, excess salt and added sugars are worth limiting — but an occasional portion is not a failure.</li></ul>
+      <blockquote>“The best diet for your heart is the one you can happily follow for the next twenty years.”</blockquote>
+      <h3>What about salt, cholesterol and coffee?</h3>
+      <p>For most people, reducing salt means cutting back on processed and restaurant foods rather than reaching for the salt shaker. Dietary cholesterol has a smaller effect on blood cholesterol than saturated fat, so focus on the fat source first. Moderate coffee consumption is generally fine for most people, though it is worth discussing if you have an irregular rhythm or uncontrolled blood pressure.</p>
+      <h3>Make it work in real life</h3>
+      <p>Sustainable change comes from small, repeatable decisions. Keep washed fruit visible, stock your freezer with vegetables, and plan two or three simple meals you genuinely enjoy. If a meal is shared with family or friends, the social benefit matters too.</p>
+      <p>If you have an existing heart condition, are taking medication or have specific nutritional needs, speak with your cardiologist before making significant changes. A personalised plan is always better than a generic one.</p>
+      <div class="article__share"><strong class="small">Share this article</strong><a href="#" aria-label="Share on Facebook">fb</a><a href="#" aria-label="Share on X">x</a><a href="#" aria-label="Share on LinkedIn">in</a><a href="#" aria-label="Copy link"><svg class="ico ico--sm"><use href="#i-mail"/></svg></a></div>
+      <div class="author-box"><img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?auto=format&fit=crop&w=300&q=80" alt="Dr. Amelia Hart"><div><h5>Dr. Amelia Hart</h5><p class="small text-muted mb-0">MD, FACC · Director of Preventive Cardiology at Cardia. Dr. Hart writes about risk reduction, lipids and practical lifestyle medicine.</p></div></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container container--wide">
+      <div class="grid-2 gap-6">
+        <div data-reveal><span class="eyebrow">In short</span><h2 class="h-2 sec-title">Three things to take away.</h2><p class="lead">If you remember nothing else from this article, let it be these.</p><ul class="check-list mt-5"><li>Build meals around plants, whole grains and unsaturated fats rather than chasing fad diets.</li><li>Small, repeatable changes are more effective than short bursts of perfection.</li><li>Personalise the plan with your cardiologist, especially if you take medication or have a diagnosis.</li></ul></div>
+        <div class="card card__body" data-reveal="right"><span class="badge badge--teal">Clinically reviewed</span><h3 class="card__title mt-4">Reviewed by our cardiac team</h3><p class="card__text">Every article in the Cardia Heart Journal is reviewed by a practising cardiologist to ensure the guidance is accurate, current and genuinely useful.</p><div class="flex items-center gap-3 mt-5"><img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?auto=format&fit=crop&w=200&q=80" alt="Dr. Amelia Hart" style="width:52px;height:52px;border-radius:50%;object-fit:cover"><div><strong class="small">Dr. Amelia Hart</strong><div class="tiny text-muted">MD, FACC · Preventive Cardiology</div></div></div></div>
+      </div>
+    </div>
+  </section>
+  <section class="section section--tint">
+    <div class="container container--wide">
+      <div class="sec-head sec-head--split" data-reveal><div><span class="eyebrow">Keep reading</span><h2 class="h-2 sec-title">Related insights.</h2></div><a class="link-more" href="blog.html">All articles <svg class="ico ico--sm"><use href="#i-arrow"/></svg></a></div>
+      <div class="grid-3">
+        <article class="post-card" data-reveal><div class="post-card__media ratio"><img src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=900&q=85" alt="Stethoscope and clinical instruments"></div><div class="post-card__body"><div class="post-card__meta"><span>Prevention</span><span>7 min read</span></div><h3 class="post-card__title">Understanding your blood pressure numbers</h3><a class="card__link" href="blog-details.html">Read more <svg class="ico ico--sm"><use href="#i-arrow"/></svg></a></div></article>
+        <article class="post-card" data-reveal data-reveal-delay="1"><div class="post-card__media ratio"><img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=900&q=85" alt="Exercise outdoors"></div><div class="post-card__body"><div class="post-card__meta"><span>Lifestyle</span><span>6 min read</span></div><h3 class="post-card__title">Exercise safely after a cardiac diagnosis</h3><a class="card__link" href="blog-details.html">Read more <svg class="ico ico--sm"><use href="#i-arrow"/></svg></a></div></article>
+        <article class="post-card" data-reveal data-reveal-delay="2"><div class="post-card__media ratio"><img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=900&q=85" alt="Calm relaxation"></div><div class="post-card__body"><div class="post-card__meta"><span>Lifestyle</span><span>5 min read</span></div><h3 class="post-card__title">Stress and your heart: what the research shows</h3><a class="card__link" href="blog-details.html">Read more <svg class="ico ico--sm"><use href="#i-arrow"/></svg></a></div></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--mist">
+    <div class="container container--wide">
+      <div class="sec-head sec-head--center" data-reveal><span class="eyebrow eyebrow--center">Keep learning</span><h2 class="h-2 sec-title">More from our heart health library.</h2></div>
+      <div class="grid-3">
+        <a class="card card--hover card__body" href="blog.html" data-reveal><div class="card__icon"><svg class="ico"><use href="#i-brain"/></svg></div><h3 class="card__title">The Heart Journal</h3><p class="card__text">Clear, practical guidance written and reviewed by our cardiology team.</p></a>
+        <a class="card card--hover card__body" href="services.html" data-reveal data-reveal-delay="1"><div class="card__icon card__icon--teal"><svg class="ico"><use href="#i-shield"/></svg></div><h3 class="card__title">Preventive Screening</h3><p class="card__text">Understand your personal risk and take action before symptoms appear.</p></a>
+        <a class="card card--hover card__body" href="contact.html" data-reveal data-reveal-delay="2"><div class="card__icon"><svg class="ico"><use href="#i-phone"/></svg></div><h3 class="card__title">Ask a Specialist</h3><p class="card__text">Bring your questions to a cardiologist who will listen and explain.</p></a>
+      </div>
+    </div>
+  </section>
+  <section class="section section--sm">
+    <div class="container container--wide"><div class="cta-band" data-reveal><div class="cta-band__inner"><div><span class="eyebrow eyebrow--light">Personalised advice</span><h2>Want guidance specific to your heart?</h2><p>A short consultation with our preventive cardiology team can make all the difference.</p></div><button class="btn btn--light btn--lg" data-book="Preventive Heart Screening">Book a Consultation <svg class="ico ico--sm"><use href="#i-arrow"/></svg></button></div></div></div>
+  </section>
+</main><div class="modal" id="bookingModal" role="dialog" aria-modal="true" aria-labelledby="bookingTitle">
+  <div class="modal__backdrop" data-modal-close></div>
+  <div class="modal__dialog">
+    <div class="modal__head">
+      <div><span class="eyebrow">Patient care</span><h3 class="modal__title" id="bookingTitle">Book an Appointment</h3></div>
+      <button class="modal__close" data-modal-close aria-label="Close"><svg class="ico"><use href="#i-close"/></svg></button>
+    </div>
+    <div class="modal__body">
+      <form id="bookingForm" novalidate>
+        <div class="form-row">
+          <div class="form-group"><label class="form-label" for="bookName">Full name *</label><input class="form-control" id="bookName" data-validate="text" placeholder="Your full name"></div>
+          <div class="form-group"><label class="form-label" for="bookPhone">Phone *</label><input class="form-control" id="bookPhone" data-validate="phone" placeholder="+1 800 000 0000"></div>
+        </div>
+        <div class="form-group"><label class="form-label" for="bookEmail">Email address *</label><input class="form-control" type="email" id="bookEmail" data-validate="email" placeholder="you@example.com"></div>
+        <div class="form-row">
+          <div class="form-group"><label class="form-label" for="bookService">Service</label><select class="form-control" id="bookService"><option>General Cardiology Consultation</option><option>ECG &amp; Heart Rhythm Test</option><option>Echocardiogram</option><option>Stress Test</option><option>Preventive Heart Screening</option></select></div>
+          <div class="form-group"><label class="form-label" for="bookDoctor">Preferred cardiologist</label><select class="form-control" id="bookDoctor"><option>No preference</option><option>Dr. Amelia Hart</option><option>Dr. Marcus Chen</option><option>Dr. Priya Raman</option><option>Dr. Daniel Ortiz</option></select></div>
+        </div>
+        <div class="form-row">
+          <div class="form-group"><label class="form-label" for="bookDate">Preferred date *</label><input class="form-control" type="date" id="bookDate" data-validate="text"></div>
+          <div class="form-group"><label class="form-label" for="bookType">Consultation type</label><select class="form-control" id="bookType"><option>At the clinic</option><option>Online / video consultation</option><option>Home visit</option></select></div>
+        </div>
+        <div class="form-group"><label class="form-label">Available time slots</label><div class="flex flex-wrap gap-2"><button type="button" class="filter-btn time-slot">09:00 AM</button><button type="button" class="filter-btn time-slot is-active">10:30 AM</button><button type="button" class="filter-btn time-slot">12:00 PM</button><button type="button" class="filter-btn time-slot">02:30 PM</button><button type="button" class="filter-btn time-slot">04:00 PM</button></div></div>
+        <div class="form-group"><label class="form-label">Consultation preference</label><div class="flex flex-wrap gap-2"><button type="button" class="filter-btn consult-opt is-active"><svg class="ico ico--sm"><use href="#i-building"/></svg> Clinic visit</button><button type="button" class="filter-btn consult-opt"><svg class="ico ico--sm"><use href="#i-video"/></svg> Online</button></div></div>
+        <div class="form-group"><label class="form-label" for="bookNotes">Anything we should know?</label><textarea class="form-control" id="bookNotes" placeholder="Optional notes for your care team"></textarea></div>
+        <button class="btn btn--primary btn--block btn--lg" type="submit">Confirm Appointment <svg class="ico ico--sm"><use href="#i-arrow"/></svg></button>
+        <p class="tiny text-muted text-center mt-4 mb-0">This is a demonstration form. No real appointment is created.</p>
+      </form>
+    </div>
+  </div>
+</div><footer class="footer">
+  <div class="container container--wide">
+    <div class="footer__grid">
+      <div class="footer__about">
+        <a href="index.html" class="logo"><span class="logo__mark"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#fff" stroke-width="1.7"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l7.8-7.6 1.1-1.1a5.5 5.5 0 0 0-.1-7.7z"/><path d="M3 12h4l2-4 3 8 2-4h4"/></svg></span><span class="logo__text"><span class="logo__name">Cardia</span><span class="logo__sub">Heart &amp; Vascular Care</span></span></a>
+        <p>A modern cardiology practice combining clinical precision with genuinely human care. Your heart, in expert hands.</p>
+        <ul class="footer__contact mt-5">
+          <li><svg class="ico"><use href="#i-pin"/></svg><span>1200 Park Avenue, Suite 400<br>New York, NY 10029</span></li>
+          <li><svg class="ico"><use href="#i-phone"/></svg><span>+1 (800) 555-0192</span></li>
+          <li><svg class="ico"><use href="#i-mail"/></svg><span>care@cardiaclinic.com</span></li>
+        </ul>
+        <div class="footer__social"><a href="#" aria-label="Instagram">ig</a><a href="#" aria-label="Facebook">fb</a><a href="#" aria-label="LinkedIn">in</a><a href="#" aria-label="X">x</a></div>
+      </div>
+      <div>
+        <h4 class="footer__title">Explore</h4>
+        <ul class="footer__links">
+          <li><a href="about.html">About Our Clinic</a></li>
+          <li><a href="doctors.html">Our Cardiologists</a></li>
+          <li><a href="services.html">Services &amp; Diagnostics</a></li>
+          <li><a href="pricing.html">Packages &amp; Pricing</a></li>
+          <li><a href="blog.html">Heart Health Journal</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer__title">Patient Care</h4>
+        <ul class="footer__links">
+          <li><a href="patient-dashboard.html">Patient Portal</a></li>
+          <li><a href="patient-dashboard.html#reports">Test Reports</a></li>
+          <li><a href="patient-dashboard.html#medications">Medication Reminders</a></li>
+          <li><a href="service-details.html">Appointments</a></li>
+          <li><a href="contact.html">Help &amp; Support</a></li>
+        </ul>
+      </div>
+      <div class="footer__news">
+        <h4 class="footer__title">Heart Health, Delivered</h4>
+        <p>Monthly insights from our cardiologists — prevention, nutrition and the latest in cardiac care.</p>
+        <form class="newsletter" data-newsletter><input type="email" placeholder="Your email address" aria-label="Email address"><button class="btn btn--teal btn--sm" type="submit">Subscribe</button></form>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2026 Cardia Heart &amp; Vascular Clinic. All rights reserved.</span>
+      <span><a href="#">Privacy</a> · <a href="#">Terms</a> · <a href="#">Accessibility</a> · Fictional demo content</span>
+    </div>
+  </div>
+</footer><div class="toast-wrap" aria-live="polite"></div>
+<button class="to-top" id="toTop" aria-label="Back to top"><svg class="ico"><use href="#i-arrow-up"/></svg></button>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

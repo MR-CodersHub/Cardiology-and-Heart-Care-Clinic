@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#FAF9F6">
+<meta name="description" content="Secure demo patient portal with appointments, test reports, medication reminders, follow-up care and profile settings.">
+<title>Patient Dashboard | Cardia Patient Portal</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/variables.css">
+<link rel="stylesheet" href="assets/css/base.css">
+<link rel="stylesheet" href="assets/css/components.css">
+<link rel="stylesheet" href="assets/css/layout.css">
+<link rel="stylesheet" href="assets/css/pages.css">
+<link rel="stylesheet" href="assets/css/dashboard.css">
+<link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a><div class="dash-backdrop" id="dashBackdrop"></div>
+<div class="dash">
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar__brand">
+      <span class="logo__mark"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#fff" stroke-width="1.7"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l7.8-7.6 1.1-1.1a5.5 5.5 0 0 0-.1-7.7z"/><path d="M3 12h4l2-4 3 8 2-4h4"/></svg></span>
+      <span class="logo__text"><span class="logo__name">Cardia</span><span class="logo__sub">Patient Portal</span></span>
+      <button class="modal__close" style="margin-inline-start:auto;color:#fff" data-sidebar-close aria-label="Close menu"><svg class="ico"><use href="#i-close"/></svg></button>
+    </div>
+    <nav class="sidebar__nav" aria-label="Dashboard navigation">
+      <div class="sidebar__label">My care</div>
+      <a href="#overview" class="is-active"><svg class="ico"><use href="#i-activity"/></svg> Overview</a>
+      <a href="#appointments"><svg class="ico"><use href="#i-calendar"/></svg> Appointments <span class="nav-count">3</span></a>
+      <a href="#reports"><svg class="ico"><use href="#i-file"/></svg> Test Reports</a>
+      <a href="#medications"><svg class="ico"><use href="#i-pill"/></svg> Medications <span class="nav-count">4</span></a>
+      <a href="#followups"><svg class="ico"><use href="#i-heart"/></svg> Follow-up Care</a>
+      <div class="sidebar__label">Account</div>
+      <a href="#doctors"><svg class="ico"><use href="#i-users"/></svg> My Doctors</a>
+      <a href="#notifications"><svg class="ico"><use href="#i-bell"/></svg> Notifications <span class="nav-count">4</span></a>
+      <a href="#settings"><svg class="ico"><use href="#i-gear"/></svg> Settings</a>
+      <a href="index.html"><svg class="ico"><use href="#i-logout"/></svg> Sign Out</a>
+    </nav>
+    <div class="sidebar__foot">
+      <div class="sidebar__help"><i><svg class="ico"><use href="#i-phone"/></svg></i><p>Need help with your care?</p><a class="btn btn--teal btn--sm" href="contact.html">Contact Us</a></div>
+    </div>
+  </aside>
+  <div class="dash__main">
+    <header class="dash-topbar">
+      <div class="dash-topbar__left">
+        <button class="dash-burger" data-sidebar-open aria-label="Open menu"><svg class="ico"><use href="#i-menu"/></svg></button>
+        <div><h1>Good morning, Jordan</h1><nav class="breadcrumb"><a href="index.html">Home</a><svg class="ico ico--sm"><use href="#i-arrow"/></svg><span>Patient Dashboard</span></nav></div>
+      </div>
+      <div class="dash-topbar__right">
+        <button class="dash-icon-btn" aria-label="Search"><svg class="ico"><use href="#i-search"/></svg></button>
+        <button class="dash-icon-btn" id="notifBadge" aria-label="Notifications" onclick="document.getElementById('notifications').scrollIntoView({behavior:'smooth'})"><svg class="ico"><use href="#i-bell"/></svg><span class="dot"></span></button>
+        <button class="dash-icon-btn" data-theme-toggle aria-label="Toggle theme"><span data-theme-icon></span></button>
+        <button class="dash-icon-btn" data-dir-toggle aria-label="Toggle direction" style="font-size:.68rem;font-weight:700" data-dir-label>RTL</button>
+        <div class="dash-user"><img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80" alt="Jordan Ellis"><div><strong>Jordan Ellis</strong><small>Patient ID · CH-20418</small></div><svg class="ico ico--sm"><use href="#i-chevron"/></svg></div>
+      </div>
+    </header>
+    <main class="dash__body" id="main">
+      <div class="dash__body--wide">        <!-- 1. OVERVIEW -->
+        <section id="overview">
+          <div class="flex items-center justify-between gap-3 flex-wrap mb-5"><div><span class="eyebrow">Your health at a glance</span><h2 class="h-3 mb-0">Overview</h2></div><button class="btn btn--primary btn--sm" data-book>Book Appointment <svg class="ico ico--sm"><use href="#i-plus"/></svg></button></div>
+          <div class="dash-grid">
+            <div class="dstat" data-reveal><div><div class="dstat__label">Upcoming visits</div><div class="dstat__value">3</div><div class="dstat__trend up"><svg class="ico ico--sm"><use href="#i-calendar"/></svg> Next in 4 days</div></div><span class="dstat__icon dstat__icon--burgundy"><svg class="ico"><use href="#i-calendar"/></svg></span></div>
+            <div class="dstat" data-reveal data-reveal-delay="1"><div><div class="dstat__label">New reports</div><div class="dstat__value">2</div><div class="dstat__trend up"><svg class="ico ico--sm"><use href="#i-file"/></svg> Ready to view</div></div><span class="dstat__icon dstat__icon--teal"><svg class="ico"><use href="#i-file"/></svg></span></div>
+            <div class="dstat" data-reveal data-reveal-delay="2"><div><div class="dstat__label">Medications today</div><div class="dstat__value" id="medProgressTop">1 of 4</div><div class="dstat__trend up"><svg class="ico ico--sm"><use href="#i-pill"/></svg> 3 remaining</div></div><span class="dstat__icon dstat__icon--mist"><svg class="ico"><use href="#i-pill"/></svg></span></div>
+            <div class="dstat" data-reveal data-reveal-delay="3"><div><div class="dstat__label">Heart health score</div><div class="dstat__value">82<span style="font-size:.45em">/100</span></div><div class="dstat__trend up"><svg class="ico ico--sm"><use href="#i-arrow-up"/></svg> +6 this quarter</div></div><span class="dstat__icon dstat__icon--gold"><svg class="ico"><use href="#i-heart"/></svg></span></div>
+          </div>
+          <div class="dash-row">
+            <div class="panel" data-reveal>
+              <div class="panel__head"><div><h3 class="panel__title">Heart health trend</h3><p class="panel__sub">Wellbeing score over the last 8 months</p></div><span class="badge badge--teal">Improving</span></div>
+              <div class="panel__body"><div class="chart-wrap"><div class="chart"><div class="chart__bar" data-height="48"><span>Mar</span></div><div class="chart__bar" data-height="54"><span>Apr</span></div><div class="chart__bar" data-height="51"><span>May</span></div><div class="chart__bar" data-height="63"><span>Jun</span></div><div class="chart__bar" data-height="60"><span>Jul</span></div><div class="chart__bar" data-height="71"><span>Aug</span></div><div class="chart__bar" data-height="76"><span>Sep</span></div><div class="chart__bar" data-height="82"><span>Oct</span></div></div></div></div>
+            </div>
+            <div class="panel" data-reveal>
+              <div class="panel__head"><h3 class="panel__title">Health metrics</h3><svg class="ico text-muted"><use href="#i-activity"/></svg></div>
+              <div class="panel__body"><div class="metric-ring mb-5"><div class="ring ring--heart"><span>82</span></div><div><strong class="small">Heart score</strong><p class="small text-muted mb-0">Excellent progress this quarter</p></div></div><div class="metric-ring"><div class="ring ring--steps"><span>64</span></div><div><strong class="small">Weekly activity</strong><p class="small text-muted mb-0">8,400 average daily steps</p></div></div><div class="grid-2 gap-3 mt-6"><div class="admin-mini-stat"><i><svg class="ico"><use href="#i-pulse"/></svg></i><div><strong>72</strong><span>Resting bpm</span></div></div><div class="admin-mini-stat"><i><svg class="ico"><use href="#i-activity"/></svg></i><div><strong>118/76</strong><span>Blood pressure</span></div></div></div></div>
+            </div>
+          </div>
+          <div class="dash-row dash-row--sidebar">
+            <div class="panel" data-reveal>
+              <div class="panel__head"><div><h3 class="panel__title">Upcoming consultations</h3><p class="panel__sub">Your next scheduled appointments</p></div><a class="link-more" href="#appointments">View all <svg class="ico ico--sm"><use href="#i-arrow"/></svg></a></div>
+              <div class="panel__body">
+                <div class="appt-card"><div class="appt-card__date"><strong>21</strong><span>Nov</span></div><div class="appt-card__info"><h5>Dr. Amelia Hart · Follow-up consultation</h5><p>General cardiology · Park Avenue Clinic</p><span class="appt-card__time"><svg class="ico ico--sm"><use href="#i-clock"/></svg> 10:30 AM · 40 minutes</span></div><span class="badge badge--success">Confirmed</span></div>
+                <div class="appt-card"><div class="appt-card__date"><strong>28</strong><span>Nov</span></div><div class="appt-card__info"><h5>Dr. Priya Raman · Echocardiogram</h5><p>Cardiac imaging · Brooklyn Centre</p><span class="appt-card__time"><svg class="ico ico--sm"><use href="#i-clock"/></svg> 02:30 PM · 45 minutes</span></div><span class="badge badge--success">Confirmed</span></div>
+                <div class="appt-card"><div class="appt-card__date"><strong>09</strong><span>Dec</span></div><div class="appt-card__info"><h5>Dr. Daniel Ortiz · Rhythm review</h5><p>Online video consultation</p><span class="appt-card__time"><svg class="ico ico--sm"><use href="#i-clock"/></svg> 11:00 AM · 20 minutes</span></div><span class="badge badge--warn">Pending</span></div>
+              </div>
+            </div>
+            <div class="panel" data-reveal>
+              <div class="panel__head"><h3 class="panel__title">Care timeline</h3></div>
+              <div class="panel__body"><div class="dash-timeline"><div class="dash-timeline__item"><strong>Report reviewed</strong><p>Lipid panel · 14 Nov 2026</p></div><div class="dash-timeline__item"><strong>Medication adjusted</strong><p>By Dr. Hart · 02 Nov 2026</p></div><div class="dash-timeline__item"><strong>Follow-up booked</strong><p>21 Nov 2026 at 10:30 AM</p></div><div class="dash-timeline__item"><strong>ECG completed</strong><p>Park Avenue Clinic · 18 Oct 2026</p></div></div></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 2. APPOINTMENTS -->
+        <section id="appointments" class="mt-11">
+          <div class="flex items-center justify-between gap-3 flex-wrap mb-5"><div><span class="eyebrow">Your schedule</span><h2 class="h-3 mb-0">Appointments</h2></div><button class="btn btn--primary btn--sm" data-book>New Appointment <svg class="ico ico--sm"><use href="#i-plus"/></svg></button></div>
+          <div class="panel" data-reveal>
+            <div class="panel__head"><div><h3 class="panel__title">Appointment history &amp; status</h3><p class="panel__sub">All sample appointments — fictional data</p></div><input class="form-control" style="max-width:220px" placeholder="Search appointments" data-table-search="#apptTable" aria-label="Search appointments"></div>
+            <div class="panel__body panel__body--flush table-scroll">
+              <table class="dash-table" id="apptTable"><thead><tr><th>Doctor / Service</th><th>Date &amp; time</th><th>Type</th><th>Status</th><th style="text-align:end">Actions</th></tr></thead><tbody>
+                <tr><td><div class="person"><img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?auto=format&fit=crop&w=200&q=80" alt=""><div><strong>Dr. Amelia Hart</strong><small>Follow-up consultation</small></div></div></td><td>21 Nov 2026<br><small class="text-faint">10:30 AM</small></td><td><span class="badge badge--mist">Clinic</span></td><td><span class="status status--confirmed">Confirmed</span></td><td style="text-align:end"><button class="action-mini" data-reschedule title="Reschedule"><svg class="ico ico--sm"><use href="#i-calendar"/></svg></button> <button class="action-mini" data-cancel-appt title="Cancel"><svg class="ico ico--sm"><use href="#i-close"/></svg></button></td></tr>
+                <tr><td><div class="person"><img src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?auto=format&fit=crop&w=200&q=80" alt=""><div><strong>Dr. Priya Raman</strong><small>Echocardiogram</small></div></div></td><td>28 Nov 2026<br><small class="text-faint">02:30 PM</small></td><td><span class="badge badge--mist">Clinic</span></td><td><span class="status status--confirmed">Confirmed</span></td><td style="text-align:end"><button class="action-mini" data-reschedule title="Reschedule"><svg class="ico ico--sm"><use href="#i-calendar"/></svg></button> <button class="action-mini" data-cancel-appt title="Cancel"><svg class="ico ico--sm"><use href="#i-close"/></svg></button></td></tr>
+                <tr><td><div class="person"><img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=200&q=80" alt=""><div><strong>Dr. Daniel Ortiz</strong><small>Rhythm review</small></div></div></td><td>09 Dec 2026<br><small class="text-faint">11:00 AM</small></td><td><span class="badge badge--teal">Online</span></td><td><span class="status status--pending">Pending</span></td><td style="text-align:end"><button class="action-mini" data-reschedule title="Reschedule"><svg class="ico ico--sm"><use href="#i-calendar"/></svg></button> <button class="action-mini" data-cancel-appt title="Cancel"><svg class="ico ico--sm"><use href="#i-close"/></svg></button></td></tr>
+                <tr><td><div class="person"><img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=200&q=80" alt=""><div><strong>Dr. Marcus Chen</strong><small>Pre-procedure assessment</small></div></div></td><td>18 Oct 2026<br><small class="text-faint">09:00 AM</small></td><td><span class="badge badge--mist">Clinic</span></td><td><span class="status status--completed">Completed</span></td><td style="text-align:end"><button class="action-mini" data-view-report title="View"><svg class="ico ico--sm"><use href="#i-eye"/></svg></button></td></tr>
+                <tr><td><div class="person"><img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?auto=format&fit=crop&w=200&q=80" alt=""><div><strong>Dr. Amelia Hart</strong><small>Initial consultation</small></div></div></td><td>02 Sep 2026<br><small class="text-faint">03:00 PM</small></td><td><span class="badge badge--teal">Online</span></td><td><span class="status status--completed">Completed</span></td><td style="text-align:end"><button class="action-mini" data-view-report title="View"><svg class="ico ico--sm"><use href="#i-eye"/></svg></button></td></tr>
+              </tbody></table>
+            </div>
+          </div>
+        </section>
+
+        <!-- 3. REPORTS -->
+        <section id="reports" class="mt-11">
+          <div class="flex items-center justify-between gap-3 flex-wrap mb-5"><div><span class="eyebrow">Your results</span><h2 class="h-3 mb-0">Test Reports</h2></div><span class="badge badge--teal">2 new reports</span></div>
+          <div class="grid-4">
+            <div class="report-card" data-reveal><div class="report-card__top"><span class="report-card__icon"><svg class="ico"><use href="#i-activity"/></svg></span><span class="badge badge--success">New</span></div><div><h5>ECG Report</h5><div class="report-card__meta">14 Nov 2026 · Dr. D. Ortiz</div><div class="report-card__status">Normal sinus rhythm</div></div><div class="report-card__actions"><button data-view-report><svg class="ico ico--sm"><use href="#i-eye"/></svg> View</button><button data-download><svg class="ico ico--sm"><use href="#i-download"/></svg> PDF</button></div></div>
+            <div class="report-card" data-reveal data-reveal-delay="1"><div class="report-card__top"><span class="report-card__icon"><svg class="ico"><use href="#i-pulse"/></svg></span><span class="badge badge--success">New</span></div><div><h5>Lipid Panel</h5><div class="report-card__meta">12 Nov 2026 · Lab Services</div><div class="report-card__status">Within target range</div></div><div class="report-card__actions"><button data-view-report><svg class="ico ico--sm"><use href="#i-eye"/></svg> View</button><button data-download><svg class="ico ico--sm"><use href="#i-download"/></svg> PDF</button></div></div>
+            <div class="report-card" data-reveal data-reveal-delay="2"><div class="report-card__top"><span class="report-card__icon"><svg class="ico"><use href="#i-heart"/></svg></span><span class="badge badge--mist">Reviewed</span></div><div><h5>Echocardiogram</h5><div class="report-card__meta">28 Sep 2026 · Dr. P. Raman</div><div class="report-card__status">EF 62% · Normal</div></div><div class="report-card__actions"><button data-view-report><svg class="ico ico--sm"><use href="#i-eye"/></svg> View</button><button data-download><svg class="ico ico--sm"><use href="#i-download"/></svg> PDF</button></div></div>
+            <div class="report-card" data-reveal data-reveal-delay="3"><div class="report-card__top"><span class="report-card__icon"><svg class="ico"><use href="#i-file"/></svg></span><span class="badge badge--mist">Archived</span></div><div><h5>Stress Test</h5><div class="report-card__meta">15 Jun 2026 · Dr. M. Chen</div><div class="report-card__status">No ischemia detected</div></div><div class="report-card__actions"><button data-view-report><svg class="ico ico--sm"><use href="#i-eye"/></svg> View</button><button data-download><svg class="ico ico--sm"><use href="#i-download"/></svg> PDF</button></div></div>
+            <div class="report-card" data-reveal><div class="report-card__top"><span class="report-card__icon"><svg class="ico"><use href="#i-activity"/></svg></span><span class="badge badge--mist">Archived</span></div><div><h5>Holter Monitor</h5><div class="report-card__meta">02 Apr 2026 · Dr. D. Ortiz</div><div class="report-card__status">Occasional ectopy</div></div><div class="report-card__actions"><button data-view-report><svg class="ico ico--sm"><use href="#i-eye"/></svg> View</button><button data-download><svg class="ico ico--sm"><use href="#i-download"/></svg> PDF</button></div></div>
+            <div class="report-card" data-reveal data-reveal-delay="1"><div class="report-card__top"><span class="report-card__icon"><svg class="ico"><use href="#i-file"/></svg></span><span class="badge badge--mist">Archived</span></div><div><h5>Blood Panel</h5><div class="report-card__meta">10 Jan 2026 · Lab Services</div><div class="report-card__status">All values normal</div></div><div class="report-card__actions"><button data-view-report><svg class="ico ico--sm"><use href="#i-eye"/></svg> View</button><button data-download><svg class="ico ico--sm"><use href="#i-download"/></svg> PDF</button></div></div>
+            <div class="report-card" data-reveal data-reveal-delay="2"><div class="report-card__top"><span class="report-card__icon"><svg class="ico"><use href="#i-heart"/></svg></span><span class="badge badge--mist">Archived</span></div><div><h5>Cardiac CT</h5><div class="report-card__meta">18 Nov 2025 · Dr. P. Raman</div><div class="report-card__status">Mild calcification</div></div><div class="report-card__actions"><button data-view-report><svg class="ico ico--sm"><use href="#i-eye"/></svg> View</button><button data-download><svg class="ico ico--sm"><use href="#i-download"/></svg> PDF</button></div></div>
+            <div class="report-card" data-reveal data-reveal-delay="3"><div class="report-card__top"><span class="report-card__icon"><svg class="ico"><use href="#i-pulse"/></svg></span><span class="badge badge--mist">Archived</span></div><div><h5>Consultation Summary</h5><div class="report-card__meta">02 Sep 2025 · Dr. A. Hart</div><div class="report-card__status">Plan on file</div></div><div class="report-card__actions"><button data-view-report><svg class="ico ico--sm"><use href="#i-eye"/></svg> View</button><button data-download><svg class="ico ico--sm"><use href="#i-download"/></svg> PDF</button></div></div>
+          </div>
+        </section>
+
+        <!-- 4. MEDICATIONS -->
+        <section id="medications" class="mt-11">
+          <div class="flex items-center justify-between gap-3 flex-wrap mb-5"><div><span class="eyebrow">Daily routine</span><h2 class="h-3 mb-0">Medications &amp; Reminders</h2></div><span class="badge badge--teal" id="medProgress">1 of 4 taken</span></div>
+          <div class="dash-row dash-row--sidebar">
+            <div class="panel" data-reveal>
+              <div class="panel__head"><div><h3 class="panel__title">Today's schedule</h3><p class="panel__sub">Tap a box to mark a dose as taken</p></div><svg class="ico text-muted"><use href="#i-pill"/></svg></div>
+              <div class="panel__body">
+                <div class="med-item is-taken"><span class="med-item__checkbox is-done"><svg class="ico ico--sm"><use href="#i-check"/></svg></span><div class="med-item__info"><strong>Atorvastatin 20mg</strong><small>1 tablet · after breakfast</small></div><span class="med-item__time">08:00 AM</span></div>
+                <div class="med-item"><span class="med-item__checkbox"><svg class="ico ico--sm"><use href="#i-check"/></svg></span><div class="med-item__info"><strong>Bisoprolol 5mg</strong><small>1 tablet · with water</small></div><span class="med-item__time">09:00 AM</span></div>
+                <div class="med-item"><span class="med-item__checkbox"><svg class="ico ico--sm"><use href="#i-check"/></svg></span><div class="med-item__info"><strong>Aspirin 81mg</strong><small>1 tablet · after lunch</small></div><span class="med-item__time">01:00 PM</span></div>
+                <div class="med-item"><span class="med-item__checkbox"><svg class="ico ico--sm"><use href="#i-check"/></svg></span><div class="med-item__info"><strong>Vitamin D3 1000 IU</strong><small>1 capsule · with evening meal</small></div><span class="med-item__time">07:00 PM</span></div>
+                <p class="tiny text-faint mt-5 mb-0">Sample medication list for demonstration only. Not medical advice.</p>
+              </div>
+            </div>
+            <div class="panel" data-reveal>
+              <div class="panel__head"><h3 class="panel__title">Reminder settings</h3></div>
+              <div class="panel__body"><div class="metric-ring mb-5"><div class="ring ring--heart" style="background:conic-gradient(var(--teal) 0 86%,var(--surface-3) 86%)"><span>86%</span></div><div><strong class="small">Weekly adherence</strong><p class="small text-muted mb-0">6 of 7 days on schedule</p></div></div><ul class="check-list"><li>Push reminders 15 minutes before each dose</li><li>Email backup if a dose is missed</li><li>Refill alert when 7 days of stock remain</li></ul><button class="btn btn--outline btn--block btn--sm" data-demo-link>Manage Reminders</button></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 5. FOLLOW-UPS & DOCTORS -->
+        <section id="followups" class="mt-11">
+          <div class="flex items-center justify-between gap-3 flex-wrap mb-5"><div><span class="eyebrow">What comes next</span><h2 class="h-3 mb-0">Follow-up Care</h2></div></div>
+          <div class="grid-3">
+            <div class="card card__body" data-reveal><span class="badge badge--warn">Due in 10 days</span><h3 class="card__title mt-4">Repeat lipid panel</h3><p class="card__text">Dr. Hart recommended repeating your lipid panel 12 weeks after starting treatment.</p><button class="btn btn--outline btn--sm" data-book="Preventive Heart Screening">Book Test <svg class="ico ico--sm"><use href="#i-arrow"/></svg></button></div>
+            <div class="card card__body" data-reveal data-reveal-delay="1"><span class="badge badge--teal">Recommended</span><h3 class="card__title mt-4">Cardiac rehabilitation</h3><p class="card__text">A gentle, supervised programme to build strength and confidence after your diagnosis.</p><a class="btn btn--outline btn--sm" href="contact.html">Learn More <svg class="ico ico--sm"><use href="#i-arrow"/></svg></a></div>
+            <div class="card card__body" data-reveal data-reveal-delay="2"><span class="badge badge--mist">Self-care</span><h3 class="card__title mt-4">Daily movement plan</h3><p class="card__text">Aim for 30 minutes of moderate activity five days a week. Log progress in your portal.</p><button class="btn btn--outline btn--sm" data-demo-link>View Plan</button></div>
+          </div>
+          <div class="dash-row dash-row--equal mt-5">
+            <div class="panel" id="doctors" data-reveal>
+              <div class="panel__head"><div><h3 class="panel__title">My doctors</h3><p class="panel__sub">Your dedicated care team</p></div><a class="link-more" href="doctors.html">All <svg class="ico ico--sm"><use href="#i-arrow"/></svg></a></div>
+              <div class="panel__body">
+                <div class="appt-card"><img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?auto=format&fit=crop&w=200&q=80" alt="" style="width:48px;height:48px;border-radius:50%;object-fit:cover"><div class="appt-card__info"><h5>Dr. Amelia Hart</h5><p>Preventive Cardiology · Primary cardiologist</p><span class="appt-card__time">Last seen 21 Nov 2026</span></div><button class="action-mini" data-demo-link><svg class="ico ico--sm"><use href="#i-video"/></svg></button></div>
+                <div class="appt-card"><img src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?auto=format&fit=crop&w=200&q=80" alt="" style="width:48px;height:48px;border-radius:50%;object-fit:cover"><div class="appt-card__info"><h5>Dr. Priya Raman</h5><p>Cardiac Imaging</p><span class="appt-card__time">Last seen 28 Sep 2026</span></div><button class="action-mini" data-demo-link><svg class="ico ico--sm"><use href="#i-video"/></svg></button></div>
+                <div class="appt-card"><img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=200&q=80" alt="" style="width:48px;height:48px;border-radius:50%;object-fit:cover"><div class="appt-card__info"><h5>Dr. Daniel Ortiz</h5><p>Heart Rhythm Specialist</p><span class="appt-card__time">Last seen 18 Oct 2026</span></div><button class="action-mini" data-demo-link><svg class="ico ico--sm"><use href="#i-video"/></svg></button></div>
+              </div>
+            </div>
+            <div class="panel" data-reveal>
+              <div class="panel__head"><h3 class="panel__title">Consultation history</h3></div>
+              <div class="panel__body"><div class="dash-timeline"><div class="dash-timeline__item"><strong>Dr. Amelia Hart</strong><p>Follow-up · 21 Nov 2026 · Clinic</p></div><div class="dash-timeline__item"><strong>Dr. Daniel Ortiz</strong><p>Rhythm review · 18 Oct 2026 · Clinic</p></div><div class="dash-timeline__item"><strong>Dr. Amelia Hart</strong><p>Initial consultation · 02 Sep 2026 · Online</p></div><div class="dash-timeline__item"><strong>Dr. Marcus Chen</strong><p>Assessment · 12 Jul 2026 · Clinic</p></div></div></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 6. NOTIFICATIONS & SETTINGS -->
+        <section id="notifications" class="mt-11">
+          <div class="flex items-center justify-between gap-3 flex-wrap mb-5"><div><span class="eyebrow">Stay informed</span><h2 class="h-3 mb-0">Notifications &amp; Settings</h2></div><button class="btn btn--outline btn--sm" data-mark-read>Mark all as read</button></div>
+          <div class="dash-row dash-row--equal">
+            <div class="panel" data-reveal>
+              <div class="panel__head"><div><h3 class="panel__title">Notifications</h3><p class="panel__sub">Latest updates from your care team</p></div><svg class="ico text-muted"><use href="#i-bell"/></svg></div>
+              <div class="panel__body">
+                <div class="notif-item is-unread"><span class="notif-item__icon" style="background:var(--accent-soft);color:var(--accent)"><svg class="ico"><use href="#i-file"/></svg></span><div class="notif-item__text"><strong>New ECG report available</strong><p>Your report from 14 Nov is ready to view.</p><time>2 hours ago</time></div></div>
+                <div class="notif-item is-unread"><span class="notif-item__icon" style="background:var(--teal-100);color:var(--teal)"><svg class="ico"><use href="#i-calendar"/></svg></span><div class="notif-item__text"><strong>Appointment reminder</strong><p>Visit with Dr. Hart on 21 Nov at 10:30 AM.</p><time>Yesterday</time></div></div>
+                <div class="notif-item is-unread"><span class="notif-item__icon" style="background:rgba(217,164,65,.14);color:#B77A21"><svg class="ico"><use href="#i-pill"/></svg></span><div class="notif-item__text"><strong>Medication reminder</strong><p>Three doses remaining in today's schedule.</p><time>Yesterday</time></div></div>
+                <div class="notif-item is-unread"><span class="notif-item__icon" style="background:var(--mist);color:var(--navy)"><svg class="ico"><use href="#i-video"/></svg></span><div class="notif-item__text"><strong>Online consultation confirmed</strong><p>Rhythm review with Dr. Ortiz on 09 Dec.</p><time>3 days ago</time></div></div>
+              </div>
+            </div>
+            <div class="panel" id="settings" data-reveal>
+              <div class="panel__head"><div><h3 class="panel__title">Profile &amp; preferences</h3><p class="panel__sub">Keep your details up to date</p></div><svg class="ico text-muted"><use href="#i-gear"/></svg></div>
+              <div class="panel__body">
+                <form id="profileForm" novalidate>
+                  <div class="profile-grid">
+                    <div class="profile-avatar"><img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=300&q=80" alt="Jordan Ellis"><label class="avatar-upload">Change photo</label></div>
+                    <div><div class="form-row"><div class="form-group"><label class="form-label">First name</label><input class="form-control" value="Jordan" data-validate="text"></div><div class="form-group"><label class="form-label">Last name</label><input class="form-control" value="Ellis" data-validate="text"></div></div><div class="form-group"><label class="form-label">Email</label><input class="form-control" type="email" value="jordan.ellis@example.com" data-validate="email"></div><div class="form-group"><label class="form-label">Phone</label><input class="form-control" value="+1 800 555 0143" data-validate="phone"></div><button class="btn btn--primary btn--sm" type="submit">Save Changes <svg class="ico ico--sm"><use href="#i-check"/></svg></button></div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+        <p class="text-center text-faint tiny mt-11 mb-0">All patient information shown here is fictional sample data for demonstration purposes only.</p>      </div>
+    </main>
+  </div>
+</div><div class="toast-wrap" aria-live="polite"></div>
+<div class="modal" id="bookingModal" role="dialog" aria-modal="true" aria-labelledby="bookingTitle">
+  <div class="modal__backdrop" data-modal-close></div>
+  <div class="modal__dialog">
+    <div class="modal__head"><div><span class="eyebrow">Patient care</span><h3 class="modal__title" id="bookingTitle">Book an Appointment</h3></div><button class="modal__close" data-modal-close aria-label="Close"><svg class="ico"><use href="#i-close"/></svg></button></div>
+    <div class="modal__body">
+      <form id="bookingForm" novalidate>
+        <div class="form-row"><div class="form-group"><label class="form-label" for="bookName">Full name *</label><input class="form-control" id="bookName" data-validate="text" value="Jordan Ellis"></div><div class="form-group"><label class="form-label" for="bookPhone">Phone *</label><input class="form-control" id="bookPhone" data-validate="phone" value="+1 800 555 0143"></div></div>
+        <div class="form-group"><label class="form-label" for="bookEmail">Email address *</label><input class="form-control" type="email" id="bookEmail" data-validate="email" value="jordan.ellis@example.com"></div>
+        <div class="form-row"><div class="form-group"><label class="form-label" for="bookService">Service</label><select class="form-control" id="bookService"><option>General Cardiology Consultation</option><option>ECG &amp; Heart Rhythm Test</option><option>Echocardiogram</option><option>Stress Test</option><option>Preventive Heart Screening</option></select></div><div class="form-group"><label class="form-label" for="bookDoctor">Preferred cardiologist</label><select class="form-control" id="bookDoctor"><option>No preference</option><option>Dr. Amelia Hart</option><option>Dr. Marcus Chen</option><option>Dr. Priya Raman</option><option>Dr. Daniel Ortiz</option></select></div></div>
+        <div class="form-row"><div class="form-group"><label class="form-label" for="bookDate">Preferred date *</label><input class="form-control" type="date" id="bookDate" data-validate="text"></div><div class="form-group"><label class="form-label" for="bookType">Consultation type</label><select class="form-control" id="bookType"><option>At the clinic</option><option>Online / video consultation</option><option>Home visit</option></select></div></div>
+        <div class="form-group"><label class="form-label">Available time slots</label><div class="flex flex-wrap gap-2"><button type="button" class="filter-btn time-slot">09:00 AM</button><button type="button" class="filter-btn time-slot is-active">10:30 AM</button><button type="button" class="filter-btn time-slot">12:00 PM</button><button type="button" class="filter-btn time-slot">02:30 PM</button><button type="button" class="filter-btn time-slot">04:00 PM</button></div></div>
+        <div class="form-group"><label class="form-label">Consultation preference</label><div class="flex flex-wrap gap-2"><button type="button" class="filter-btn consult-opt is-active">Clinic visit</button><button type="button" class="filter-btn consult-opt">Online</button></div></div>
+        <p class="tiny text-muted mb-0">Demonstration form — no real appointment is created.</p>
+        <button class="btn btn--primary btn--block btn--lg mt-5" type="submit">Confirm Appointment <svg class="ico ico--sm"><use href="#i-arrow"/></svg></button>
+      </form>
+    </div>
+  </div>
+</div>
+<button class="to-top" id="toTop" aria-label="Back to top"><svg class="ico"><use href="#i-arrow-up"/></svg></button>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/dashboard.js"></script>
+</body>
+</html>

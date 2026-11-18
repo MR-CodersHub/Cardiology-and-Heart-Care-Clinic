@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#FAF9F6">
+<meta name="description" content="Transparent cardiology consultation and diagnostic pricing with care packages, test costs and insurance information.">
+<meta name="keywords" content="cardiology, heart care, cardiologist, cardiac diagnostics, preventive cardiology">
+<title>Pricing & Care Packages | Cardia Heart Clinic</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/variables.css">
+<link rel="stylesheet" href="assets/css/base.css">
+<link rel="stylesheet" href="assets/css/components.css">
+<link rel="stylesheet" href="assets/css/layout.css">
+<link rel="stylesheet" href="assets/css/pages.css">
+<link rel="stylesheet" href="assets/css/dashboard.css">
+<link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body><a class="skip-link" href="#main">Skip to content</a>
+<div class="topbar">
+  <div class="container container--wide topbar__inner">
+    <ul class="topbar__list">
+      <li><a href="tel:+18005550192"><svg class="ico ico--sm"><use href="#i-phone"/></svg> +1 (800) 555-0192</a></li>
+      <li><a href="mailto:care@cardiaclinic.com"><svg class="ico ico--sm"><use href="#i-mail"/></svg> care@cardiaclinic.com</a></li>
+      <li><span><svg class="ico ico--sm"><use href="#i-clock"/></svg> Mon–Sat · 8:00–20:00</span></li>
+      <li><span><svg class="ico ico--sm"><use href="#i-pin"/></svg> 1200 Park Avenue, New York</span></li>
+    </ul>
+    <div class="topbar__tools">
+      <button class="tool-btn" id="themeToggle" data-theme-toggle aria-label="Toggle theme"><span data-theme-icon></span></button>
+      <button class="tool-btn" id="dirToggle" data-dir-toggle aria-label="Toggle layout direction"><span data-dir-label>RTL</span></button>
+    </div>
+  </div>
+</div>
+<header class="header">
+  <div class="container container--wide header__inner">
+    <a href="index.html" class="logo" aria-label="Cardia Heart Clinic home">
+      <span class="logo__mark"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#fff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l7.8-7.6 1.1-1.1a5.5 5.5 0 0 0-.1-7.7z"/><path d="M3 12h4l2-4 3 8 2-4h4"/></svg></span>
+      <span class="logo__text"><span class="logo__name">Cardia</span><span class="logo__sub">Heart &amp; Vascular Care</span></span>
+    </a>
+    <nav class="nav" aria-label="Primary navigation">
+      <div class="nav__item"><a class="nav__link" href="index.html">Home</a></div>
+      <div class="nav__item"><a class="nav__link" href="about.html">About</a></div>
+      <div class="nav__item"><a class="nav__link" href="services.html">Services <svg class="ico ico--sm"><use href="#i-chevron"/></svg></a>
+        <div class="nav__dropdown">
+          <a href="services.html">Cardiac Diagnostics <span>›</span></a>
+          <a href="service-details.html">Consultations <span>›</span></a>
+          <a href="service-details.html">Interventional Care <span>›</span></a>
+          <a href="pricing.html">Packages &amp; Pricing <span>›</span></a>
+        </div>
+      </div>
+      <div class="nav__item"><a class="nav__link" href="doctors.html">Doctors</a></div>
+      <div class="nav__item"><a class="nav__link" href="blog.html">Insights</a></div>
+      <div class="nav__item"><a class="nav__link" href="pricing.html">Pricing</a></div>
+      <div class="nav__item"><a class="nav__link" href="contact.html">Contact</a></div>
+      <div class="nav__item"><a class="nav__link nav__link--port" href="patient-dashboard.html">Patient Portal</a></div>
+    </nav>
+    <div class="header__cta">
+      <div class="header__phone"><i><svg class="ico"><use href="#i-phone"/></svg></i><div><small>Need help?</small><strong>+1 (800) 555-0192</strong></div></div>
+      <button class="btn btn--primary btn--sm" data-book>Book Appointment <svg class="ico ico--sm"><use href="#i-arrow"/></svg></button>
+      <button class="burger" data-menu-open aria-label="Open navigation"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header><div class="mobile-menu" id="mobileMenu">
+  <div class="mobile-menu__backdrop" data-menu-close></div>
+  <div class="mobile-menu__panel">
+    <div class="mobile-menu__head">
+      <span class="logo"><span class="logo__mark"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#fff" stroke-width="1.7"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l7.8-7.6 1.1-1.1a5.5 5.5 0 0 0-.1-7.7z"/></svg></span><span class="logo__text"><span class="logo__name">Cardia</span><span class="logo__sub">Heart Care</span></span></span>
+      <button class="modal__close" data-menu-close aria-label="Close menu"><svg class="ico"><use href="#i-close"/></svg></button>
+    </div>
+    <nav class="mobile-nav" aria-label="Mobile navigation">
+      <a href="index.html">Home <span>›</span></a>
+      <a href="about.html">About Us <span>›</span></a>
+      <a href="services.html">Services <span>›</span></a>
+      <a href="service-details.html">Service Details <span>›</span></a>
+      <a href="doctors.html">Our Doctors <span>›</span></a>
+      <a href="doctor-details.html">Doctor Profile <span>›</span></a>
+      <a href="blog.html">Insights <span>›</span></a>
+      <a href="contact.html">Contact <span>›</span></a>
+      <a href="pricing.html">Pricing <span>›</span></a>
+      <a href="patient-dashboard.html">Patient Portal <span>›</span></a>
+      <a href="admin-dashboard.html">Admin Portal <span>›</span></a>
+    </nav>
+    <div class="mobile-menu__foot"><a class="btn btn--primary btn--block" href="contact.html" data-book>Book an Appointment <svg class="ico ico--sm"><use href="#i-arrow"/></svg></a></div>
+  </div>
+</div><main id="main">
+  <section class="page-hero">
+    <div class="page-hero__pattern"></div>
+    <div class="container container--wide page-hero__inner">
+      <nav class="breadcrumb" aria-label="Breadcrumb"><a href="index.html">Home</a><svg class="ico ico--sm"><use href="#i-arrow"/></svg><span>Pricing</span></nav>
+      <span class="eyebrow">Transparent pricing</span>
+      <h1 class="h-1">Exceptional care, clearly priced.</h1>
+      <p>No hidden fees, no surprises. Choose a package that fits your needs and know exactly what to expect.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container container--wide">
+      <div class="sec-head sec-head--center" data-reveal><span class="eyebrow eyebrow--center">Care packages</span><h2 class="h-2 sec-title">A plan for every stage.</h2><p class="sec-sub">All packages include a clear written summary and access to your patient portal.</p></div>
+      <div class="grid-3">
+        <div class="price-card" data-reveal><div class="price-card__plan">Essential Consultation</div><div class="price-card__price">$180<span> / visit</span></div><p class="price-card__desc">A focused first conversation about your heart health and concerns.</p><ul class="price-card__features"><li><svg class="ico ico--sm"><use href="#i-check"/></svg> 30-minute cardiology consultation</li><li><svg class="ico ico--sm"><use href="#i-check"/></svg> Medical history &amp; risk review</li><li><svg class="ico ico--sm"><use href="#i-check"/></svg> Written summary and plan</li><li><svg class="ico ico--sm"><use href="#i-check"/></svg> Patient portal access</li></ul><button class="btn btn--outline btn--block mt-6" data-book>Book This Package <svg class="ico ico--sm"><use href="#i-arrow"/></svg></button></div>
+        <div class="price-card price-card--featured" data-reveal data-reveal-delay="1"><div class="price-card__plan">Comprehensive Care</div><div class="price-card__price">$420<span> / visit</span></div><p class="price-card__desc">Our most popular choice — a thorough assessment with on-site diagnostics.</p><ul class="price-card__features"><li><svg class="ico ico--sm"><use href="#i-check"/></svg> 40-minute specialist consultation</li><li><svg class="ico ico--sm"><use href="#i-check"/></svg> ECG and blood pressure assessment</li><li><svg class="ico ico--sm"><use href="#i-check"/></svg> Full risk profile &amp; blood panel</li><li><svg class="ico ico--sm"><use href="#i-check"/></svg> Same-day report review</li><li><svg class="ico ico--sm"><use href="#i-check"/></svg> 3-month follow-up included</li></ul><button class="btn btn--primary btn--block mt-6" data-book>Book This Package <svg class="ico ico--sm"><use href="#i-arrow"/></svg></button></div>
+        <div class="price-card" data-reveal data-reveal-delay="2"><div class="price-card__plan">Preventive Plus</div><div class="price-card__price">$690<span> / year</span></div><p class="price-card__desc">Ongoing partnership for long-term heart health and prevention.</p><ul class="price-card__features"><li><svg class="ico ico--sm"><use href="#i-check"/></svg> Two specialist consultations yearly</li><li><svg class="ico ico--sm"><use href="#i-check"/></svg> Annual echocardiogram</li><li><svg class="ico ico--sm"><use href="#i-check"/></svg> Quarterly risk reviews</li><li><svg class="ico ico--sm"><use href="#i-check"/></svg> Unlimited portal messaging</li><li><svg class="ico ico--sm"><use href="#i-check"/></svg> Priority appointment booking</li></ul><button class="btn btn--outline btn--block mt-6" data-book>Book This Package <svg class="ico ico--sm"><use href="#i-arrow"/></svg></button></div>
+      </div>
+      <p class="text-center text-muted small mt-6 mb-0">All prices are illustrative sample figures for this demonstration and do not represent real clinical charges.</p>
+    </div>
+  </section>
+
+  <section class="section section--tint">
+    <div class="container container--wide">
+      <div class="sec-head" data-reveal><span class="eyebrow">Individual tests</span><h2 class="h-2 sec-title">Diagnostic services à la carte.</h2><p class="sec-sub">Need a specific test rather than a package? Book it directly.</p></div>
+      <div class="panel" data-reveal><div class="table-scroll"><table class="dash-table"><thead><tr><th>Service</th><th>Duration</th><th>Report time</th><th style="text-align:end">Price</th><th style="text-align:end">Action</th></tr></thead><tbody><tr><td><strong>ECG / Rhythm test</strong></td><td>10 min</td><td>Same day</td><td style="text-align:end">$95</td><td style="text-align:end"><button class="btn btn--outline btn--sm" data-book="ECG &amp; Heart Rhythm Test">Book</button></td></tr><tr><td><strong>Echocardiogram</strong></td><td>45 min</td><td>24 hours</td><td style="text-align:end">$290</td><td style="text-align:end"><button class="btn btn--outline btn--sm" data-book="Echocardiogram">Book</button></td></tr><tr><td><strong>Stress test</strong></td><td>60 min</td><td>1–2 days</td><td style="text-align:end">$340</td><td style="text-align:end"><button class="btn btn--outline btn--sm" data-book="Stress Test">Book</button></td></tr><tr><td><strong>24h Holter monitor</strong></td><td>24 hours</td><td>2–3 days</td><td style="text-align:end">$260</td><td style="text-align:end"><button class="btn btn--outline btn--sm" data-book>Schedule</button></td></tr><tr><td><strong>Online follow-up</strong></td><td>20 min</td><td>Same day</td><td style="text-align:end">$120</td><td style="text-align:end"><button class="btn btn--outline btn--sm" data-book>Book</button></td></tr></tbody></table></div></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container container--wide">
+      <div class="grid-2 gap-6 items-center">
+        <div class="ratio ratio--4-3" data-reveal="left"><img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1100&q=85" alt="Clear billing and insurance information"></div>
+        <div data-reveal="right"><span class="eyebrow">Insurance &amp; payment</span><h2 class="h-2 sec-title">We make the practical side simple.</h2><p class="lead">We work with most major insurance providers and will verify your coverage before your visit, so you always know where you stand.</p><ul class="check-list"><li>Most major plans accepted for consultations and diagnostics</li><li>Clear estimate provided before any procedure</li><li>Flexible payment plans for larger treatments</li><li>Itemised invoices available in your patient portal</li></ul><a class="link-more mt-4" href="contact.html">Ask about your coverage <svg class="ico ico--sm"><use href="#i-arrow"/></svg></a></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--mist">
+    <div class="container container--narrow">
+      <div class="sec-head sec-head--center" data-reveal><span class="eyebrow eyebrow--center">Pricing questions</span><h2 class="h-2 sec-title">Common questions about cost.</h2></div>
+      <div class="accordion" data-reveal>
+        <div class="accordion-item is-open"><button class="accordion-head">Will I know the cost before my appointment?<span class="accordion-icon"></span></button><div class="accordion-body"><div class="accordion-body__inner">Yes. After you book, our team confirms your expected cost based on your plan or package. Nothing is charged without your agreement.</div></div></div>
+        <div class="accordion-item"><button class="accordion-head">Can I pay in instalments?<span class="accordion-icon"></span></button><div class="accordion-body"><div class="accordion-body__inner">For larger procedures we offer interest-free payment plans over three to twelve months. Ask our team for details.</div></div></div>
+        <div class="accordion-item"><button class="accordion-head">Are follow-up appointments included?<span class="accordion-icon"></span></button><div class="accordion-body"><div class="accordion-body__inner">The Comprehensive Care package includes a three-month follow-up. Preventive Plus includes two annual consultations and unlimited portal messaging.</div></div></div>
+        <div class="accordion-item"><button class="accordion-head">What if I need an additional test?<span class="accordion-icon"></span></button><div class="accordion-body"><div class="accordion-body__inner">Your cardiologist will discuss any additional test before it is ordered, including the reason and the cost. You are always in control.</div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--sm">
+    <div class="container container--wide"><div class="cta-band" data-reveal><div class="cta-band__inner"><div><span class="eyebrow eyebrow--light">Invest in your heart</span><h2>Choose the care that's right for you.</h2><p>Not sure which package fits? Our team will help you decide — no obligation.</p></div><div class="cta-band__actions"><button class="btn btn--light btn--lg" data-book>Book a Consultation <svg class="ico ico--sm"><use href="#i-arrow"/></svg></button><a class="btn btn--ghost-light btn--lg" href="contact.html">Ask Our Team</a></div></div></div></div>
+  </section>
+</main><div class="modal" id="bookingModal" role="dialog" aria-modal="true" aria-labelledby="bookingTitle">
+  <div class="modal__backdrop" data-modal-close></div>
+  <div class="modal__dialog">
+    <div class="modal__head">
+      <div><span class="eyebrow">Patient care</span><h3 class="modal__title" id="bookingTitle">Book an Appointment</h3></div>
+      <button class="modal__close" data-modal-close aria-label="Close"><svg class="ico"><use href="#i-close"/></svg></button>
+    </div>
+    <div class="modal__body">
+      <form id="bookingForm" novalidate>
+        <div class="form-row">
+          <div class="form-group"><label class="form-label" for="bookName">Full name *</label><input class="form-control" id="bookName" data-validate="text" placeholder="Your full name"></div>
+          <div class="form-group"><label class="form-label" for="bookPhone">Phone *</label><input class="form-control" id="bookPhone" data-validate="phone" placeholder="+1 800 000 0000"></div>
+        </div>
+        <div class="form-group"><label class="form-label" for="bookEmail">Email address *</label><input class="form-control" type="email" id="bookEmail" data-validate="email" placeholder="you@example.com"></div>
+        <div class="form-row">
+          <div class="form-group"><label class="form-label" for="bookService">Service</label><select class="form-control" id="bookService"><option>General Cardiology Consultation</option><option>ECG &amp; Heart Rhythm Test</option><option>Echocardiogram</option><option>Stress Test</option><option>Preventive Heart Screening</option></select></div>
+          <div class="form-group"><label class="form-label" for="bookDoctor">Preferred cardiologist</label><select class="form-control" id="bookDoctor"><option>No preference</option><option>Dr. Amelia Hart</option><option>Dr. Marcus Chen</option><option>Dr. Priya Raman</option><option>Dr. Daniel Ortiz</option></select></div>
+        </div>
+        <div class="form-row">
+          <div class="form-group"><label class="form-label" for="bookDate">Preferred date *</label><input class="form-control" type="date" id="bookDate" data-validate="text"></div>
+          <div class="form-group"><label class="form-label" for="bookType">Consultation type</label><select class="form-control" id="bookType"><option>At the clinic</option><option>Online / video consultation</option><option>Home visit</option></select></div>
+        </div>
+        <div class="form-group"><label class="form-label">Available time slots</label><div class="flex flex-wrap gap-2"><button type="button" class="filter-btn time-slot">09:00 AM</button><button type="button" class="filter-btn time-slot is-active">10:30 AM</button><button type="button" class="filter-btn time-slot">12:00 PM</button><button type="button" class="filter-btn time-slot">02:30 PM</button><button type="button" class="filter-btn time-slot">04:00 PM</button></div></div>
+        <div class="form-group"><label class="form-label">Consultation preference</label><div class="flex flex-wrap gap-2"><button type="button" class="filter-btn consult-opt is-active"><svg class="ico ico--sm"><use href="#i-building"/></svg> Clinic visit</button><button type="button" class="filter-btn consult-opt"><svg class="ico ico--sm"><use href="#i-video"/></svg> Online</button></div></div>
+        <div class="form-group"><label class="form-label" for="bookNotes">Anything we should know?</label><textarea class="form-control" id="bookNotes" placeholder="Optional notes for your care team"></textarea></div>
+        <button class="btn btn--primary btn--block btn--lg" type="submit">Confirm Appointment <svg class="ico ico--sm"><use href="#i-arrow"/></svg></button>
+        <p class="tiny text-muted text-center mt-4 mb-0">This is a demonstration form. No real appointment is created.</p>
+      </form>
+    </div>
+  </div>
+</div><footer class="footer">
+  <div class="container container--wide">
+    <div class="footer__grid">
+      <div class="footer__about">
+        <a href="index.html" class="logo"><span class="logo__mark"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#fff" stroke-width="1.7"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l7.8-7.6 1.1-1.1a5.5 5.5 0 0 0-.1-7.7z"/><path d="M3 12h4l2-4 3 8 2-4h4"/></svg></span><span class="logo__text"><span class="logo__name">Cardia</span><span class="logo__sub">Heart &amp; Vascular Care</span></span></a>
+        <p>A modern cardiology practice combining clinical precision with genuinely human care. Your heart, in expert hands.</p>
+        <ul class="footer__contact mt-5">
+          <li><svg class="ico"><use href="#i-pin"/></svg><span>1200 Park Avenue, Suite 400<br>New York, NY 10029</span></li>
+          <li><svg class="ico"><use href="#i-phone"/></svg><span>+1 (800) 555-0192</span></li>
+          <li><svg class="ico"><use href="#i-mail"/></svg><span>care@cardiaclinic.com</span></li>
+        </ul>
+        <div class="footer__social"><a href="#" aria-label="Instagram">ig</a><a href="#" aria-label="Facebook">fb</a><a href="#" aria-label="LinkedIn">in</a><a href="#" aria-label="X">x</a></div>
+      </div>
+      <div>
+        <h4 class="footer__title">Explore</h4>
+        <ul class="footer__links">
+          <li><a href="about.html">About Our Clinic</a></li>
+          <li><a href="doctors.html">Our Cardiologists</a></li>
+          <li><a href="services.html">Services &amp; Diagnostics</a></li>
+          <li><a href="pricing.html">Packages &amp; Pricing</a></li>
+          <li><a href="blog.html">Heart Health Journal</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer__title">Patient Care</h4>
+        <ul class="footer__links">
+          <li><a href="patient-dashboard.html">Patient Portal</a></li>
+          <li><a href="patient-dashboard.html#reports">Test Reports</a></li>
+          <li><a href="patient-dashboard.html#medications">Medication Reminders</a></li>
+          <li><a href="service-details.html">Appointments</a></li>
+          <li><a href="contact.html">Help &amp; Support</a></li>
+        </ul>
+      </div>
+      <div class="footer__news">
+        <h4 class="footer__title">Heart Health, Delivered</h4>
+        <p>Monthly insights from our cardiologists — prevention, nutrition and the latest in cardiac care.</p>
+        <form class="newsletter" data-newsletter><input type="email" placeholder="Your email address" aria-label="Email address"><button class="btn btn--teal btn--sm" type="submit">Subscribe</button></form>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2026 Cardia Heart &amp; Vascular Clinic. All rights reserved.</span>
+      <span><a href="#">Privacy</a> · <a href="#">Terms</a> · <a href="#">Accessibility</a> · Fictional demo content</span>
+    </div>
+  </div>
+</footer><div class="toast-wrap" aria-live="polite"></div>
+<button class="to-top" id="toTop" aria-label="Back to top"><svg class="ico"><use href="#i-arrow-up"/></svg></button>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

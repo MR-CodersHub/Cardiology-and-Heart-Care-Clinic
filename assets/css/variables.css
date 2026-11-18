@@ -1,0 +1,104 @@
+/* ==========================================================================
+   Cardiology & Heart Care Clinic — Design Tokens
+   ========================================================================== */
+
+:root{
+  /* Brand palette */
+  --burgundy:#702F42;
+  --burgundy-600:#5E2637;
+  --burgundy-700:#4C1E2C;
+  --burgundy-100:#F3E6EA;
+  --teal:#348F91;
+  --teal-600:#2B7678;
+  --teal-700:#215D5F;
+  --teal-100:#E2F0F0;
+  --blush:#F1DDE0;
+  --ivory:#FAF9F6;
+  --mist:#DCE9EF;
+  --navy:#23364A;
+  --navy-600:#1C2C3D;
+  --navy-100:#E7ECF1;
+
+  /* Neutral tokens (light) */
+  --bg:#FAF9F6;
+  --bg-alt:#FFFFFF;
+  --bg-soft:#F3F1EC;
+  --surface:#FFFFFF;
+  --surface-2:#F7F6F2;
+  --surface-3:#EFEDE7;
+  --text:#23364A;
+  --text-muted:#6C7684;
+  --text-faint:#98A1AD;
+  --border:rgba(35,54,74,.10);
+  --border-strong:rgba(35,54,74,.18);
+  --line:rgba(35,54,74,.08);
+
+  /* Accent tokens */
+  --accent:#702F42;
+  --accent-soft:#F1DDE0;
+  --accent-contrast:#FFFFFF;
+  --link:#348F91;
+
+  /* Shadows */
+  --shadow-xs:0 1px 2px rgba(35,54,74,.05);
+  --shadow-sm:0 4px 16px rgba(35,54,74,.06);
+  --shadow-md:0 14px 40px rgba(35,54,74,.09);
+  --shadow-lg:0 28px 70px rgba(35,54,74,.13);
+  --shadow-accent:0 18px 44px rgba(112,47,66,.22);
+
+  /* Radii */
+  --r-xs:6px;
+  --r-sm:10px;
+  --r-md:16px;
+  --r-lg:24px;
+  --r-xl:36px;
+  --r-pill:999px;
+
+  /* Spacing scale */
+  --s-1:.25rem; --s-2:.5rem; --s-3:.75rem; --s-4:1rem; --s-5:1.25rem;
+  --s-6:1.5rem; --s-7:2rem; --s-8:2.5rem; --s-9:3rem; --s-10:4rem;
+  --s-11:5rem; --s-12:6.5rem; --s-13:8rem;
+
+  /* Type */
+  --font-display:"DM Serif Display",Georgia,serif;
+  --font-body:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+
+  /* Motion */
+  --ease:cubic-bezier(.22,1,.36,1);
+  --ease-soft:cubic-bezier(.4,0,.2,1);
+  --dur:.45s;
+
+  /* Layout */
+  --container:1200px;
+  --container-wide:1360px;
+  --header-h:84px;
+  --topbar-h:38px;
+}
+
+/* Dark theme */
+[data-theme="dark"]{
+  --bg:#121C27;
+  --bg-alt:#172432;
+  --bg-soft:#1B2938;
+  --surface:#1A2837;
+  --surface-2:#1F2F40;
+  --surface-3:#26384A;
+  --text:#EDF1F5;
+  --text-muted:#A6B2C0;
+  --text-faint:#7E8C9C;
+  --border:rgba(255,255,255,.09);
+  --border-strong:rgba(255,255,255,.16);
+  --line:rgba(255,255,255,.06);
+  --accent:#D98BA0;
+  --accent-soft:rgba(217,139,160,.14);
+  --accent-contrast:#1A1116;
+  --link:#6FC3C4;
+  --shadow-sm:0 4px 16px rgba(0,0,0,.24);
+  --shadow-md:0 14px 40px rgba(0,0,0,.32);
+  --shadow-lg:0 28px 70px rgba(0,0,0,.42);
+  --shadow-accent:0 18px 44px rgba(217,139,160,.18);
+  --burgundy-100:rgba(112,47,66,.35);
+  --teal-100:rgba(52,143,145,.2);
+  --mist:rgba(220,233,239,.12);
+  --blush:rgba(241,221,224,.12);
+}
