@@ -108,7 +108,7 @@
   .dash-table th,.dash-table td{padding:12px 14px}
   .dash-table{font-size:.76rem}
   .report-card__actions{flex-direction:column}
-  .to-top{bottom:80px;inset-inline-start:16px}
+  .to-top{bottom:80px;inset-inline-end:16px}
 }
 
 @media (max-width:540px){
