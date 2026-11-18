@@ -83,14 +83,12 @@
     const next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
     localStorage.setItem('chc-theme', next);
     applyTheme(next);
-    showToast('Appearance updated', 'Switched to ' + next + ' mode.', 'success');
   }));
 
   $$('[data-dir-toggle]').forEach(btn => btn.addEventListener('click', () => {
     const next = root.getAttribute('dir') === 'rtl' ? 'ltr' : 'rtl';
     localStorage.setItem('chc-dir', next);
     applyDir(next);
-    showToast('Layout direction changed', 'Now displaying in ' + next.toUpperCase() + '.', 'success');
   }));
 
   /* ---------------- Header scroll ---------------- */

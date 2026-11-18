@@ -21,16 +21,13 @@
 <body><a class="skip-link" href="#main">Skip to content</a>
 <div class="topbar">
   <div class="container container--wide topbar__inner">
+    <span class="topbar__badge">24/7 Available</span>
     <ul class="topbar__list">
       <li><a href="tel:+18005550192"><svg class="ico ico--sm"><use href="#i-phone"/></svg> +1 (800) 555-0192</a></li>
       <li><a href="mailto:care@cardiaclinic.com"><svg class="ico ico--sm"><use href="#i-mail"/></svg> care@cardiaclinic.com</a></li>
       <li><span><svg class="ico ico--sm"><use href="#i-clock"/></svg> Mon–Sat · 8:00–20:00</span></li>
       <li><span><svg class="ico ico--sm"><use href="#i-pin"/></svg> 1200 Park Avenue, New York</span></li>
     </ul>
-    <div class="topbar__tools">
-      <button class="tool-btn" id="themeToggle" data-theme-toggle aria-label="Toggle theme"><span data-theme-icon></span></button>
-      <button class="tool-btn" id="dirToggle" data-dir-toggle aria-label="Toggle layout direction"><span data-dir-label>RTL</span></button>
-    </div>
   </div>
 </div>
 <header class="header">
@@ -41,32 +38,27 @@
     </a>
     <nav class="nav" aria-label="Primary navigation">
       <div class="nav__item"><a class="nav__link" href="index.html">Home</a></div>
+      <div class="nav__item"><a class="nav__link" href="home-2.html">Home 2</a></div>
       <div class="nav__item"><a class="nav__link" href="about.html">About</a></div>
-      <div class="nav__item"><a class="nav__link" href="services.html">Services <svg class="ico ico--sm"><use href="#i-chevron"/></svg></a>
-        <div class="nav__dropdown">
-          <a href="services.html">Cardiac Diagnostics <span>›</span></a>
-          <a href="service-details.html">Consultations <span>›</span></a>
-          <a href="service-details.html">Interventional Care <span>›</span></a>
-          <a href="pricing.html">Packages &amp; Pricing <span>›</span></a>
-        </div>
-      </div>
+      <div class="nav__item"><a class="nav__link" href="services.html">Services</a></div>
       <div class="nav__item"><a class="nav__link" href="doctors.html">Doctors</a></div>
-      <div class="nav__item"><a class="nav__link" href="blog.html">Insights</a></div>
       <div class="nav__item"><a class="nav__link" href="pricing.html">Pricing</a></div>
+      <div class="nav__item"><a class="nav__link" href="blog.html">Blog</a></div>
       <div class="nav__item"><a class="nav__link" href="contact.html">Contact</a></div>
-      <div class="nav__item"><a class="nav__link nav__link--port" href="patient-dashboard.html">Patient Portal</a></div>
     </nav>
     <div class="header__cta">
-      <div class="header__phone"><i><svg class="ico"><use href="#i-phone"/></svg></i><div><small>Need help?</small><strong>+1 (800) 555-0192</strong></div></div>
-      <button class="btn btn--primary btn--sm" data-book>Book Appointment <svg class="ico ico--sm"><use href="#i-arrow"/></svg></button>
+      <button type="button" class="nav-tool-btn" id="themeToggle" data-theme-toggle aria-label="Toggle theme"><span data-theme-icon></span></button>
+      <button type="button" class="nav-tool-btn nav-tool-btn--dir" id="dirToggle" data-dir-toggle aria-label="Toggle layout direction"><span data-dir-label>RTL</span></button>
       <div class="profile-menu" data-profile-menu>
         <button type="button" class="profile-menu__trigger" aria-label="Account menu" aria-haspopup="true" aria-expanded="false" aria-controls="profileDropdown"><svg class="ico" aria-hidden="true"><use href="#i-user"/></svg></button>
         <div class="profile-menu__dropdown" id="profileDropdown" role="menu" aria-label="Account options">
           <div class="profile-menu__header">Profile</div>
           <a class="profile-menu__item" href="login.html" role="menuitem">Login <span aria-hidden="true">&#8250;</span></a>
           <a class="profile-menu__item" href="signup.html" role="menuitem">Signup <span aria-hidden="true">&#8250;</span></a>
+          <a class="profile-menu__item" href="patient-dashboard.html" role="menuitem">Patient Dashboard <span aria-hidden="true">&#8250;</span></a>
         </div>
       </div>
+      <button class="btn btn--primary btn--sm btn--book" data-book><svg class="ico ico--sm" aria-hidden="true"><use href="#i-calendar"/></svg> Book Appointment</button>
       <button class="burger" data-menu-open aria-label="Open navigation"><span></span><span></span><span></span></button>
     </div>
   </div>
@@ -79,18 +71,15 @@
     </div>
     <nav class="mobile-nav" aria-label="Mobile navigation">
       <a href="index.html">Home <span>›</span></a>
-      <a href="about.html">About Us <span>›</span></a>
+      <a href="home-2.html">Home 2 <span>›</span></a>
+      <a href="about.html">About <span>›</span></a>
       <a href="services.html">Services <span>›</span></a>
-      <a href="service-details.html">Service Details <span>›</span></a>
-      <a href="doctors.html">Our Doctors <span>›</span></a>
-      <a href="doctor-details.html">Doctor Profile <span>›</span></a>
-      <a href="blog.html">Insights <span>›</span></a>
-      <a href="contact.html">Contact <span>›</span></a>
+      <a href="doctors.html">Doctors <span>›</span></a>
       <a href="pricing.html">Pricing <span>›</span></a>
-      <a href="patient-dashboard.html">Patient Portal <span>›</span></a>
-      <a href="admin-dashboard.html">Admin Portal <span>›</span></a>
+      <a href="blog.html">Blog <span>›</span></a>
+      <a href="contact.html">Contact <span>›</span></a>
     </nav>
-    <div class="mobile-menu__foot"><a class="btn btn--primary btn--block" href="contact.html" data-book>Book an Appointment <svg class="ico ico--sm"><use href="#i-arrow"/></svg></a></div>
+    <div class="mobile-menu__foot"><a class="btn btn--primary btn--block btn--book" href="contact.html" data-book><svg class="ico ico--sm" aria-hidden="true"><use href="#i-calendar"/></svg> Book Appointment</a></div>
   </div>
 </div><main id="main">
   <section class="page-hero">
