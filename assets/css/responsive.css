@@ -77,8 +77,7 @@
   .container{padding-inline:18px}
   .grid-2,.grid-3,.grid-4,.form-row{grid-template-columns:1fr}
   .form-row{gap:0}
-  .page-hero{padding-block:var(--s-9) var(--s-9)}
-  .page-hero__pattern{width:260px;height:260px;inset-inline-end:-120px}
+  .page-hero{min-height:290px;padding-block:36px}
   .hero-slide__sub{font-size:.92rem}
   .hero-slide__content{padding-block:18px}
   .hero-slide__title{font-size:clamp(2.1875rem,9.8vw,2.375rem);margin-bottom:var(--s-4)}
