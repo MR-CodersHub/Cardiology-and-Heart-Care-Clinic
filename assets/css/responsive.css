@@ -43,6 +43,8 @@
   .dash-row,.dash-row--equal,.dash-row--sidebar{grid-template-columns:1fr}
   .dash-grid{grid-template-columns:repeat(4,1fr)}
   .profile-grid{grid-template-columns:1fr}
+  .facility-layout{grid-template-columns:1fr}
+  .facility-slider__viewport{aspect-ratio:16/10}
 }
 
 @media (max-width:1440px){
@@ -63,6 +65,14 @@
   .grid-3{grid-template-columns:repeat(2,1fr)}
   .sec-head--split{flex-direction:column;align-items:flex-start}
   .process-step::after{display:none}
+  .home-stats__grid{grid-template-columns:repeat(2,1fr);row-gap:22px}
+  .home-stats .stat{padding:8px 12px}
+  .home-stats .stat:nth-child(odd){border-inline-start:0}
+  .home-stats .stat:nth-child(n+3){border-top:1px solid rgba(255,255,255,.14);padding-top:22px}
+  .space-gallery{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .space-tile__zoom{opacity:1;transform:none}
+  .journey-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .journey-grid::before{display:none}
   .footer__grid{grid-template-columns:1fr 1fr;gap:var(--s-8) var(--s-7)}
   .doctor-profile{grid-template-columns:1fr}
   .doctor-profile__photo::before{padding-top:70%}
@@ -77,6 +87,25 @@
   .container{padding-inline:18px}
   .grid-2,.grid-3,.grid-4,.form-row{grid-template-columns:1fr}
   .form-row{gap:0}
+  .facility-slider__viewport{aspect-ratio:4/3}
+  .facility-slider__arrow{width:38px;height:38px}
+  .facility-slider__bar{inset-inline:14px;bottom:12px}
+  .facility-info__list{grid-template-columns:1fr}
+  .journey-aside__card{padding:20px}
+  .team-card__body{padding:18px}
+  .tabs-wrap--center .tabs{justify-content:center;flex-wrap:wrap;overflow:visible}
+  .home-stats{padding:20px 14px;border-radius:28px}
+  .home-stats__grid{grid-template-columns:1fr 1fr}
+  .home-stats .stat{padding:10px 6px}
+  .home-stats .stat__num{font-size:1.8rem}
+  .home-stats .stat__label{font-size:.64rem;letter-spacing:.06em}
+  .home-stats__vector--rings{width:180px;height:180px;inset-inline-end:-48px;top:-40px}
+  .space-gallery{gap:12px}
+  .space-tile{border-radius:var(--r-sm)}
+  .journey-grid{grid-template-columns:1fr}
+  .journey-step{display:grid;grid-template-columns:54px 1fr;column-gap:16px;padding:20px}
+  .journey-step__icon{grid-row:1 / span 2;margin-bottom:0}
+  .journey-step h3{margin-top:2px}
   .page-hero{min-height:290px;padding-block:36px}
   .hero-slide__sub{font-size:.92rem}
   .hero-slide__content{padding-block:18px}

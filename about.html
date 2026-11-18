@@ -133,8 +133,36 @@
   <section class="section">
     <div class="container container--wide">
       <div class="grid-2 gap-6">
-        <div data-reveal="left"><span class="eyebrow">Our journey</span><h2 class="h-2 sec-title">Milestones that shaped our care.</h2><p class="lead">From a single room to a leading centre for preventive cardiology — the journey has always been about the people we serve.</p></div>
-        <div class="timeline" data-reveal="right">
+        <div data-reveal="left">
+          <span class="eyebrow">Our journey</span>
+          <h2 class="h-2 sec-title">Milestones that shaped our care.</h2>
+          <p class="lead">From a single room to a leading centre for preventive cardiology — the journey has always been about the people we serve.</p>
+          <div class="journey-aside">
+            <div class="journey-aside__card">
+              <span class="journey-aside__label">What has never changed</span>
+              <ul class="journey-aside__list">
+                <li>
+                  <span class="journey-aside__icon"><svg class="ico"><use href="#i-users"/></svg></span>
+                  <div><strong>One coordinated team</strong><span>Cardiologists, imaging specialists and nurses work from a single plan.</span></div>
+                </li>
+                <li>
+                  <span class="journey-aside__icon"><svg class="ico"><use href="#i-clock"/></svg></span>
+                  <div><strong>Time to be heard</strong><span>Appointments are built around your questions, not a stopwatch.</span></div>
+                </li>
+                <li>
+                  <span class="journey-aside__icon"><svg class="ico"><use href="#i-file"/></svg></span>
+                  <div><strong>Answers you can keep</strong><span>Every finding is explained clearly and shared in plain language.</span></div>
+                </li>
+                <li>
+                  <span class="journey-aside__icon"><svg class="ico"><use href="#i-check"/></svg></span>
+                  <div><strong>A clear next step</strong><span>You leave every visit knowing what happens next, and why.</span></div>
+                </li>
+              </ul>
+            </div>
+            <blockquote class="journey-aside__quote">“The technology has changed. The promise has not: every patient gets our full attention.”</blockquote>
+          </div>
+        </div>
+        <div class="timeline journey-timeline" data-reveal="right">
           <div class="timeline__item"><span class="timeline__dot"></span><div class="timeline__year">2009</div><h5>The first clinic opens</h5><p>One consultation room, two specialists and a promise to never rush a patient.</p></div>
           <div class="timeline__item"><span class="timeline__dot"></span><div class="timeline__year">2013</div><h5>Diagnostics arrive on site</h5><p>ECG and echocardiography suites open, bringing answers closer to home.</p></div>
           <div class="timeline__item"><span class="timeline__dot"></span><div class="timeline__year">2017</div><h5>Preventive programme launched</h5><p>Our risk-assessment and lifestyle programme helps thousands stay well.</p></div>
@@ -147,31 +175,113 @@
 
   <section class="section section--mist" id="facilities">
     <div class="container container--wide">
-      <div class="sec-head sec-head--split" data-reveal><div><span class="eyebrow">Our facilities</span><h2 class="h-2 sec-title">A clinic that calms before it treats.</h2><p class="sec-sub">Purpose-built spaces where clinical precision and human comfort coexist.</p></div><a class="link-more" href="contact.html">Plan a visit <svg class="ico ico--sm"><use href="#i-arrow"/></svg></a></div>
-      <div class="grid-2 gap-5">
-        <div class="ratio ratio--4-3" data-reveal><img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=1100&q=85" alt="Contemporary clinic reception"></div>
-        <div data-reveal="right">
+      <div class="sec-head sec-head--split sec-head--split--center" data-reveal><div><span class="eyebrow">Our facilities</span><h2 class="h-2 sec-title">A clinic that calms before it treats.</h2><p class="sec-sub">Purpose-built spaces where clinical precision and human comfort coexist.</p></div><a class="link-more" href="contact.html">Plan a visit <svg class="ico ico--sm"><use href="#i-arrow"/></svg></a></div>
+      <div class="facility-layout">
+        <div class="facility-slider" data-slider data-reveal aria-roledescription="carousel" aria-label="Clinic facilities gallery">
+          <div class="facility-slider__viewport">
+            <div class="facility-slide is-active" aria-hidden="false"><img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=1200&q=85" alt="Contemporary clinic reception and waiting area"></div>
+            <div class="facility-slide" aria-hidden="true"><img src="https://images.unsplash.com/photo-1512678080530-7760d81faba6?auto=format&fit=crop&w=1200&q=85" alt="Private inpatient room"></div>
+            <div class="facility-slide" aria-hidden="true"><img src="https://images.unsplash.com/photo-1538108149393-fbbd81895907?auto=format&fit=crop&w=1200&q=85" alt="Comfortable patient recovery suite"></div>
+            <div class="facility-slide" aria-hidden="true"><img src="https://images.unsplash.com/photo-1582719471384-894fbb16e074?auto=format&fit=crop&w=1200&q=85" alt="Cardiac research laboratory"></div>
+            <div class="facility-slide" aria-hidden="true"><img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1200&q=85" alt="Cardiac ultrasound imaging suite"></div>
+            <div class="facility-slide" aria-hidden="true"><img src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=1200&q=85" alt="Cardiac examination room"></div>
+            <div class="facility-slide" aria-hidden="true"><img src="https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?auto=format&fit=crop&w=1200&q=85" alt="Consultation with a cardiologist"></div>
+            <div class="facility-slide" aria-hidden="true"><img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=1200&q=85" alt="On-site medication dispensary"></div>
+            <button class="facility-slider__arrow facility-slider__arrow--prev" type="button" data-slider-prev aria-label="Previous facility image"><svg class="ico"><use href="#i-arrow"/></svg></button>
+            <button class="facility-slider__arrow facility-slider__arrow--next" type="button" data-slider-next aria-label="Next facility image"><svg class="ico"><use href="#i-arrow"/></svg></button>
+            <div class="facility-slider__bar">
+              <span class="facility-slider__count" aria-live="polite"><span data-slider-current>1</span><span aria-hidden="true"> / </span>8</span>
+              <div class="facility-slider__dots" data-slider-dots></div>
+            </div>
+          </div>
+        </div>
+        <div class="facility-content" data-reveal="right">
           <div class="grid-2 gap-4">
             <div class="diag-card"><div class="diag-card__icon"><svg class="ico"><use href="#i-heart"/></svg></div><div><h5>Private consultation suites</h5><p>Quiet, comfortable rooms designed for unhurried conversations.</p></div></div>
             <div class="diag-card"><div class="diag-card__icon"><svg class="ico"><use href="#i-activity"/></svg></div><div><h5>Imaging &amp; rhythm lab</h5><p>On-site echocardiography, ECG and monitoring facilities.</p></div></div>
             <div class="diag-card"><div class="diag-card__icon"><svg class="ico"><use href="#i-users"/></svg></div><div><h5>Family consultation room</h5><p>Space for loved ones to be part of the conversation.</p></div></div>
             <div class="diag-card"><div class="diag-card__icon"><svg class="ico"><use href="#i-coffee"/></svg></div><div><h5>Calm waiting lounge</h5><p>Natural light, quiet zones and refreshments for you and your family.</p></div></div>
           </div>
+          <div class="facility-info">
+            <div class="facility-info__head">
+              <span class="facility-info__icon"><svg class="ico"><use href="#i-clock"/></svg></span>
+              <div><h5>Good to know before your visit</h5><p>Everything is designed to make your appointment calm and straightforward.</p></div>
+            </div>
+            <ul class="facility-info__list">
+              <li><svg class="ico"><use href="#i-check"/></svg> Same-day diagnostics</li>
+              <li><svg class="ico"><use href="#i-check"/></svg> Step-free access</li>
+              <li><svg class="ico"><use href="#i-check"/></svg> On-site parking</li>
+              <li><svg class="ico"><use href="#i-check"/></svg> Quiet family lounge</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="section section--sm">
+  <section class="section section--sm section--tint">
     <div class="container container--wide">
-      <div class="sec-head sec-head--center" data-reveal><span class="eyebrow eyebrow--center">The people behind the care</span><h2 class="h-2 sec-title">Experienced specialists. Genuinely kind people.</h2></div>
+      <div class="sec-head sec-head--center" data-reveal><span class="eyebrow eyebrow--center">The people behind the care</span><h2 class="h-2 sec-title">Experienced specialists. Genuinely kind people.</h2><p class="sec-sub">Four specialists, one shared standard: care that is clear, calm and built around you.</p></div>
       <div class="grid-4">
-        <article class="doctor-card" data-reveal><div class="doctor-card__media"><div class="ratio"><img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?auto=format&fit=crop&w=800&q=85" alt="Dr. Amelia Hart"></div></div><div class="doctor-card__body"><h3 class="doctor-card__name">Dr. Amelia Hart</h3><p class="doctor-card__spec">Preventive Cardiology</p><div class="doctor-card__actions"><a class="btn btn--primary btn--sm" href="doctor-details.html">View Profile</a></div></div></article>
-        <article class="doctor-card" data-reveal data-reveal-delay="1"><div class="doctor-card__media"><div class="ratio"><img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=800&q=85" alt="Dr. Marcus Chen"></div></div><div class="doctor-card__body"><h3 class="doctor-card__name">Dr. Marcus Chen</h3><p class="doctor-card__spec">Interventional Cardiology</p><div class="doctor-card__actions"><a class="btn btn--primary btn--sm" href="doctor-details.html">View Profile</a></div></div></article>
-        <article class="doctor-card" data-reveal data-reveal-delay="2"><div class="doctor-card__media"><div class="ratio"><img src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?auto=format&fit=crop&w=800&q=85" alt="Dr. Priya Raman"></div></div><div class="doctor-card__body"><h3 class="doctor-card__name">Dr. Priya Raman</h3><p class="doctor-card__spec">Cardiac Imaging</p><div class="doctor-card__actions"><a class="btn btn--primary btn--sm" href="doctor-details.html">View Profile</a></div></div></article>
-        <article class="doctor-card" data-reveal data-reveal-delay="3"><div class="doctor-card__media"><div class="ratio"><img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=800&q=85" alt="Dr. Daniel Ortiz"></div></div><div class="doctor-card__body"><h3 class="doctor-card__name">Dr. Daniel Ortiz</h3><p class="doctor-card__spec">Heart Rhythm</p><div class="doctor-card__actions"><a class="btn btn--primary btn--sm" href="doctor-details.html">View Profile</a></div></div></article>
+        <article class="team-card" data-reveal>
+          <div class="team-card__media">
+            <img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?auto=format&fit=crop&w=800&q=85" alt="Dr. Amelia Hart">
+            <span class="team-card__badge">Preventive</span>
+          </div>
+          <div class="team-card__body">
+            <h3 class="team-card__name">Dr. Amelia Hart</h3>
+            <p class="team-card__spec">Preventive Cardiology</p>
+            <p class="team-card__desc">Focuses on early risk detection and personalised prevention plans for long-term heart health.</p>
+            <div class="team-card__meta"><span><svg class="ico ico--sm"><use href="#i-star"/></svg> 14 yrs</span><span><svg class="ico ico--sm"><use href="#i-pin"/></svg> New York</span></div>
+            <a class="team-card__link" href="doctor-details.html">View Profile <svg class="ico ico--sm"><use href="#i-arrow"/></svg></a>
+          </div>
+        </article>
+        <article class="team-card" data-reveal data-reveal-delay="1">
+          <div class="team-card__media">
+            <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=800&q=85" alt="Dr. Marcus Chen">
+            <span class="team-card__badge">Interventional</span>
+          </div>
+          <div class="team-card__body">
+            <h3 class="team-card__name">Dr. Marcus Chen</h3>
+            <p class="team-card__spec">Interventional Cardiology</p>
+            <p class="team-card__desc">Specialises in minimally invasive procedures with a calm, clear approach to complex care.</p>
+            <div class="team-card__meta"><span><svg class="ico ico--sm"><use href="#i-star"/></svg> 18 yrs</span><span><svg class="ico ico--sm"><use href="#i-pin"/></svg> New York</span></div>
+            <a class="team-card__link" href="doctor-details.html">View Profile <svg class="ico ico--sm"><use href="#i-arrow"/></svg></a>
+          </div>
+        </article>
+        <article class="team-card" data-reveal data-reveal-delay="2">
+          <div class="team-card__media">
+            <img src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?auto=format&fit=crop&w=800&q=85" alt="Dr. Priya Raman">
+            <span class="team-card__badge">Imaging</span>
+          </div>
+          <div class="team-card__body">
+            <h3 class="team-card__name">Dr. Priya Raman</h3>
+            <p class="team-card__spec">Cardiac Imaging</p>
+            <p class="team-card__desc">Uses advanced echocardiography and structural imaging to guide precise, timely treatment.</p>
+            <div class="team-card__meta"><span><svg class="ico ico--sm"><use href="#i-star"/></svg> 11 yrs</span><span><svg class="ico ico--sm"><use href="#i-pin"/></svg> Brooklyn</span></div>
+            <a class="team-card__link" href="doctor-details.html">View Profile <svg class="ico ico--sm"><use href="#i-arrow"/></svg></a>
+          </div>
+        </article>
+        <article class="team-card" data-reveal data-reveal-delay="3">
+          <div class="team-card__media">
+            <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=800&q=85" alt="Dr. Daniel Ortiz">
+            <span class="team-card__badge">Rhythm</span>
+          </div>
+          <div class="team-card__body">
+            <h3 class="team-card__name">Dr. Daniel Ortiz</h3>
+            <p class="team-card__spec">Heart Rhythm</p>
+            <p class="team-card__desc">Treats irregular heart rhythms with tailored monitoring, medication and ablation care.</p>
+            <div class="team-card__meta"><span><svg class="ico ico--sm"><use href="#i-star"/></svg> 9 yrs</span><span><svg class="ico ico--sm"><use href="#i-pin"/></svg> Manhattan</span></div>
+            <a class="team-card__link" href="doctor-details.html">View Profile <svg class="ico ico--sm"><use href="#i-arrow"/></svg></a>
+          </div>
+        </article>
       </div>
-      <div class="cta-band mt-11" data-reveal><div class="cta-band__inner"><div><span class="eyebrow eyebrow--light">Join our practice</span><h2>Ready to experience care that feels different?</h2><p>We would be honoured to look after your heart.</p></div><div class="cta-band__actions"><button class="btn btn--light btn--lg" data-book>Book a Consultation <svg class="ico ico--sm"><use href="#i-arrow"/></svg></button><a class="btn btn--ghost-light btn--lg" href="doctors.html">Meet the Team</a></div></div></div>
+    </div>
+  </section>
+
+  <section class="section section--sm section--blush">
+    <div class="container container--wide">
+      <div class="cta-band" data-reveal><div class="cta-band__inner"><div><span class="eyebrow eyebrow--light">Join our practice</span><h2>Ready to experience care that feels different?</h2><p>We would be honoured to look after your heart.</p></div><div class="cta-band__actions"><button class="btn btn--light btn--lg" data-book>Book a Consultation <svg class="ico ico--sm"><use href="#i-arrow"/></svg></button><a class="btn btn--ghost-light btn--lg" href="doctors.html">Meet the Team</a></div></div></div>
     </div>
   </section>
 </main><div class="modal" id="bookingModal" role="dialog" aria-modal="true" aria-labelledby="bookingTitle">

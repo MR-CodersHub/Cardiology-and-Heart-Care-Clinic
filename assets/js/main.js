@@ -222,6 +222,65 @@
     start();
   }
 
+  /* ---------------- Facility slider ---------------- */
+  $$('[data-slider]').forEach(slider => {
+    const slides = $$('.facility-slide', slider);
+    if (slides.length < 2) return;
+    const dotsWrap = $('[data-slider-dots]', slider);
+    const currentEl = $('[data-slider-current]', slider);
+    const prevBtn = $('[data-slider-prev]', slider);
+    const nextBtn = $('[data-slider-next]', slider);
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    let current = 0;
+    let timer;
+    const dots = slides.map((_, i) => {
+      if (!dotsWrap) return null;
+      const dot = document.createElement('button');
+      dot.type = 'button';
+      dot.className = 'facility-slider__dot';
+      dot.setAttribute('aria-label', `Go to facility image ${i + 1}`);
+      dot.addEventListener('click', () => { go(i); stop(); start(); });
+      dotsWrap.appendChild(dot);
+      return dot;
+    });
+    const go = (i) => {
+      current = (i + slides.length) % slides.length;
+      slides.forEach((slide, n) => {
+        const active = n === current;
+        slide.classList.toggle('is-active', active);
+        slide.setAttribute('aria-hidden', String(!active));
+      });
+      dots.forEach((dot, n) => {
+        if (!dot) return;
+        dot.classList.toggle('is-active', n === current);
+        if (n === current) dot.setAttribute('aria-current', 'true');
+        else dot.removeAttribute('aria-current');
+      });
+      if (currentEl) currentEl.textContent = current + 1;
+    };
+    const stop = () => clearInterval(timer);
+    const start = () => {
+      if (reduceMotion) return;
+      stop();
+      timer = setInterval(() => go(current + 1), 6500);
+    };
+    prevBtn?.addEventListener('click', () => { go(current - 1); stop(); start(); });
+    nextBtn?.addEventListener('click', () => { go(current + 1); stop(); start(); });
+    slider.addEventListener('mouseenter', stop);
+    slider.addEventListener('mouseleave', start);
+    slider.addEventListener('focusin', stop);
+    slider.addEventListener('focusout', (e) => { if (!slider.contains(e.relatedTarget)) start(); });
+    slider.addEventListener('keydown', (e) => {
+      if (e.key !== 'ArrowLeft' && e.key !== 'ArrowRight') return;
+      e.preventDefault();
+      go(current + (e.key === 'ArrowRight' ? 1 : -1));
+      stop();
+      start();
+    });
+    go(0);
+    start();
+  });
+
   /* ---------------- Scroll reveal ---------------- */
   const revealEls = $$('[data-reveal]');
   if ('IntersectionObserver' in window && revealEls.length) {
@@ -367,6 +426,35 @@
       document.body.classList.remove('no-scroll');
     }
   });
+
+  /* ---------------- Image lightbox ---------------- */
+  const lightbox = $('#imageLightbox');
+  const lightboxImage = $('#lightboxImage');
+  const lightboxCaption = $('#lightboxCaption');
+
+  function closeLightbox() {
+    if (!lightbox || !lightbox.classList.contains('is-open')) return;
+    lightbox.classList.remove('is-open');
+    lightbox.setAttribute('aria-hidden', 'true');
+    lightboxImage?.removeAttribute('src');
+    if (lightboxCaption) lightboxCaption.textContent = '';
+    document.body.classList.remove('no-scroll');
+  }
+
+  $$('[data-lightbox]').forEach(tile => tile.addEventListener('click', () => {
+    const img = $('img', tile);
+    if (!lightbox || !lightboxImage || !img) return;
+    lightboxImage.src = img.currentSrc || img.src;
+    lightboxImage.alt = img.alt;
+    if (lightboxCaption) lightboxCaption.textContent = img.alt;
+    lightbox.classList.add('is-open');
+    lightbox.setAttribute('aria-hidden', 'false');
+    document.body.classList.add('no-scroll');
+    $('.lightbox__close', lightbox)?.focus();
+  }));
+
+  $$('[data-lightbox-close]').forEach(btn => btn.addEventListener('click', closeLightbox));
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
 
   $$('.time-slot').forEach(slot => slot.addEventListener('click', () => {
     $$('.time-slot').forEach(s => s.classList.remove('is-active'));

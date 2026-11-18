@@ -110,20 +110,30 @@
         <div class="card card--hover card__body" data-reveal data-reveal-delay="1"><div class="card__icon card__icon--teal"><svg class="ico"><use href="#i-file"/></svg></div><h3 class="card__title">Reports, made simple</h3><p class="card__text">View and download your results in a secure portal, with notes from your doctor.</p></div>
         <div class="card card--hover card__body" data-reveal data-reveal-delay="2"><div class="card__icon"><svg class="ico"><use href="#i-pill"/></svg></div><h3 class="card__title">Support between visits</h3><p class="card__text">Medication reminders and follow-up prompts that keep your plan on track.</p></div>
       </div>
-      <div class="grid-4 gap-4 mt-8">
-        <div class="stat" data-reveal><div class="stat__num"><span data-count="40">0</span><span class="stat__unit stat__unit--word">min</span></div><div class="stat__label">Minimum consultation</div></div>
-        <div class="stat" data-reveal><div class="stat__num"><span data-count="4">0</span>.9<span class="stat__unit">/5</span></div><div class="stat__label">Patient rating</div></div>
-        <div class="stat" data-reveal><div class="stat__num"><span data-count="6">0</span></div><div class="stat__label">On-site diagnostics</div></div>
-        <div class="stat" data-reveal><div class="stat__num"><span data-count="12">0</span><span class="stat__unit">k+</span></div><div class="stat__label">Patients cared for</div></div>
+      <div class="home-stats" data-reveal>
+        <svg class="home-stats__vector home-stats__vector--pulse" viewBox="0 0 620 120" fill="none" aria-hidden="true" focusable="false">
+          <path d="M0 72h74l18-38 24 78 22-60 18 20h58l16-30 20 60 18-30h352" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <svg class="home-stats__vector home-stats__vector--rings" viewBox="0 0 260 260" fill="none" aria-hidden="true" focusable="false">
+          <circle cx="130" cy="130" r="112" stroke="currentColor" stroke-opacity=".55"/>
+          <circle cx="130" cy="130" r="78" stroke="currentColor" stroke-opacity=".35"/>
+          <circle cx="130" cy="130" r="44" stroke="currentColor" stroke-opacity=".2"/>
+        </svg>
+        <div class="home-stats__grid">
+          <div class="stat"><div class="stat__num"><span data-count="40">0</span><span class="stat__unit stat__unit--word">min</span></div><div class="stat__label">Minimum consultation</div></div>
+          <div class="stat"><div class="stat__num"><span data-count="4">0</span>.9<span class="stat__unit">/5</span></div><div class="stat__label">Patient rating</div></div>
+          <div class="stat"><div class="stat__num"><span data-count="6">0</span><span class="stat__unit">+</span></div><div class="stat__label">On-site diagnostics</div></div>
+          <div class="stat"><div class="stat__num"><span data-count="12">0</span><span class="stat__unit">k+</span></div><div class="stat__label">Patients cared for</div></div>
+        </div>
       </div>
     </div>
   </section>
 
   <section class="section">
     <div class="container container--wide">
-      <div class="sec-head" data-reveal><span class="eyebrow">Treatment pathways</span><h2 class="h-2 sec-title">Care that meets you where you are.</h2><p class="sec-sub">Explore how we diagnose, treat and prevent heart conditions.</p></div>
-      <div class="tabs-wrap">
-        <div class="tabs" role="tablist"><button class="tab is-active" data-tab="tab-prev" role="tab">Prevention &amp; Screening</button><button class="tab" data-tab="tab-diag" role="tab">Diagnostics</button><button class="tab" data-tab="tab-treat" role="tab">Treatment</button><button class="tab" data-tab="tab-recov" role="tab">Recovery &amp; Follow-up</button></div>
+      <div class="sec-head sec-head--center" data-reveal><span class="eyebrow eyebrow--center">Treatment pathways</span><h2 class="h-2 sec-title">Care that meets you where you are.</h2><p class="sec-sub">Explore how we diagnose, treat and prevent heart conditions.</p></div>
+      <div class="tabs-wrap tabs-wrap--center">
+        <div class="tabs" role="tablist" aria-label="Treatment pathways"><button class="tab is-active" data-tab="tab-prev" role="tab">Prevention &amp; Screening</button><button class="tab" data-tab="tab-diag" role="tab">Diagnostics</button><button class="tab" data-tab="tab-treat" role="tab">Treatment</button><button class="tab" data-tab="tab-recov" role="tab">Recovery &amp; Follow-up</button></div>
         <div class="tab-panel is-active" id="tab-prev"><div class="grid-2 items-center gap-6"><div><h3 class="h-3">Stay ahead of heart disease.</h3><p class="text-muted">Our preventive programme maps your personal risk using blood pressure, lipid profile, family history and lifestyle, then builds a plan to lower it.</p><ul class="check-list"><li>Comprehensive cardiovascular risk assessment</li><li>Cholesterol, glucose and inflammatory marker testing</li><li>Nutrition and movement planning with our specialists</li></ul><button class="btn btn--primary mt-3" data-book="Preventive Heart Screening">Book a Screening <svg class="ico ico--sm"><use href="#i-arrow"/></svg></button></div><div class="ratio ratio--16-9"><img src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=1200&q=85" alt="Stethoscope ready for a cardiac examination"></div></div></div>
         <div class="tab-panel" id="tab-diag"><div class="grid-2 items-center gap-6"><div><h3 class="h-3">Clarity, quickly.</h3><p class="text-muted">On-site ECG, echocardiography, Holter monitoring and stress testing with specialist reporting ” usually within the same day.</p><ul class="check-list"><li>Same-day appointments and reporting</li><li>Private, purpose-built imaging suites</li><li>Digital reports in your patient portal</li></ul><button class="btn btn--primary mt-3" data-book="ECG &amp; Heart Rhythm Test">Schedule a Test <svg class="ico ico--sm"><use href="#i-arrow"/></svg></button></div><div class="ratio ratio--16-9"><img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1200&q=85" alt="Cardiac ultrasound equipment"></div></div></div>
         <div class="tab-panel" id="tab-treat"><div class="grid-2 items-center gap-6"><div><h3 class="h-3">Evidence-led, individually tailored.</h3><p class="text-muted">From medication optimisation to interventional procedures, your cardiologist explains every option and helps you choose with confidence.</p><ul class="check-list"><li>Medication management with clear schedules</li><li>Minimally invasive interventional procedures</li><li>Second opinions from specialist consultants</li></ul><button class="btn btn--primary mt-3" data-book> Speak to a Specialist <svg class="ico ico--sm"><use href="#i-arrow"/></svg></button></div><div class="ratio ratio--16-9"><img src="https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?auto=format&fit=crop&w=1200&q=85" alt="Cardiologist discussing treatment with a patient"></div></div></div>
@@ -134,26 +144,56 @@
 
   <section class="section section--mist">
     <div class="container container--wide">
-      <div class="sec-head sec-head--split" data-reveal><div><span class="eyebrow">Our space</span><h2 class="h-2 sec-title">Built to help you feel at ease.</h2><p class="sec-sub">Natural light, quiet rooms and thoughtful details ” because your comfort is part of your care.</p></div><a class="link-more" href="about.html#facilities">Tour the clinic <svg class="ico ico--sm"><use href="#i-arrow"/></svg></a></div>
-      <div class="grid-2 gap-4">
-        <div class="ratio" data-reveal><img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=1000&q=85" alt="Bright clinic waiting area"></div>
-        <div class="ratio" data-reveal data-reveal-delay="1"><img src="https://images.unsplash.com/photo-1512678080530-7760d81faba6?auto=format&fit=crop&w=1000&q=85" alt="Private inpatient room"></div>
-        <div class="ratio" data-reveal><img src="https://images.unsplash.com/photo-1538108149393-fbbd81895907?auto=format&fit=crop&w=1000&q=85" alt="Comfortable patient recovery suite"></div>
-        <div class="ratio" data-reveal data-reveal-delay="1"><img src="https://images.unsplash.com/photo-1582719471384-894fbb16e074?auto=format&fit=crop&w=1000&q=85" alt="Cardiac research laboratory"></div>
+      <div class="sec-head sec-head--split sec-head--split--center" data-reveal><div><span class="eyebrow">Our space</span><h2 class="h-2 sec-title">Built to help you feel at ease.</h2><p class="sec-sub">Natural light, quiet rooms and thoughtful details ” because your comfort is part of your care.</p></div><a class="link-more" href="about.html#facilities">Tour the clinic <svg class="ico ico--sm"><use href="#i-arrow"/></svg></a></div>
+      <div class="space-gallery">
+        <button class="space-tile" type="button" data-lightbox data-reveal aria-label="Preview bright clinic waiting area">
+          <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=1000&q=85" alt="Bright clinic waiting area">
+          <span class="space-tile__zoom" aria-hidden="true"><svg class="ico"><use href="#i-eye"/></svg></span>
+        </button>
+        <button class="space-tile" type="button" data-lightbox data-reveal data-reveal-delay="1" aria-label="Preview private inpatient room">
+          <img src="https://images.unsplash.com/photo-1512678080530-7760d81faba6?auto=format&fit=crop&w=1000&q=85" alt="Private inpatient room">
+          <span class="space-tile__zoom" aria-hidden="true"><svg class="ico"><use href="#i-eye"/></svg></span>
+        </button>
+        <button class="space-tile" type="button" data-lightbox data-reveal aria-label="Preview comfortable patient recovery suite">
+          <img src="https://images.unsplash.com/photo-1538108149393-fbbd81895907?auto=format&fit=crop&w=1000&q=85" alt="Comfortable patient recovery suite">
+          <span class="space-tile__zoom" aria-hidden="true"><svg class="ico"><use href="#i-eye"/></svg></span>
+        </button>
+        <button class="space-tile" type="button" data-lightbox data-reveal data-reveal-delay="1" aria-label="Preview cardiac research laboratory">
+          <img src="https://images.unsplash.com/photo-1582719471384-894fbb16e074?auto=format&fit=crop&w=1000&q=85" alt="Cardiac research laboratory">
+          <span class="space-tile__zoom" aria-hidden="true"><svg class="ico"><use href="#i-eye"/></svg></span>
+        </button>
       </div>
     </div>
   </section>
 
-  <section class="section">
+  <section class="section section--blush">
     <div class="container container--wide">
-      <div class="grid-2 gap-6 items-center">
-        <div data-reveal><span class="eyebrow">Your journey with us</span><h2 class="h-2 sec-title">Four simple steps to a healthier heart.</h2><p class="lead">We remove the guesswork. Here is exactly what happens when you choose Cardia.</p></div>
-        <div data-reveal="right">
-          <div class="process-step" style="text-align:start;padding-inline-start:86px"><div class="process-step__num" style="margin-inline-start:-86px">1</div><h5>Book your visit</h5><p>Choose a time, location and consultation type in under two minutes.</p></div>
-          <div class="process-step" style="text-align:start;padding-inline-start:86px"><div class="process-step__num" style="margin-inline-start:-86px">2</div><h5>Meet your cardiologist</h5><p>A thorough, unhurried conversation about your heart and your goals.</p></div>
-          <div class="process-step" style="text-align:start;padding-inline-start:86px"><div class="process-step__num" style="margin-inline-start:-86px">3</div><h5>Get answers</h5><p>On-site testing and clear results, explained in plain language.</p></div>
-          <div class="process-step" style="text-align:start;padding-inline-start:86px"><div class="process-step__num" style="margin-inline-start:-86px">4</div><h5>Follow through</h5><p>A personal plan, reminders and follow-ups that keep you moving forward.</p></div>
-        </div>
+      <div class="sec-head sec-head--center" data-reveal><span class="eyebrow eyebrow--center">Your journey with us</span><h2 class="h-2 sec-title">Four simple steps to a healthier heart.</h2><p class="sec-sub">We remove the guesswork. Here is exactly what happens when you choose Cardia.</p></div>
+      <div class="journey-grid">
+        <article class="journey-step" data-reveal>
+          <span class="journey-step__num">01</span>
+          <div class="journey-step__icon"><svg class="ico"><use href="#i-calendar"/></svg></div>
+          <h3>Book your visit</h3>
+          <p>Choose a time, location and consultation type in under two minutes.</p>
+        </article>
+        <article class="journey-step" data-reveal data-reveal-delay="1">
+          <span class="journey-step__num">02</span>
+          <div class="journey-step__icon"><svg class="ico"><use href="#i-steth"/></svg></div>
+          <h3>Meet your cardiologist</h3>
+          <p>A thorough, unhurried conversation about your heart and your goals.</p>
+        </article>
+        <article class="journey-step" data-reveal data-reveal-delay="2">
+          <span class="journey-step__num">03</span>
+          <div class="journey-step__icon"><svg class="ico"><use href="#i-pulse"/></svg></div>
+          <h3>Get answers</h3>
+          <p>On-site testing and clear results, explained in plain language.</p>
+        </article>
+        <article class="journey-step" data-reveal data-reveal-delay="3">
+          <span class="journey-step__num">04</span>
+          <div class="journey-step__icon"><svg class="ico"><use href="#i-heart"/></svg></div>
+          <h3>Follow through</h3>
+          <p>A personal plan, reminders and follow-ups that keep you moving forward.</p>
+        </article>
       </div>
     </div>
   </section>
@@ -196,7 +236,16 @@
       </form>
     </div>
   </div>
-</div><footer class="footer">
+</div>
+<div class="lightbox" id="imageLightbox" role="dialog" aria-modal="true" aria-label="Image preview" aria-hidden="true">
+  <button class="lightbox__backdrop" type="button" data-lightbox-close aria-label="Close preview"></button>
+  <button class="lightbox__close" type="button" data-lightbox-close aria-label="Close preview"><svg class="ico"><use href="#i-close"/></svg></button>
+  <figure class="lightbox__figure">
+    <img class="lightbox__img" id="lightboxImage" alt="">
+    <figcaption class="lightbox__caption" id="lightboxCaption"></figcaption>
+  </figure>
+</div>
+<footer class="footer">
   <div class="container container--wide">
     <div class="footer__grid">
       <div class="footer__about">
