@@ -7,20 +7,17 @@
 
 /* Sidebar */
 .sidebar{background:var(--navy);color:rgba(255,255,255,.72);position:sticky;top:0;height:100vh;display:flex;flex-direction:column;z-index:1100;transition:transform .4s var(--ease)}
-.sidebar__brand{height:82px;display:flex;align-items:center;gap:11px;padding-inline:24px;border-bottom:1px solid rgba(255,255,255,.08);flex:0 0 auto}
+.sidebar__brand{height:82px;display:flex;align-items:center;gap:11px;padding-inline:24px;border-bottom:1px solid rgba(255,255,255,.08);flex:0 0 auto;text-decoration:none}
+.sidebar__brand:focus-visible{outline:2px solid var(--teal);outline-offset:-4px}
 .sidebar__brand .logo__name{color:#fff;font-size:1.1rem}
-.sidebar__nav{flex:1;overflow-y:auto;padding:20px 14px}
+.sidebar__nav{flex:1;overflow-y:auto;padding:20px 14px;scrollbar-width:none;-ms-overflow-style:none}
+.sidebar__nav::-webkit-scrollbar{display:none}
 .sidebar__label{font-size:.62rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.38);padding:0 12px;margin:18px 0 10px;font-weight:700}
 .sidebar__nav a{display:flex;align-items:center;gap:13px;padding:11px 13px;border-radius:var(--r-sm);font-size:.85rem;font-weight:500;margin-bottom:3px;transition:all .3s}
 .sidebar__nav a i{width:19px;text-align:center;font-size:.95rem;flex:0 0 auto}
 .sidebar__nav a:hover{background:rgba(255,255,255,.07);color:#fff}
 .sidebar__nav a.is-active{background:linear-gradient(90deg,var(--burgundy),rgba(112,47,66,.55));color:#fff;box-shadow:0 6px 18px rgba(0,0,0,.15)}
 .sidebar__nav a .nav-count{margin-inline-start:auto;background:rgba(255,255,255,.15);padding:1px 8px;border-radius:var(--r-pill);font-size:.66rem}
-.sidebar__foot{padding:18px;border-top:1px solid rgba(255,255,255,.08);flex:0 0 auto}
-.sidebar__help{background:rgba(255,255,255,.06);border-radius:var(--r-sm);padding:16px;text-align:center}
-.sidebar__help i{font-size:1.4rem;color:#E9B8C5}
-.sidebar__help p{font-size:.76rem;margin:8px 0 12px;color:rgba(255,255,255,.7)}
-
 /* Dash topbar */
 .dash-topbar{height:82px;background:var(--bg-alt);border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;gap:16px;padding-inline:var(--s-7);position:sticky;top:0;z-index:900}
 .dash-topbar__left{display:flex;align-items:center;gap:14px}

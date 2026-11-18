@@ -22,27 +22,23 @@
 <a class="skip-link" href="#main">Skip to content</a><div class="dash-backdrop" id="dashBackdrop"></div>
 <div class="dash">
   <aside class="sidebar" id="sidebar">
-    <div class="sidebar__brand">
+    <a class="sidebar__brand" href="index.html" aria-label="Cardia home">
       <span class="logo__mark"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#fff" stroke-width="1.7"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l7.8-7.6 1.1-1.1a5.5 5.5 0 0 0-.1-7.7z"/><path d="M3 12h4l2-4 3 8 2-4h4"/></svg></span>
       <span class="logo__text"><span class="logo__name">Cardia</span><span class="logo__sub">Patient Portal</span></span>
-      <button class="modal__close" style="margin-inline-start:auto;color:#fff" data-sidebar-close aria-label="Close menu"><svg class="ico"><use href="#i-close"/></svg></button>
-    </div>
+    </a>
     <nav class="sidebar__nav" aria-label="Dashboard navigation">
       <div class="sidebar__label">My care</div>
-      <a href="#overview" class="is-active"><svg class="ico"><use href="#i-activity"/></svg> Overview</a>
-      <a href="#appointments"><svg class="ico"><use href="#i-calendar"/></svg> Appointments <span class="nav-count">3</span></a>
-      <a href="#reports"><svg class="ico"><use href="#i-file"/></svg> Test Reports</a>
-      <a href="#medications"><svg class="ico"><use href="#i-pill"/></svg> Medications <span class="nav-count">4</span></a>
-      <a href="#followups"><svg class="ico"><use href="#i-heart"/></svg> Follow-up Care</a>
+      <a href="?view=overview" class="is-active"><svg class="ico"><use href="#i-activity"/></svg> Overview</a>
+      <a href="?view=appointments"><svg class="ico"><use href="#i-calendar"/></svg> Appointments <span class="nav-count">3</span></a>
+      <a href="?view=reports"><svg class="ico"><use href="#i-file"/></svg> Test Reports</a>
+      <a href="?view=medications"><svg class="ico"><use href="#i-pill"/></svg> Medications <span class="nav-count">4</span></a>
+      <a href="?view=followups"><svg class="ico"><use href="#i-heart"/></svg> Follow-up Care</a>
       <div class="sidebar__label">Account</div>
-      <a href="#doctors"><svg class="ico"><use href="#i-users"/></svg> My Doctors</a>
-      <a href="#notifications"><svg class="ico"><use href="#i-bell"/></svg> Notifications <span class="nav-count">4</span></a>
-      <a href="#settings"><svg class="ico"><use href="#i-gear"/></svg> Settings</a>
+      <a href="?view=doctors"><svg class="ico"><use href="#i-users"/></svg> My Doctors</a>
+      <a href="?view=notifications"><svg class="ico"><use href="#i-bell"/></svg> Notifications <span class="nav-count">4</span></a>
+      <a href="?view=settings"><svg class="ico"><use href="#i-gear"/></svg> Settings</a>
       <a href="index.html"><svg class="ico"><use href="#i-logout"/></svg> Sign Out</a>
     </nav>
-    <div class="sidebar__foot">
-      <div class="sidebar__help"><i><svg class="ico"><use href="#i-phone"/></svg></i><p>Need help with your care?</p><a class="btn btn--teal btn--sm" href="contact.html">Contact Us</a></div>
-    </div>
   </aside>
   <div class="dash__main">
     <header class="dash-topbar">
@@ -51,11 +47,9 @@
         <div><h1>Good morning, Jordan</h1><nav class="breadcrumb"><a href="index.html">Home</a><svg class="ico ico--sm"><use href="#i-arrow"/></svg><span>Patient Dashboard</span></nav></div>
       </div>
       <div class="dash-topbar__right">
-        <button class="dash-icon-btn" aria-label="Search"><svg class="ico"><use href="#i-search"/></svg></button>
-        <button class="dash-icon-btn" id="notifBadge" aria-label="Notifications" onclick="document.getElementById('notifications').scrollIntoView({behavior:'smooth'})"><svg class="ico"><use href="#i-bell"/></svg><span class="dot"></span></button>
         <button class="dash-icon-btn" data-theme-toggle aria-label="Toggle theme"><span data-theme-icon></span></button>
         <button class="dash-icon-btn" data-dir-toggle aria-label="Toggle direction" style="font-size:.68rem;font-weight:700" data-dir-label>RTL</button>
-        <div class="dash-user"><img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80" alt="Jordan Ellis"><div><strong>Jordan Ellis</strong><small>Patient ID · CH-20418</small></div><svg class="ico ico--sm"><use href="#i-chevron"/></svg></div>
+        <div class="dash-user"><img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80" alt="Jordan Ellis"><div><strong>Jordan Ellis</strong><small>Patient ID · CH-20418</small></div></div>
       </div>
     </header>
     <main class="dash__body" id="main">
@@ -80,7 +74,7 @@
           </div>
           <div class="dash-row dash-row--sidebar">
             <div class="panel" data-reveal>
-              <div class="panel__head"><div><h3 class="panel__title">Upcoming consultations</h3><p class="panel__sub">Your next scheduled appointments</p></div><a class="link-more" href="#appointments">View all <svg class="ico ico--sm"><use href="#i-arrow"/></svg></a></div>
+              <div class="panel__head"><div><h3 class="panel__title">Upcoming consultations</h3><p class="panel__sub">Your next scheduled appointments</p></div><a class="link-more" href="?view=appointments">View all <svg class="ico ico--sm"><use href="#i-arrow"/></svg></a></div>
               <div class="panel__body">
                 <div class="appt-card"><div class="appt-card__date"><strong>21</strong><span>Nov</span></div><div class="appt-card__info"><h5>Dr. Amelia Hart · Follow-up consultation</h5><p>General cardiology · Park Avenue Clinic</p><span class="appt-card__time"><svg class="ico ico--sm"><use href="#i-clock"/></svg> 10:30 AM · 40 minutes</span></div><span class="badge badge--success">Confirmed</span></div>
                 <div class="appt-card"><div class="appt-card__date"><strong>28</strong><span>Nov</span></div><div class="appt-card__info"><h5>Dr. Priya Raman · Echocardiogram</h5><p>Cardiac imaging · Brooklyn Centre</p><span class="appt-card__time"><svg class="ico ico--sm"><use href="#i-clock"/></svg> 02:30 PM · 45 minutes</span></div><span class="badge badge--success">Confirmed</span></div>
@@ -155,9 +149,13 @@
             <div class="card card__body" data-reveal data-reveal-delay="1"><span class="badge badge--teal">Recommended</span><h3 class="card__title mt-4">Cardiac rehabilitation</h3><p class="card__text">A gentle, supervised programme to build strength and confidence after your diagnosis.</p><a class="btn btn--outline btn--sm" href="contact.html">Learn More <svg class="ico ico--sm"><use href="#i-arrow"/></svg></a></div>
             <div class="card card__body" data-reveal data-reveal-delay="2"><span class="badge badge--mist">Self-care</span><h3 class="card__title mt-4">Daily movement plan</h3><p class="card__text">Aim for 30 minutes of moderate activity five days a week. Log progress in your portal.</p><button class="btn btn--outline btn--sm" data-demo-link>View Plan</button></div>
           </div>
-          <div class="dash-row dash-row--equal mt-5">
-            <div class="panel" id="doctors" data-reveal>
-              <div class="panel__head"><div><h3 class="panel__title">My doctors</h3><p class="panel__sub">Your dedicated care team</p></div><a class="link-more" href="doctors.html">All <svg class="ico ico--sm"><use href="#i-arrow"/></svg></a></div>
+        </section>
+
+        <section id="doctors" class="mt-11">
+          <div class="flex items-center justify-between gap-3 flex-wrap mb-5"><div><span class="eyebrow">Your care team</span><h2 class="h-3 mb-0">My Doctors</h2></div><a class="link-more" href="doctors.html">All doctors <svg class="ico ico--sm"><use href="#i-arrow"/></svg></a></div>
+          <div class="dash-row dash-row--equal">
+            <div class="panel" data-reveal>
+              <div class="panel__head"><div><h3 class="panel__title">My doctors</h3><p class="panel__sub">Your dedicated care team</p></div></div>
               <div class="panel__body">
                 <div class="appt-card"><img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?auto=format&fit=crop&w=200&q=80" alt="" style="width:48px;height:48px;border-radius:50%;object-fit:cover"><div class="appt-card__info"><h5>Dr. Amelia Hart</h5><p>Preventive Cardiology · Primary cardiologist</p><span class="appt-card__time">Last seen 21 Nov 2026</span></div><button class="action-mini" data-demo-link><svg class="ico ico--sm"><use href="#i-video"/></svg></button></div>
                 <div class="appt-card"><img src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?auto=format&fit=crop&w=200&q=80" alt="" style="width:48px;height:48px;border-radius:50%;object-fit:cover"><div class="appt-card__info"><h5>Dr. Priya Raman</h5><p>Cardiac Imaging</p><span class="appt-card__time">Last seen 28 Sep 2026</span></div><button class="action-mini" data-demo-link><svg class="ico ico--sm"><use href="#i-video"/></svg></button></div>
@@ -173,19 +171,22 @@
 
         <!-- 6. NOTIFICATIONS & SETTINGS -->
         <section id="notifications" class="mt-11">
-          <div class="flex items-center justify-between gap-3 flex-wrap mb-5"><div><span class="eyebrow">Stay informed</span><h2 class="h-3 mb-0">Notifications &amp; Settings</h2></div><button class="btn btn--outline btn--sm" data-mark-read>Mark all as read</button></div>
-          <div class="dash-row dash-row--equal">
-            <div class="panel" data-reveal>
-              <div class="panel__head"><div><h3 class="panel__title">Notifications</h3><p class="panel__sub">Latest updates from your care team</p></div><svg class="ico text-muted"><use href="#i-bell"/></svg></div>
+          <div class="flex items-center justify-between gap-3 flex-wrap mb-5"><div><span class="eyebrow">Stay informed</span><h2 class="h-3 mb-0">Notifications</h2></div><button class="btn btn--outline btn--sm" data-mark-read>Mark all as read</button></div>
+          <div class="panel" data-reveal>
+            <div class="panel__head"><div><h3 class="panel__title">Notifications</h3><p class="panel__sub">Latest updates from your care team</p></div><svg class="ico text-muted"><use href="#i-bell"/></svg></div>
               <div class="panel__body">
                 <div class="notif-item is-unread"><span class="notif-item__icon" style="background:var(--accent-soft);color:var(--accent)"><svg class="ico"><use href="#i-file"/></svg></span><div class="notif-item__text"><strong>New ECG report available</strong><p>Your report from 14 Nov is ready to view.</p><time>2 hours ago</time></div></div>
                 <div class="notif-item is-unread"><span class="notif-item__icon" style="background:var(--teal-100);color:var(--teal)"><svg class="ico"><use href="#i-calendar"/></svg></span><div class="notif-item__text"><strong>Appointment reminder</strong><p>Visit with Dr. Hart on 21 Nov at 10:30 AM.</p><time>Yesterday</time></div></div>
                 <div class="notif-item is-unread"><span class="notif-item__icon" style="background:rgba(217,164,65,.14);color:#B77A21"><svg class="ico"><use href="#i-pill"/></svg></span><div class="notif-item__text"><strong>Medication reminder</strong><p>Three doses remaining in today's schedule.</p><time>Yesterday</time></div></div>
                 <div class="notif-item is-unread"><span class="notif-item__icon" style="background:var(--mist);color:var(--navy)"><svg class="ico"><use href="#i-video"/></svg></span><div class="notif-item__text"><strong>Online consultation confirmed</strong><p>Rhythm review with Dr. Ortiz on 09 Dec.</p><time>3 days ago</time></div></div>
               </div>
-            </div>
-            <div class="panel" id="settings" data-reveal>
-              <div class="panel__head"><div><h3 class="panel__title">Profile &amp; preferences</h3><p class="panel__sub">Keep your details up to date</p></div><svg class="ico text-muted"><use href="#i-gear"/></svg></div>
+          </div>
+        </section>
+
+        <section id="settings" class="mt-11">
+          <div class="flex items-center justify-between gap-3 flex-wrap mb-5"><div><span class="eyebrow">Account</span><h2 class="h-3 mb-0">Settings</h2></div></div>
+          <div class="panel" data-reveal>
+            <div class="panel__head"><div><h3 class="panel__title">Profile &amp; preferences</h3><p class="panel__sub">Keep your details up to date</p></div><svg class="ico text-muted"><use href="#i-gear"/></svg></div>
               <div class="panel__body">
                 <form id="profileForm" novalidate>
                   <div class="profile-grid">
@@ -194,7 +195,6 @@
                   </div>
                 </form>
               </div>
-            </div>
           </div>
         </section>
         <p class="text-center text-faint tiny mt-11 mb-0">All patient information shown here is fictional sample data for demonstration purposes only.</p>      </div>
@@ -219,7 +219,6 @@
     </div>
   </div>
 </div>
-<button class="to-top" id="toTop" aria-label="Back to top"><svg class="ico"><use href="#i-arrow-up"/></svg></button>
 <script src="assets/js/main.js"></script>
 <script src="assets/js/dashboard.js"></script>
 </body>

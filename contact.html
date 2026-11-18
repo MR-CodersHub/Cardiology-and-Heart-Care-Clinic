@@ -95,17 +95,34 @@
 
   <section class="section">
     <div class="container container--wide">
-      <div class="grid-2 gap-6">
-        <div data-reveal>
+      <div class="grid-2 gap-6 contact-grid">
+        <div class="contact-side" data-reveal>
           <div class="grid-2 gap-4">
             <div class="contact-card"><div class="contact-card__icon"><svg class="ico"><use href="#i-phone"/></svg></div><div><h5>Call us</h5><p>+1 (800) 555-0192<br>Mon–Sat, 8:00–20:00</p></div></div>
             <div class="contact-card"><div class="contact-card__icon"><svg class="ico"><use href="#i-mail"/></svg></div><div><h5>Email us</h5><p>care@cardiaclinic.com<br>We reply within one working day</p></div></div>
             <div class="contact-card"><div class="contact-card__icon"><svg class="ico"><use href="#i-pin"/></svg></div><div><h5>Main clinic</h5><p>1200 Park Avenue, Suite 400<br>New York, NY 10029</p></div></div>
             <div class="contact-card"><div class="contact-card__icon"><svg class="ico"><use href="#i-clock"/></svg></div><div><h5>Opening hours</h5><p>Mon–Fri 8:00–20:00<br>Sat 9:00–14:00 · Sun closed</p></div></div>
           </div>
-          <div class="card card__body mt-5" data-reveal><h5 class="mb-3">For urgent symptoms</h5><p class="card__text">If you are experiencing chest pain, severe shortness of breath or fainting, call your local emergency number immediately. For non-emergency clinical advice during opening hours, call our nurse line.</p></div>
+          <div class="urgent-card">
+            <div class="urgent-card__top">
+              <span class="badge badge--light">Emergency care</span>
+              <span class="urgent-card__icon"><svg class="ico"><use href="#i-pulse"/></svg></span>
+            </div>
+            <h3 class="urgent-card__title">For urgent symptoms</h3>
+            <p class="urgent-card__text">If you are experiencing chest pain, severe shortness of breath or fainting, call your local emergency number immediately.</p>
+            <div class="urgent-card__signals">
+              <span><svg class="ico ico--sm"><use href="#i-heart"/></svg> Chest pain or pressure</span>
+              <span><svg class="ico ico--sm"><use href="#i-activity"/></svg> Severe breathlessness</span>
+              <span><svg class="ico ico--sm"><use href="#i-bell"/></svg> Fainting or collapse</span>
+            </div>
+            <div class="urgent-card__actions">
+              <a class="btn btn--light btn--sm" href="tel:911">Call emergency services</a>
+              <a class="urgent-card__phone" href="tel:+18005550192">Nurse line: +1 (800) 555-0192</a>
+            </div>
+            <p class="urgent-card__note">For non-emergency clinical advice during opening hours, call our nurse line.</p>
+          </div>
         </div>
-        <div class="card card__body" data-reveal="right">
+        <div class="card card__body" data-reveal>
           <span class="eyebrow">Send a message</span><h2 class="h-3 mb-2">How can we help?</h2><p class="text-muted small mb-5">Fill in the form and our care team will be in touch shortly.</p>
           <form data-ajax novalidate>
             <div class="form-row"><div class="form-group"><label class="form-label" for="cName">Full name *</label><input class="form-control" id="cName" data-validate="text" placeholder="Your name"></div><div class="form-group"><label class="form-label" for="cPhone">Phone *</label><input class="form-control" id="cPhone" data-validate="phone" placeholder="Your phone number"></div></div>
@@ -122,19 +139,37 @@
 
   <section class="section section--tint">
     <div class="container container--wide">
-      <div class="sec-head" data-reveal><span class="eyebrow">Visit us</span><h2 class="h-2 sec-title">Our locations &amp; hours.</h2><p class="sec-sub">Three convenient locations, one connected team.</p></div>
+      <div class="sec-head sec-head--center contact-sec-head" data-reveal><span class="eyebrow eyebrow--center">Visit us</span><h2 class="h-2 sec-title">Our locations &amp; hours.</h2><p class="sec-sub">Three convenient locations, one connected team.</p></div>
       <div class="grid-3">
-        <div class="card card__body" data-reveal><span class="badge badge--teal">Main clinic</span><h3 class="card__title mt-4">Park Avenue</h3><p class="card__text">1200 Park Avenue, Suite 400<br>New York, NY 10029</p><p class="card__text mb-0"><strong>Mon–Fri:</strong> 8:00–20:00<br><strong>Sat:</strong> 9:00–14:00</p></div>
-        <div class="card card__body" data-reveal data-reveal-delay="1"><span class="badge badge--mist">Diagnostics</span><h3 class="card__title mt-4">Brooklyn Imaging Centre</h3><p class="card__text">88 Montague Street, Level 2<br>Brooklyn, NY 11201</p><p class="card__text mb-0"><strong>Mon–Fri:</strong> 8:00–18:00<br><strong>Sat:</strong> Closed</p></div>
-        <div class="card card__body" data-reveal data-reveal-delay="2"><span class="badge badge--mist">Follow-ups</span><h3 class="card__title mt-4">Midtown Consultations</h3><p class="card__text">410 Madison Avenue, Floor 6<br>New York, NY 10017</p><p class="card__text mb-0"><strong>Mon–Thu:</strong> 9:00–19:00<br><strong>Fri:</strong> 9:00–15:00</p></div>
+        <article class="location-card card card--hover" data-reveal>
+          <div class="location-card__top"><span class="badge badge--teal">Main clinic</span><span class="location-card__icon"><svg class="ico"><use href="#i-building"/></svg></span></div>
+          <h3 class="location-card__title">Park Avenue</h3>
+          <p class="location-card__address"><svg class="ico ico--sm"><use href="#i-pin"/></svg><span>1200 Park Avenue, Suite 400<br>New York, NY 10029</span></p>
+          <div class="location-card__hours"><div><span>Mon–Fri</span><strong>8:00–20:00</strong></div><div><span>Sat</span><strong>9:00–14:00</strong></div></div>
+          <div class="location-card__actions"><a class="card__link" href="https://www.google.com/maps/search/?api=1&amp;query=1200+Park+Avenue+New+York+NY+10029" target="_blank" rel="noopener noreferrer">Get directions <svg class="ico ico--sm"><use href="#i-arrow"/></svg></a><a class="location-card__phone" href="tel:+18005550192"><svg class="ico ico--sm"><use href="#i-phone"/></svg> Call</a></div>
+        </article>
+        <article class="location-card card card--hover" data-reveal data-reveal-delay="1">
+          <div class="location-card__top"><span class="badge badge--mist">Diagnostics</span><span class="location-card__icon"><svg class="ico"><use href="#i-activity"/></svg></span></div>
+          <h3 class="location-card__title">Brooklyn Imaging Centre</h3>
+          <p class="location-card__address"><svg class="ico ico--sm"><use href="#i-pin"/></svg><span>88 Montague Street, Level 2<br>Brooklyn, NY 11201</span></p>
+          <div class="location-card__hours"><div><span>Mon–Fri</span><strong>8:00–18:00</strong></div><div><span>Sat</span><strong>Closed</strong></div></div>
+          <div class="location-card__actions"><a class="card__link" href="https://www.google.com/maps/search/?api=1&amp;query=88+Montague+Street+Brooklyn+NY+11201" target="_blank" rel="noopener noreferrer">Get directions <svg class="ico ico--sm"><use href="#i-arrow"/></svg></a><a class="location-card__phone" href="tel:+18005550192"><svg class="ico ico--sm"><use href="#i-phone"/></svg> Call</a></div>
+        </article>
+        <article class="location-card card card--hover" data-reveal data-reveal-delay="2">
+          <div class="location-card__top"><span class="badge badge--mist">Follow-ups</span><span class="location-card__icon"><svg class="ico"><use href="#i-steth"/></svg></span></div>
+          <h3 class="location-card__title">Midtown Consultations</h3>
+          <p class="location-card__address"><svg class="ico ico--sm"><use href="#i-pin"/></svg><span>410 Madison Avenue, Floor 6<br>New York, NY 10017</span></p>
+          <div class="location-card__hours"><div><span>Mon–Thu</span><strong>9:00–19:00</strong></div><div><span>Fri</span><strong>9:00–15:00</strong></div></div>
+          <div class="location-card__actions"><a class="card__link" href="https://www.google.com/maps/search/?api=1&amp;query=410+Madison+Avenue+New+York+NY+10017" target="_blank" rel="noopener noreferrer">Get directions <svg class="ico ico--sm"><use href="#i-arrow"/></svg></a><a class="location-card__phone" href="tel:+18005550192"><svg class="ico ico--sm"><use href="#i-phone"/></svg> Call</a></div>
+        </article>
       </div>
     </div>
   </section>
 
   <section class="section section--sm">
     <div class="container container--wide">
-      <div class="sec-head" data-reveal><span class="eyebrow">Find us</span><h2 class="h-2 sec-title">Easy to reach, designed to calm.</h2></div>
-      <iframe class="map-embed" data-reveal title="Map to Cardia clinic" src="https://www.openstreetmap.org/export/embed.html?bbox=-73.96%2C40.77%2C-73.94%2C40.80&layer=mapnik" loading="lazy"></iframe>
+      <div class="sec-head sec-head--center contact-sec-head" data-reveal><span class="eyebrow eyebrow--center">Find us</span><h2 class="h-2 sec-title">Easy to reach, designed to calm.</h2><p class="sec-sub">Find us on Park Avenue, with accessible entrances, nearby parking and easy transport links.</p></div>
+      <iframe class="map-embed" data-reveal title="Google Map to Cardia clinic" src="https://www.google.com/maps?q=1200+Park+Avenue,+New+York,+NY+10029&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
     </div>
   </section>
 
@@ -142,7 +177,7 @@
     <div class="container container--narrow">
       <div class="sec-head sec-head--center" data-reveal><span class="eyebrow eyebrow--center">Quick answers</span><h2 class="h-2 sec-title">Before you get in touch.</h2></div>
       <div class="accordion" data-reveal>
-        <div class="accordion-item is-open"><button class="accordion-head">How do I reschedule an appointment?<span class="accordion-icon"></span></button><div class="accordion-body"><div class="accordion-body__inner">You can reschedule directly in your patient portal under Appointments, or call us at least 24 hours before your visit. We will always try to find a time that works.</div></div></div>
+        <div class="accordion-item"><button class="accordion-head">How do I reschedule an appointment?<span class="accordion-icon"></span></button><div class="accordion-body"><div class="accordion-body__inner">You can reschedule directly in your patient portal under Appointments, or call us at least 24 hours before your visit. We will always try to find a time that works.</div></div></div>
         <div class="accordion-item"><button class="accordion-head">How do I get a copy of my test results?<span class="accordion-icon"></span></button><div class="accordion-body"><div class="accordion-body__inner">All reports are available in the Reports section of your patient portal. If you need help accessing them, our team can assist by phone or email.</div></div></div>
         <div class="accordion-item"><button class="accordion-head">Do you offer interpreter services?<span class="accordion-icon"></span></button><div class="accordion-body"><div class="accordion-body__inner">Yes. We can arrange professional interpreters for most languages with advance notice. Let us know when you book.</div></div></div>
         <div class="accordion-item"><button class="accordion-head">Is parking available at the clinic?<span class="accordion-icon"></span></button><div class="accordion-body"><div class="accordion-body__inner">Yes, there is a parking garage two minutes from the main clinic, and the building is served by several bus and subway routes.</div></div></div>
@@ -150,7 +185,7 @@
     </div>
   </section>
 
-  <section class="section section--sm">
+  <section class="section section--sm section--tint">
     <div class="container container--wide"><div class="cta-band" data-reveal><div class="cta-band__inner"><div><span class="eyebrow eyebrow--light">Ready when you are</span><h2>Booking is quicker than you think.</h2><p>Choose a time online and we will take care of the rest.</p></div><button class="btn btn--light btn--lg" data-book>Book an Appointment <svg class="ico ico--sm"><use href="#i-arrow"/></svg></button></div></div></div>
   </section>
 </main><div class="modal" id="bookingModal" role="dialog" aria-modal="true" aria-labelledby="bookingTitle">

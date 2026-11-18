@@ -22,24 +22,22 @@
 <a class="skip-link" href="#main">Skip to content</a><div class="dash-backdrop" id="dashBackdrop"></div>
 <div class="dash">
   <aside class="sidebar" id="sidebar">
-    <div class="sidebar__brand">
+    <a class="sidebar__brand" href="index.html" aria-label="Cardia home">
       <span class="logo__mark"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#fff" stroke-width="1.7"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l7.8-7.6 1.1-1.1a5.5 5.5 0 0 0-.1-7.7z"/><path d="M3 12h4l2-4 3 8 2-4h4"/></svg></span>
       <span class="logo__text"><span class="logo__name">Cardia</span><span class="logo__sub">Admin Console</span></span>
-      <button class="modal__close" style="margin-inline-start:auto;color:#fff" data-sidebar-close aria-label="Close menu"><svg class="ico"><use href="#i-close"/></svg></button>
-    </div>
+    </a>
     <nav class="sidebar__nav" aria-label="Admin navigation">
       <div class="sidebar__label">Management</div>
-      <a href="#overview" class="is-active"><svg class="ico"><use href="#i-activity"/></svg> Overview</a>
-      <a href="#appointment-admin"><svg class="ico"><use href="#i-calendar"/></svg> Appointments <span class="nav-count">12</span></a>
-      <a href="#patients"><svg class="ico"><use href="#i-users"/></svg> Patients</a>
-      <a href="#doctors-admin"><svg class="ico"><use href="#i-steth"/></svg> Doctors</a>
-      <a href="#diagnostics"><svg class="ico"><use href="#i-file"/></svg> Diagnostics <span class="nav-count">6</span></a>
+      <a href="?view=overview" class="is-active"><svg class="ico"><use href="#i-activity"/></svg> Overview</a>
+      <a href="?view=appointment-admin"><svg class="ico"><use href="#i-calendar"/></svg> Appointments <span class="nav-count">12</span></a>
+      <a href="?view=patients"><svg class="ico"><use href="#i-users"/></svg> Patients</a>
+      <a href="?view=doctors-admin"><svg class="ico"><use href="#i-steth"/></svg> Doctors</a>
+      <a href="?view=diagnostics"><svg class="ico"><use href="#i-file"/></svg> Diagnostics <span class="nav-count">6</span></a>
       <div class="sidebar__label">System</div>
-      <a href="#notifications-admin"><svg class="ico"><use href="#i-bell"/></svg> Notifications <span class="nav-count">3</span></a>
-      <a href="#settings-admin"><svg class="ico"><use href="#i-gear"/></svg> Settings</a>
+      <a href="?view=notifications-admin"><svg class="ico"><use href="#i-bell"/></svg> Notifications <span class="nav-count">3</span></a>
+      <a href="?view=settings-admin"><svg class="ico"><use href="#i-gear"/></svg> Settings</a>
       <a href="index.html"><svg class="ico"><use href="#i-logout"/></svg> Sign Out</a>
     </nav>
-    <div class="sidebar__foot"><div class="sidebar__help"><i><svg class="ico"><use href="#i-shield"/></svg></i><p>Admin access · Demo mode</p><a class="btn btn--teal btn--sm" href="patient-dashboard.html">Patient View</a></div></div>
   </aside>
   <div class="dash__main">
     <header class="dash-topbar">
@@ -48,11 +46,9 @@
         <div><h1>Clinic Overview</h1><nav class="breadcrumb"><a href="index.html">Home</a><svg class="ico ico--sm"><use href="#i-arrow"/></svg><span>Admin Dashboard</span></nav></div>
       </div>
       <div class="dash-topbar__right">
-        <button class="dash-icon-btn" aria-label="Search"><svg class="ico"><use href="#i-search"/></svg></button>
-        <button class="dash-icon-btn" aria-label="Notifications" onclick="document.getElementById('notifications-admin').scrollIntoView({behavior:'smooth'})"><svg class="ico"><use href="#i-bell"/></svg><span class="dot"></span></button>
         <button class="dash-icon-btn" data-theme-toggle aria-label="Toggle theme"><span data-theme-icon></span></button>
         <button class="dash-icon-btn" data-dir-toggle aria-label="Toggle direction" style="font-size:.68rem;font-weight:700" data-dir-label>RTL</button>
-        <div class="dash-user"><img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=200&q=80" alt="Admin"><div><strong>Dr. Sarah Webb</strong><small>Clinic Administrator</small></div><svg class="ico ico--sm"><use href="#i-chevron"/></svg></div>
+        <div class="dash-user"><img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=200&q=80" alt="Admin"><div><strong>Dr. Sarah Webb</strong><small>Clinic Administrator</small></div></div>
       </div>
     </header>
     <main class="dash__body" id="main">
@@ -141,18 +137,21 @@
 
         <!-- 6. NOTIFICATIONS & SETTINGS -->
         <section id="notifications-admin" class="mt-11">
-          <div class="flex items-center justify-between gap-3 flex-wrap mb-5"><div><span class="eyebrow">System</span><h2 class="h-3 mb-0">Notifications &amp; Settings</h2></div><button class="btn btn--outline btn--sm" data-mark-read>Mark all as read</button></div>
-          <div class="dash-row dash-row--equal">
-            <div class="panel" data-reveal>
-              <div class="panel__head"><h3 class="panel__title">System notifications</h3></div>
+          <div class="flex items-center justify-between gap-3 flex-wrap mb-5"><div><span class="eyebrow">System</span><h2 class="h-3 mb-0">Notifications</h2></div><button class="btn btn--outline btn--sm" data-mark-read>Mark all as read</button></div>
+          <div class="panel" data-reveal>
+            <div class="panel__head"><h3 class="panel__title">System notifications</h3></div>
               <div class="panel__body">
                 <div class="notif-item is-unread"><span class="notif-item__icon" style="background:rgba(196,81,107,.12);color:#C4516B"><svg class="ico"><use href="#i-clock"/></svg></span><div class="notif-item__text"><strong>2 reports overdue</strong><p>ECG and echocardiogram reports need review.</p><time>1 hour ago</time></div></div>
                 <div class="notif-item is-unread"><span class="notif-item__icon" style="background:var(--teal-100);color:var(--teal)"><svg class="ico"><use href="#i-calendar"/></svg></span><div class="notif-item__text"><strong>Schedule change</strong><p>Dr. Raman requested theatre time on 28 Nov.</p><time>4 hours ago</time></div></div>
                 <div class="notif-item is-unread"><span class="notif-item__icon" style="background:var(--accent-soft);color:var(--accent)"><svg class="ico"><use href="#i-users"/></svg></span><div class="notif-item__text"><strong>New registrations</strong><p>3 patients joined the portal today.</p><time>Yesterday</time></div></div>
               </div>
-            </div>
-            <div class="panel" id="settings-admin" data-reveal>
-              <div class="panel__head"><h3 class="panel__title">Clinic settings</h3></div>
+          </div>
+        </section>
+
+        <section id="settings-admin" class="mt-11">
+          <div class="flex items-center justify-between gap-3 flex-wrap mb-5"><div><span class="eyebrow">System</span><h2 class="h-3 mb-0">Settings</h2></div></div>
+          <div class="panel" data-reveal>
+            <div class="panel__head"><h3 class="panel__title">Clinic settings</h3></div>
               <div class="panel__body">
                 <div class="form-group"><label class="form-label">Clinic name</label><input class="form-control" value="Cardia Heart &amp; Vascular Clinic"></div>
                 <div class="form-row"><div class="form-group"><label class="form-label">Opening time</label><input class="form-control" value="08:00"></div><div class="form-group"><label class="form-label">Closing time</label><input class="form-control" value="20:00"></div></div>
@@ -161,7 +160,6 @@
                 <div class="form-group"><div class="form-check"><input type="checkbox" id="setSms" checked><label for="setSms">Send SMS reminders to patients</label></div></div>
                 <button class="btn btn--primary btn--sm" data-demo-link>Save Settings <svg class="ico ico--sm"><use href="#i-check"/></svg></button>
               </div>
-            </div>
           </div>
         </section>
         <p class="text-center text-faint tiny mt-11 mb-0">All clinic and patient information shown here is fictional sample data for demonstration purposes only.</p>      </div>
@@ -186,7 +184,6 @@
     </div>
   </div>
 </div>
-<button class="to-top" id="toTop" aria-label="Back to top"><svg class="ico"><use href="#i-arrow-up"/></svg></button>
 <script src="assets/js/main.js"></script>
 <script src="assets/js/dashboard.js"></script>
 </body>

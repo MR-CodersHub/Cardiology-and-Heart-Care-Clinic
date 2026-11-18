@@ -6,6 +6,32 @@
   const $ = (s, c = document) => c.querySelector(s);
   const $$ = (s, c = document) => Array.from(c.querySelectorAll(s));
 
+  const dashSections = $$('.dash__body section[id]');
+  if (dashSections.length) {
+    const params = new URLSearchParams(window.location.search);
+    const requested = params.get('view') || window.location.hash.slice(1);
+    const activeView = dashSections.some(section => section.id === requested) ? requested : dashSections[0].id;
+    dashSections.forEach(section => { section.hidden = section.id !== activeView; });
+    $$('.sidebar__nav a[href*="?view="]').forEach(link => {
+      const view = new URLSearchParams((link.getAttribute('href') || '').split('?')[1] || '').get('view');
+      const active = view === activeView;
+      link.classList.toggle('is-active', active);
+      if (active) link.setAttribute('aria-current', 'page');
+      else link.removeAttribute('aria-current');
+    });
+    const activeSection = dashSections.find(section => section.id === activeView);
+    const heading = activeSection?.querySelector('h2')?.textContent.trim();
+    if (heading) {
+      const topTitle = $('.dash-topbar h1');
+      if (topTitle) topTitle.textContent = heading;
+      const crumb = $('.dash-topbar .breadcrumb span');
+      if (crumb) crumb.textContent = heading;
+      const suffix = document.title.split('|')[1];
+      if (suffix) document.title = heading + ' |' + suffix;
+    }
+    window.scrollTo(0, 0);
+  }
+
   /* Medication checklist */
   $$('.med-item__checkbox').forEach(box => {
     box.addEventListener('click', () => {

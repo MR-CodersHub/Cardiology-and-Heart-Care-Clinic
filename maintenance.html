@@ -20,72 +20,60 @@
 <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
 <body><a class="skip-link" href="#main">Skip to content</a>
-<div class="topbar">
-  <div class="container container--wide topbar__inner">
-    <span class="topbar__badge">24/7 Available</span>
-    <ul class="topbar__list">
-      <li><a href="tel:+18005550192"><svg class="ico ico--sm"><use href="#i-phone"/></svg> +1 (800) 555-0192</a></li>
-      <li><a href="mailto:care@cardiaclinic.com"><svg class="ico ico--sm"><use href="#i-mail"/></svg> care@cardiaclinic.com</a></li>
-      <li><span><svg class="ico ico--sm"><use href="#i-clock"/></svg> Mon–Sat · 8:00–20:00</span></li>
-      <li><span><svg class="ico ico--sm"><use href="#i-pin"/></svg> 1200 Park Avenue, New York</span></li>
-    </ul>
-  </div>
-</div>
-<header class="header">
-  <div class="container container--wide header__inner">
-    <a href="index.html" class="logo" aria-label="Cardia Heart Clinic home">
-      <span class="logo__mark"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#fff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l7.8-7.6 1.1-1.1a5.5 5.5 0 0 0-.1-7.7z"/><path d="M3 12h4l2-4 3 8 2-4h4"/></svg></span>
-      <span class="logo__text"><span class="logo__name">Cardia</span><span class="logo__sub">Heart &amp; Vascular Care</span></span>
-    </a>
-    <nav class="nav" aria-label="Primary navigation">
-      <div class="nav__item"><a class="nav__link" href="index.html">Home</a></div>
-      <div class="nav__item"><a class="nav__link" href="home-2.html">Home 2</a></div>
-      <div class="nav__item"><a class="nav__link" href="about.html">About</a></div>
-      <div class="nav__item"><a class="nav__link" href="services.html">Services</a></div>
-      <div class="nav__item"><a class="nav__link" href="doctors.html">Doctors</a></div>
-      <div class="nav__item"><a class="nav__link" href="pricing.html">Pricing</a></div>
-      <div class="nav__item"><a class="nav__link" href="blog.html">Blog</a></div>
-      <div class="nav__item"><a class="nav__link" href="contact.html">Contact</a></div>
-    </nav>
-    <div class="header__cta">
-      <button type="button" class="nav-tool-btn" id="themeToggle" data-theme-toggle aria-label="Toggle theme"><span data-theme-icon></span></button>
-      <button type="button" class="nav-tool-btn nav-tool-btn--dir" id="dirToggle" data-dir-toggle aria-label="Toggle layout direction"><span data-dir-label>RTL</span></button>
-      <div class="profile-menu" data-profile-menu>
-        <button type="button" class="profile-menu__trigger" aria-label="Account menu" aria-haspopup="true" aria-expanded="false" aria-controls="profileDropdown"><svg class="ico" aria-hidden="true"><use href="#i-user"/></svg></button>
-        <div class="profile-menu__dropdown" id="profileDropdown" role="menu" aria-label="Account options">
-          <div class="profile-menu__header">Profile</div>
-          <a class="profile-menu__item" href="login.html" role="menuitem">Login/Signup <span aria-hidden="true">&#8250;</span></a>
-          <a class="profile-menu__item" href="patient-dashboard.html" role="menuitem">Patient Dashboard <span aria-hidden="true">&#8250;</span></a>
-          <a class="profile-menu__item" href="admin-dashboard.html" role="menuitem">Admin Dashboard <span aria-hidden="true">&#8250;</span></a>
-        </div>
-      </div>
-      <button class="btn btn--primary btn--sm btn--book" data-book><svg class="ico ico--sm" aria-hidden="true"><use href="#i-calendar"/></svg> Book Appointment</button>
-      <button class="burger" data-menu-open aria-label="Open navigation"><span></span><span></span><span></span></button>
-    </div>
-  </div>
-</header><div class="mobile-menu" id="mobileMenu">
-  <div class="mobile-menu__backdrop" data-menu-close></div>
-  <div class="mobile-menu__panel">
-    <div class="mobile-menu__head">
-      <span class="logo"><span class="logo__mark"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#fff" stroke-width="1.7"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l7.8-7.6 1.1-1.1a5.5 5.5 0 0 0-.1-7.7z"/></svg></span><span class="logo__text"><span class="logo__name">Cardia</span><span class="logo__sub">Heart Care</span></span></span>
-      <button class="modal__close" data-menu-close aria-label="Close menu"><svg class="ico"><use href="#i-close"/></svg></button>
-    </div>
-    <nav class="mobile-nav" aria-label="Mobile navigation">
-      <a href="index.html">Home <span>›</span></a>
-      <a href="home-2.html">Home 2 <span>›</span></a>
-      <a href="about.html">About <span>›</span></a>
-      <a href="services.html">Services <span>›</span></a>
-      <a href="doctors.html">Doctors <span>›</span></a>
-      <a href="pricing.html">Pricing <span>›</span></a>
-      <a href="blog.html">Blog <span>›</span></a>
-      <a href="contact.html">Contact <span>›</span></a>
-    </nav>
-    <div class="mobile-menu__foot"><a class="btn btn--primary btn--block btn--book" href="contact.html" data-book><svg class="ico ico--sm" aria-hidden="true"><use href="#i-calendar"/></svg> Book Appointment</a></div>
-  </div>
-</div><main id="main">
-  <section class="center-scene">
+<main id="main">
+  <section class="center-scene center-scene--standalone">
     <div class="container" data-reveal>
-      <div class="maintenance-art ratio" style="max-width:420px;margin-inline:auto;border-radius:var(--r-lg)"><img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=900&q=85" alt="Cardia clinic being prepared for patients"></div>
+      <div class="maintenance-art" role="img" aria-label="Animated illustration of a heart being tuned with gears and a wrench">
+        <svg viewBox="0 0 520 340" aria-hidden="true" focusable="false">
+          <defs>
+            <linearGradient id="maintHeartGradient" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" class="maint-stop-accent"/>
+              <stop offset="1" class="maint-stop-accent-deep"/>
+            </linearGradient>
+            <linearGradient id="maintGearGradient" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" class="maint-stop-teal"/>
+              <stop offset="1" class="maint-stop-teal-deep"/>
+            </linearGradient>
+            <filter id="maintSoftGlow" x="-50%" y="-50%" width="200%" height="200%">
+              <feGaussianBlur stdDeviation="8" result="blur"/>
+              <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+            </filter>
+          </defs>
+          <circle class="maint-orbit maint-orbit--one" cx="260" cy="170" r="132"/>
+          <circle class="maint-orbit maint-orbit--two" cx="260" cy="170" r="104"/>
+          <circle class="maint-halo" cx="260" cy="170" r="74"/>
+          <g class="maint-heart">
+            <path class="maint-heart__shape" d="M260 252c-9-8-59-43-81-69-16-19-23-36-23-54 0-29 22-50 49-50 21 0 36 11 47 27 11-16 26-27 47-27 27 0 49 21 49 50 0 18-7 35-23 54-22 26-72 61-81 69z"/>
+            <path class="maint-heart__line" d="M191 158h38l12-25 18 55 15-38 10 18h47"/>
+            <path class="maint-heart__shine" d="M217 108c-13 5-21 16-22 29"/>
+          </g>
+          <g transform="translate(392 100)">
+            <g class="maint-gear maint-gear--one">
+              <path class="maint-gear__body" d="M0-42 10-39 14-30 24-28 31-35 39-27 35-19 39-9 48-6 48 6 39 9 35 19 39 27 31 35 24 28 14 30 10 39 0 42-10 39-14 30-24 28-31 35-39 27-35 19-39 9-48 6-48-6-39-9-35-19-39-27-31-35-24-28-14-30-10-39Z"/>
+              <circle class="maint-gear__hub" r="15"/>
+            </g>
+          </g>
+          <g transform="translate(124 236)">
+            <g class="maint-gear maint-gear--two">
+              <path class="maint-gear__body maint-gear__body--teal" d="M0-31 8-29 10-22 18-20 23-26 29-20 26-14 29-7 36-5 36 5 29 7 26 14 29 20 23 26 18 20 10 22 8 29 0 31-8 29-10 22-18 20-23 26-29 20-26 14-29 7-36 5-36-5-29-7-26-14-29-20-23-26-18-20-10-22-8-29Z"/>
+              <circle class="maint-gear__hub maint-gear__hub--teal" r="11"/>
+            </g>
+          </g>
+          <g transform="translate(86 74) scale(2.7) rotate(-14)">
+            <path class="maint-wrench" d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.3 2.3-3-3 2.3-2.3z"/>
+          </g>
+          <g class="maint-sparks">
+            <circle cx="338" cy="248" r="4"/>
+            <circle cx="392" cy="214" r="3"/>
+            <circle cx="154" cy="126" r="3"/>
+            <circle cx="96" cy="168" r="4"/>
+          </g>
+          <path class="maint-pulse" d="M54 292h86l14-24 18 48 16-34 12 20h40l14-30 20 42 16-26h136"/>
+          <g class="maint-plus">
+            <path d="M438 246v20M428 256h20"/>
+          </g>
+        </svg>
+      </div>
       <span class="eyebrow eyebrow--center" style="margin-top:28px">Brief downtime</span>
       <h1 class="h-2 mt-4">We are polishing something for your heart.</h1>
       <p class="lead" style="max-width:600px;margin-inline:auto">A few pages are being updated right now. We will be back shortly with a faster, even more reassuring experience.</p>
@@ -94,51 +82,15 @@
     </div>
   </section>
 
-  <section class="section section--sm section--tint">
-    <div class="container container--wide">
-      <div class="sec-head sec-head--center" data-reveal><span class="eyebrow eyebrow--center">Current status</span><h2 class="h-2 sec-title">What is happening right now.</h2></div>
-      <div class="grid-3">
-        <div class="card card__body" data-reveal><span class="badge badge--success badge--dot">Operational</span><h3 class="card__title mt-4">Patient portal</h3><p class="card__text">Appointments, reports and medication reminders are available as usual.</p></div>
-        <div class="card card__body" data-reveal data-reveal-delay="1"><span class="badge badge--warn badge--dot">In progress</span><h3 class="card__title mt-4">Website updates</h3><p class="card__text">We are improving page speed and the appointment booking experience.</p></div>
-        <div class="card card__body" data-reveal data-reveal-delay="2"><span class="badge badge--success badge--dot">Operational</span><h3 class="card__title mt-4">Phone &amp; email</h3><p class="card__text">Our care team remains reachable during normal clinic hours.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container container--wide">
-      <div class="sec-head" data-reveal><span class="eyebrow">What we are improving</span><h2 class="h-2 sec-title">Worth the short wait.</h2></div>
-      <div class="grid-3">
-        <div class="value-item" data-reveal><div class="value-item__icon"><svg class="ico"><use href="#i-calendar"/></svg></div><div><h5>Simpler booking</h5><p>Fewer steps to reserve your consultation slot.</p></div></div>
-        <div class="value-item" data-reveal data-reveal-delay="1"><div class="value-item__icon card__icon--teal"><svg class="ico"><use href="#i-file"/></svg></div><div><h5>Faster reports</h5><p>Quicker access to your results and summaries.</p></div></div>
-        <div class="value-item" data-reveal data-reveal-delay="2"><div class="value-item__icon"><svg class="ico"><use href="#i-pill"/></svg></div><div><h5>Smarter reminders</h5><p>A calmer, clearer medication schedule.</p></div></div>
-      </div>
-    </div>
-  </section>
-
   <section class="section section--mist">
     <div class="container container--wide">
       <div class="grid-2 items-center gap-6">
-        <div data-reveal="left"><span class="eyebrow">Still need help?</span><h2 class="h-2 sec-title">Your care does not pause.</h2><p class="lead">If you need assistance during maintenance, our team is available by phone and email. For emergencies, always contact your local emergency number.</p><div class="flex flex-wrap gap-3 mt-6"><a class="btn btn--primary" href="contact.html">Contact Us <svg class="ico ico--sm"><use href="#i-arrow"/></svg></a><a class="btn btn--outline" href="patient-dashboard.html">Open Patient Portal</a></div></div>
-        <div data-reveal="right"><div class="contact-card"><div class="contact-card__icon"><svg class="ico"><use href="#i-phone"/></svg></div><div><h5>Call our care team</h5><p>+1 (800) 555-0192<br>Mon–Sat, 8:00–20:00</p></div></div><div class="contact-card mt-4"><div class="contact-card__icon"><svg class="ico"><use href="#i-mail"/></svg></div><div><h5>Send an email</h5><p>care@cardiaclinic.com<br>We reply within one working day</p></div></div></div>
+        <div data-reveal><span class="eyebrow">Still need help?</span><h2 class="h-2 sec-title">Your care does not pause.</h2><p class="lead">If you need assistance during maintenance, our team is available by phone and email. For emergencies, always contact your local emergency number.</p><div class="flex flex-wrap gap-3 mt-6"><a class="btn btn--primary" href="contact.html">Contact Us <svg class="ico ico--sm"><use href="#i-arrow"/></svg></a><a class="btn btn--outline" href="patient-dashboard.html">Open Patient Portal</a></div></div>
+        <div data-reveal><div class="contact-card"><div class="contact-card__icon"><svg class="ico"><use href="#i-phone"/></svg></div><div><h5>Call our care team</h5><p>+1 (800) 555-0192<br>Mon–Sat, 8:00–20:00</p></div></div><div class="contact-card mt-4"><div class="contact-card__icon"><svg class="ico"><use href="#i-mail"/></svg></div><div><h5>Send an email</h5><p>care@cardiaclinic.com<br>We reply within one working day</p></div></div></div>
       </div>
     </div>
   </section>
 
-  <section class="section section--tint">
-    <div class="container container--narrow">
-      <div class="sec-head sec-head--center" data-reveal><span class="eyebrow eyebrow--center">Maintenance FAQ</span><h2 class="h-2 sec-title">A few quick answers.</h2></div>
-      <div class="accordion" data-reveal>
-        <div class="accordion-item is-open"><button class="accordion-head">Will my appointment still go ahead?<span class="accordion-icon"></span></button><div class="accordion-body"><div class="accordion-body__inner">Yes. Clinical appointments are unaffected by website maintenance. You will receive the usual reminders and directions.</div></div></div>
-        <div class="accordion-item"><button class="accordion-head">Can I still access my test reports?<span class="accordion-icon"></span></button><div class="accordion-body"><div class="accordion-body__inner">Yes. The patient portal remains operational throughout. Reports appear there as soon as they are finalised.</div></div></div>
-        <div class="accordion-item"><button class="accordion-head">When will the site be back?<span class="accordion-icon"></span></button><div class="accordion-body"><div class="accordion-body__inner">We expect maintenance to finish within approximately 30 minutes. This page will update automatically once we are back.</div></div></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section section--sm">
-    <div class="container container--wide"><div class="cta-band" data-reveal><div class="cta-band__inner"><div><span class="eyebrow eyebrow--light">Thank you for your patience</span><h2>We will be back very soon.</h2><p>In the meantime, explore the pages that are already live.</p></div><div class="cta-band__actions"><a class="btn btn--light btn--lg" href="index.html">Go to Home <svg class="ico ico--sm"><use href="#i-arrow"/></svg></a><a class="btn btn--ghost-light btn--lg" href="services.html">Browse Services</a></div></div></div></div>
-  </section>
 </main><div class="modal" id="bookingModal" role="dialog" aria-modal="true" aria-labelledby="bookingTitle">
   <div class="modal__backdrop" data-modal-close></div>
   <div class="modal__dialog">
@@ -169,79 +121,7 @@
       </form>
     </div>
   </div>
-</div><footer class="footer">
-  <div class="container container--wide">
-    <div class="footer__grid">
-      <div class="footer__about">
-        <h2 class="sr-only">Cardia Heart &amp; Vascular Clinic</h2>
-        <a href="index.html" class="logo" aria-label="Cardia Heart &amp; Vascular Clinic home">
-          <span class="logo__mark"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#fff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l7.8-7.6 1.1-1.1a5.5 5.5 0 0 0-.1-7.7z"/><path d="M3 12h4l2-4 3 8 2-4h4"/></svg></span>
-          <span class="logo__text"><span class="logo__name">Cardia</span><span class="logo__sub">Heart &amp; Vascular Care</span></span>
-        </a>
-        <p>Cardia Heart &amp; Vascular Clinic combines advanced cardiac diagnostics with genuinely human care — from preventive screenings to long-term heart health support.</p>
-        <div class="footer__social">
-          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Follow Cardia on Instagram">
-            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
-          </a>
-          <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Follow Cardia on Facebook">
-            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-          </a>
-          <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="Follow Cardia on LinkedIn">
-            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"/></svg>
-          </a>
-          <a href="https://x.com/" target="_blank" rel="noopener noreferrer" aria-label="Follow Cardia on X">
-            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg>
-          </a>
-          <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="Follow Cardia on YouTube">
-            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
-          </a>
-        </div>
-      </div>
-      <nav class="footer__nav" aria-labelledby="footer-quick-links">
-        <h2 class="footer__title" id="footer-quick-links">Quick Links</h2>
-        <ul class="footer__links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="home-2.html">Home 2</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="doctors.html">Doctors</a></li>
-          <li><a href="pricing.html">Pricing</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-      <div>
-        <h2 class="footer__title">Contact Us</h2>
-        <ul class="footer__contact">
-          <li><svg class="ico" aria-hidden="true"><use href="#i-pin"/></svg><a href="contact.html"><bdi dir="ltr">1200 Park Avenue, Suite 400<br>New York, NY 10029</bdi></a></li>
-          <li><svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg><a href="tel:+18005550192"><bdi dir="ltr">+1 (800) 555-0192</bdi></a></li>
-          <li><svg class="ico" aria-hidden="true"><use href="#i-mail"/></svg><a href="mailto:care@cardiaclinic.com"><bdi dir="ltr">care@cardiaclinic.com</bdi></a></li>
-          <li><svg class="ico" aria-hidden="true"><use href="#i-clock"/></svg><span><bdi dir="ltr">Mon–Fri: 8:00–20:00<br>Sat: 9:00–14:00 · Sun: Closed</bdi></span></li>
-        </ul>
-      </div>
-      <div class="footer__news">
-        <h2 class="footer__title">Newsletter</h2>
-        <p>Heart-health insights, prevention tips and clinic news from our cardiologists, delivered monthly.</p>
-        <form class="newsletter" data-newsletter>
-          <label class="sr-only" for="footerNewsletterEmail">Email address</label>
-          <input type="email" id="footerNewsletterEmail" name="email" placeholder="Your email address" autocomplete="email">
-          <button class="btn btn--teal btn--sm" type="submit">Subscribe</button>
-        </form>
-      </div>
-    </div>
-    <div class="footer__bottom">
-      <p class="footer__copyright" dir="ltr">© 2026 Cardia Heart &amp; Vascular Clinic. All rights reserved.</p>
-      <nav class="footer__legal" dir="ltr" aria-label="Legal links">
-        <a href="privacy-policy.html">Privacy Policy</a>
-        <span aria-hidden="true">|</span>
-        <a href="terms-conditions.html">Terms &amp; Conditions</a>
-        <span aria-hidden="true">|</span>
-        <a href="sitemap.html">Sitemap</a>
-      </nav>
-    </div>
-  </div>
-</footer>
-
+</div>
 <div class="toast-wrap" aria-live="polite"></div>
 <button class="to-top" id="toTop" aria-label="Back to top"><svg class="ico"><use href="#i-arrow-up"/></svg></button>
 <script src="assets/js/main.js"></script>
