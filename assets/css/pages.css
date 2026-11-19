@@ -43,7 +43,7 @@
 /* Home trust strip & intro section spacing */
 .home-intro{padding-top:0}
 .home-intro .trust-strip{border-top:0}
-.home-intro__grid{padding-top:var(--s-10)}
+.home-intro__grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr);padding-top:var(--s-10)}
 
 /* Homepage service cards with photography */
 .service-card--media{padding:0;display:flex;flex-direction:column}

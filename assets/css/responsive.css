@@ -51,6 +51,7 @@
   .profile-grid{grid-template-columns:1fr}
   .facility-layout{grid-template-columns:1fr}
   .facility-slider__viewport{aspect-ratio:16/10}
+  [data-reveal="left"],[data-reveal="right"]{transform:translateY(26px)}
 }
 
 @media (max-width:1440px){
@@ -68,8 +69,9 @@
 @media (max-width:860px){
   :root{--s-12:5rem;--s-13:6rem;--s-11:4.5rem}
   .grid-4{grid-template-columns:repeat(2,1fr)}
-  .grid-3{grid-template-columns:repeat(2,1fr)}
-  .sec-head--split{flex-direction:column;align-items:flex-start}
+   .grid-3{grid-template-columns:repeat(2,1fr)}
+   .home-intro__grid{grid-template-columns:1fr;row-gap:var(--s-6)}
+   .sec-head--split{flex-direction:column;align-items:flex-start}
   .process-step::after{display:none}
   .process-flow{grid-template-columns:repeat(2,minmax(0,1fr))}
   .process-flow::before{display:none}
@@ -89,6 +91,7 @@
   .topbar__list li:nth-child(n+3){display:none}
   .dash-topbar{height:72px;padding-inline:18px}
   .dash-topbar h1{font-size:1.14rem}
+  .dash-grid,.dash-grid--3{grid-template-columns:repeat(2,1fr);gap:12px}
   .dash-topbar__right{gap:8px}
   .dash-user small,.dash-user i{display:none}
   .dash-user{padding-inline-start:10px}
